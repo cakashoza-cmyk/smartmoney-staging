@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sample: Smart Money lines on Lending Radar cards</title>
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#f4f6fa;--card:#fff;--ink:#0f172a;--mut:#64748b;--line:#e2e8f0;--ok:#15803d;--okb:#dcfce7;--ca:#b45309;--cab:#fef3c7;--av:#b91c1c;--avb:#fee2e2;--un:#475569;--unb:#e2e8f0;--acc:#2563eb;--hi:#eff6ff;--hib:#bfdbfe}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:14px 14px 56px}
+h1{font-size:22px;margin:8px 0 6px;line-height:1.25}
+h2{font-size:18px;margin:28px 0 8px}
+h3{font-size:14px;margin:0}
+.sub,.meta{color:var(--mut);font-size:13px}
+.banner{background:#fff7ed;border:1px solid #fdba74;color:#9a3412;border-radius:12px;padding:10px 14px;font-size:14px;font-weight:650;margin:8px 0 16px}
+.banner a{color:#9a3412}
+.intro,.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:0 0 14px}
+.intro p,.box p{margin:0 0 10px}
+.intro p:last-child,.box p:last-child{margin-bottom:0}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 16px}
+.toc a{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;color:var(--ink);text-decoration:none}
+.toc a:hover{border-color:var(--acc);color:var(--acc)}
+.pair{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:900px){.pair{grid-template-columns:1fr 1fr;align-items:start}}
+.coltag{font-size:11px;font-weight:750;letter-spacing:.4px;text-transform:uppercase;color:var(--mut);margin:0 0 6px}
+.coltag.new{color:#1d4ed8}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 1px 2px #0f172a0d}
+.card.sample{outline:2px solid var(--hib)}
+.ctitle{font-weight:700;font-size:16px;margin-bottom:4px}
+.ctitle span{color:var(--mut);font-weight:500}
+.cs{border-top:1px solid var(--line);padding:12px 0 4px}
+.cs h3{display:flex;align-items:center;gap:8px;margin:0 0 8px;color:var(--ink);font-size:14px;text-transform:none;letter-spacing:0}
+.cs h3 span{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#0f172a;color:#fff;font-size:12px;font-weight:700}
+.cs p{margin:0 0 8px}
+.cs ul{margin:0 0 8px;padding-left:20px}
+.cs li{margin:4px 0}
+.cs .src{font-size:12px;color:var(--mut)}
+.cs .src a{color:var(--acc)}
+a{color:var(--acc)}
+.nd{color:#64748b;background:#f1f5f9;border-radius:8px;padding:8px 10px;font-size:13.5px}
+.why{list-style:none;padding-left:0}
+.why li{padding-left:20px;position:relative}
+.cs i{font-style:normal;font-size:11px;margin-right:6px}
+.why li i{position:absolute;left:0;top:3px}
+.up{color:var(--ok)}.dn{color:var(--av)}.nt{color:var(--mut)}
+.news{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:8px 10px;margin-top:6px;font-size:13.5px}
+.news ul{margin:6px 0 0}
+.news li.stale,.news li.stale a{color:#94a3b8}
+.sh{font-weight:650;font-size:13.5px;margin:6px 0 4px!important}
+.upd{color:var(--mut);font-size:12px;margin:10px 0 0;border-top:1px solid var(--line);padding-top:8px}
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.badge{font-weight:750;font-size:15px;padding:7px 14px;border-radius:999px}
+.ok{background:var(--okb);color:var(--ok)}
+.caution{background:var(--cab);color:var(--ca)}
+.avoid{background:var(--avb);color:var(--av)}
+.unknown{background:var(--unb);color:var(--un)}
+.score{font-size:28px;font-weight:750}
+.score small{font-size:13px;color:var(--mut);font-weight:500}
+.note{background:#fffbeb;border-left:3px solid #f59e0b;padding:8px 10px;border-radius:0 8px 8px 0;font-size:14px}
+.newwhy{background:var(--hi);border-radius:8px;padding:6px 8px 6px 20px;margin:6px 0 !important;border:1px solid var(--hib)}
+.stance{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:12px 0 8px;font-size:14.5px}
+.stance b{display:block;margin-bottom:4px}
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#f8fafc;font-size:12px;text-transform:uppercase;letter-spacing:.3px;color:var(--mut)}
+tr:last-child td{border-bottom:0}
+.disc{background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:24px;font-size:12.5px;color:#334155}
+ul.plain{margin:8px 0;padding-left:20px}
+ul.plain li{margin:5px 0}
+code{font-size:12.5px;background:#f1f5f9;padding:1px 5px;border-radius:4px}
+</style>
+</head>
+<body>
+<main>
+<div class="banner">Sample only — the live Lending Radar site and its main branch have not been changed. Compare with the live cards: <a href="https://cakashoza-cmyk.github.io/india-regime-engine/lending.html?state=GJ&amp;city=gj_morbi&amp;ind=ceramics" target="_blank" rel="noopener">Morbi ceramics</a> · <a href="https://cakashoza-cmyk.github.io/india-regime-engine/lending.html?state=GJ&amp;city=gj_surat&amp;ind=mmf_textiles" target="_blank" rel="noopener">Surat MMF textiles</a> · <a href="https://cakashoza-cmyk.github.io/india-regime-engine/lending.html?state=GJ&amp;city=gj_vapi&amp;ind=chemicals_dyes" target="_blank" rel="noopener">Vapi chemicals</a>.</div>
+
+<h1>How Smart Money data could appear on a Lending Radar card</h1>
+<p class="sub">A before-and-after sample for three Gujarat clusters, using only public figures already in the Smart Money export of 22 Nov 2026, 15:48. The five-section card is unchanged. What is new is one or two lines in <b>Why</b>, each with a source and a date. Grey means the figure is missing or the map is too weak to use.</p>
+
+<nav class="toc">
+  <a href="#how">How to read this</a>
+  <a href="#rule">Caution-only rule</a>
+  <a href="#morbi">Morbi ceramics</a>
+  <a href="#surat">Surat MMF textiles</a>
+  <a href="#vapi">Vapi chemicals</a>
+  <a href="#gaps">Gaps and rollout</a>
+</nav>
+
+<section class="intro" id="how">
+  <p>These three clusters were chosen because a public series can be linked without stretching: kiln gas for Morbi, textile factory output and trade for Surat, and chemical factory output plus a Valsad-based listed peer for Vapi. Where the link is weak — for example PTA prices for Surat, or ceramic-only exports — the sample shows <span class="nd" style="display:inline;padding:2px 6px">insufficient data</span> instead of a number.</p>
+  <p>Existing card wording, scores and news items are copied from Lending Radar as of 21 Nov 2026, 10:16 IST. New lines (highlighted in blue) come only from Smart Money files: company results, MoSPI industrial production, Commerce Ministry trade, and IMF commodity prices via FRED. No bank customer data is used.</p>
+</section>
+
+<section class="box" id="rule">
+  <p><b>The simple caution-only rule used in this sample</b></p>
+  <p>A caution flag is raised only when a <em>tightly mapped</em> official series shows stress:</p>
+  <ul class="plain">
+    <li><b>Input cost:</b> the mapped commodity is up 20% or more in three months.</li>
+    <li><b>Factory output:</b> the mapped IIP (Index of Industrial Production) series is down 5% or more year on year in the latest month.</li>
+    <li><b>Listed peers:</b> at least two tightly mapped peers have results, and their median sales are down 5% or more year on year, or their median operating margin is down 2 percentage points or more. One peer is shown for context but does not raise a flag.</li>
+  </ul>
+  <p>One flag can move <b>OK to lend → Caution</b>. Two independent flags can move <b>Caution → Avoid</b>. A flag never creates a score where the industry is not scored. Improving figures never move a stance toward OK, until this layer has been back-tested. This is the same one-way idea as Lending Radar’s rating-actions layer.</p>
+</section>
+
+<!-- =================== MORBI =================== -->
+<h2 id="morbi">1. Morbi · Ceramic tiles</h2>
+<p class="sub">Chosen because Morbi kilns run on gas, and Asia LNG (liquefied natural gas) prices are in the Smart Money file. India’s non-metallic minerals output is a broader backdrop (it also includes cement and glass). Only one listed tile maker has quarterly results in that file.</p>
+
+<div class="pair">
+<div>
+<div class="coltag">Now on Lending Radar</div>
+<div class="card">
+  <div class="ctitle">Ceramic Tiles, Sanitaryware &amp; Glass <span>· Morbi, Gujarat</span></div>
+  <section class="cs"><h3><span>1</span>What it is</h3>
+    <p>Kiln-based units in Morbi make wall, floor and vitrified tiles and sanitaryware, selling across India and exporting to the Gulf, Africa, Europe and the US.</p>
+    <p>Morbi produces 80% of India's ceramics from over 900 MSME (micro, small and medium enterprise) units; nearly 300 factories shut in the three years to Sep 2025. <span class="src"><a href="https://www.hindustantimes.com/india-news/cracks-appear-in-gujarat-ceramic-industry-as-tariffs-hurt-101756752962367.html" target="_blank" rel="noopener">Hindustan Times</a> · data to Sep 2025</span></p>
+    <p>Of about 900 tile units, about 370 run fully on gas and about 530 on gas and propane. <span class="src"><a href="https://plindia.com/ResReport/Building%20Materials-5-3-26-PL.pdf" target="_blank" rel="noopener">PL Capital research note (Building Materials)</a> · data to Oct to Dec 2025, published Mar 2026</span></p>
+  </section>
+  <section class="cs"><h3><span>2</span>How it makes money</h3>
+    <ul>
+      <li>The margin is the gap between selling price per square metre and fuel plus clay cost, in a crowded cluster where prices are cut quickly when kilns run below capacity.</li>
+      <li>Fuel is about a quarter of expenses, so gas and propane prices decide margins. <span class="src"><a href="https://www.hindustantimes.com/india-news/cracks-appear-in-gujarat-ceramic-industry-as-tariffs-hurt-101756752962367.html" target="_blank" rel="noopener">Hindustan Times</a> · data to Sep 2025</span></li>
+      <li>Gujarat Gas volumes in Morbi fell about 50% on a year earlier in Oct to Dec 2025, a sign of kilns running less. <span class="src"><a href="https://plindia.com/ResReport/Building%20Materials-5-3-26-PL.pdf" target="_blank" rel="noopener">PL Capital research note (Building Materials)</a> · data to Oct to Dec 2025, published Mar 2026</span></li>
+      <li>Listed peer Kajaria Ceramics (tiles): operating margin (EBITDA) 19.5% in Jul to Sep 2026, up from 18.0% a year earlier. A large listed firm, not an SME: read it for the direction of margins only. <span class="src"><a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1745469_24102026084847_WEB.xml" target="_blank" rel="noopener">NSE filing, Kajaria Ceramics</a> · data to Jul to Sep 2026; <a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1551012_16102025101041_WEB.xml" target="_blank" rel="noopener">NSE filing, Kajaria Ceramics</a> · data to Jul to Sep 2025</span></li>
+      <li>Listed peer Somany Ceramics (tiles): operating margin (EBITDA) 11.6% in Jul to Sep 2026, up from 7.8% a year earlier. A large listed firm, not an SME: read it for the direction of margins only. <span class="src"><a href="https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1753087_04112026073834_WEB.xml" target="_blank" rel="noopener">NSE filing, Somany Ceramics</a> · data to Jul to Sep 2026; <a href="https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1568584_07112025081933_WEB.xml" target="_blank" rel="noopener">NSE filing, Somany Ceramics</a> · data to Jul to Sep 2025</span> <span class="src"><a href="https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1753087_04112026073834_WEB.xml" target="_blank" rel="noopener">NSE filing, Somany Ceramics</a> · data to Jul to Sep 2026; <a href="https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1568584_07112025081933_WEB.xml" target="_blank" rel="noopener">NSE filing, Somany Ceramics</a> · data to Jul to Sep 2025</span></li>
+    </ul>
+  </section>
+  <section class="cs"><h3><span>3</span>Our view</h3>
+    <div class="top"><span class="badge unknown">Not scored</span></div>
+    <p class="meta">Not scored: the official output series for this group mostly tracks other products, so it does not fit this industry.</p>
+  </section>
+  <section class="cs"><h3><span>4</span>Why</h3>
+    <p class="nd">No score, so no rationale. The parent sector's figures are not shown so they are not mistaken for a view on this industry.</p>
+    <div class="news"><b>In the news</b> <span class="meta">News, not data: unverified, never raises a view, and it reads worse than the data. Items older than 90 days are greyed out.</span>
+      <ul>
+        <li><a href="https://cofacto.ai/market-news/kajariacer-q2-fy27-earnings-call" target="_blank" rel="noopener">Cofacto: Kajaria Q2 FY27 call summary (chairman on Morbi)</a> <span class="meta">news · 26 Oct 2026</span></li>
+        <li><a href="https://morbimirror.com/inflation-hits-morbis-ceramic-industry-propane-gas-cross" target="_blank" rel="noopener">Propane crosses ₹100 (Morbi Mirror)</a> <span class="meta">news · 22 Oct 2026</span></li>
+        <li><a href="https://www.divyabhaskar.co.in/local/gujarat/morbi/news/morbi-packaging-associat" target="_blank" rel="noopener">મોરબી પેકેજિંગ એસોસિએશને બાકી પેમેન્ટ ચૂકવવા માટે એકમોને મુદત આપી: સમયસર પેમેન્ટ ન કરનાર એકમો થશે બ્લેકલિસ્ટ, કોઈ કંપની</a> <span class="meta">news · 19 Sep 2026</span></li>
+        <li class="stale"><a href="https://www.icra.in/Rating/GetRationalReportFilePdf?id=115908" target="_blank" rel="noopener">ICRA rationale: Eros for Sanitarywares, Morbi</a> <span class="meta">news · 21 Nov 2022 · stale</span></li>
+      </ul>
+    </div>
+  </section>
+  <section class="cs"><h3><span>5</span>What to monitor</h3>
+    <p class="sh">Check with the borrower</p>
+    <ul>
+      <li>Gas or propane cost per square metre against selling price, every month.</li>
+      <li>Kiln running days and planned shutdowns.</li>
+      <li>Dealer receivable days and stock of finished tiles.</li>
+      <li>Export orders under anti-dumping or tariff action.</li>
+    </ul>
+    <p class="sh">What would move the view</p>
+    <p class="nd">Get a local note or a branch view before relying on any stance for this industry here.</p>
+  </section>
+  <p class="upd">Updated 21 Nov 2026, 10:16 IST · company filings checked 15 Nov 2026. Decision aid, not a substitute for credit judgment.</p>
+</div>
+</div>
+
+<div>
+<div class="coltag new">Sample: with Smart Money lines</div>
+<div class="card sample">
+  <div class="ctitle">Ceramic Tiles, Sanitaryware &amp; Glass <span>· Morbi, Gujarat</span></div>
+  <section class="cs"><h3><span>1</span>What it is</h3>
+    <p>Kiln-based units in Morbi make wall, floor and vitrified tiles and sanitaryware, selling across India and exporting to the Gulf, Africa, Europe and the US.</p>
+    <p>Morbi produces 80% of India's ceramics from over 900 MSME units; nearly 300 factories shut in the three years to Sep 2025. <span class="src"><a href="https://www.hindustantimes.com/india-news/cracks-appear-in-gujarat-ceramic-industry-as-tariffs-hurt-101756752962367.html" target="_blank" rel="noopener">Hindustan Times</a> · data to Sep 2025</span></p>
+    <p>Of about 900 tile units, about 370 run fully on gas and about 530 on gas and propane. <span class="src"><a href="https://plindia.com/ResReport/Building%20Materials-5-3-26-PL.pdf" target="_blank" rel="noopener">PL Capital research note (Building Materials)</a> · data to Oct to Dec 2025, published Mar 2026</span></p>
+  </section>
+  <section class="cs"><h3><span>2</span>How it makes money</h3>
+    <ul>
+      <li>The margin is the gap between selling price per square metre and fuel plus clay cost, in a crowded cluster where prices are cut quickly when kilns run below capacity.</li>
+      <li>Fuel is about a quarter of expenses, so gas and propane prices decide margins. <span class="src"><a href="https://www.hindustantimes.com/india-news/cracks-appear-in-gujarat-ceramic-industry-as-tariffs-hurt-101756752962367.html" target="_blank" rel="noopener">Hindustan Times</a> · data to Sep 2025</span></li>
+      <li>Gujarat Gas volumes in Morbi fell about 50% on a year earlier in Oct to Dec 2025, a sign of kilns running less. <span class="src"><a href="https://plindia.com/ResReport/Building%20Materials-5-3-26-PL.pdf" target="_blank" rel="noopener">PL Capital research note (Building Materials)</a> · data to Oct to Dec 2025, published Mar 2026</span></li>
+      <li>Listed peer Kajaria Ceramics (tiles): operating margin (EBITDA) 19.5% in Jul to Sep 2026, up from 18.0% a year earlier. A large listed firm, not an SME: read it for the direction of margins only. <span class="src"><a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1745469_24102026084847_WEB.xml" target="_blank" rel="noopener">NSE filing, Kajaria Ceramics</a> · data to Jul to Sep 2026; <a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1551012_16102025101041_WEB.xml" target="_blank" rel="noopener">NSE filing, Kajaria Ceramics</a> · data to Jul to Sep 2025</span></li>
+      <li>Listed peer Somany Ceramics (tiles): operating margin (EBITDA) 11.6% in Jul to Sep 2026, up from 7.8% a year earlier. A large listed firm, not an SME: read it for the direction of margins only.</li>
+    </ul>
+  </section>
+  <section class="cs"><h3><span>3</span>Our view</h3>
+    <div class="top"><span class="badge unknown">Not scored</span></div>
+    <p class="meta">Not scored: the official output series for this group mostly tracks other products, so it does not fit this industry. The new lines below fill the Why section; they do not create a score.</p>
+  </section>
+  <section class="cs"><h3><span>4</span>Why</h3>
+    <ul class="why">
+      <li class="newwhy"><i class="dn">▼</i>Asia LNG prices were US$ 26.64 per mmBtu in Sep 2026, up 55% from US$ 17.19 in Jun 2026. Gas is a main kiln fuel in Morbi, so this puts pressure on margins. <span class="src"><a href="https://fred.stlouisfed.org/series/PNGASJPUSDM" target="_blank" rel="noopener">IMF commodity price via FRED (PNGASJPUSDM)</a> · data to Sep 2026</span></li>
+      <li class="newwhy"><i class="nt">•</i>Kajaria Ceramics, the only listed tile maker with quarterly results in the Smart Money file: sales were up 23.8% year on year in Jul to Sep 2026, and operating margin (EBITDA) was 19.5%, up 1.5 percentage points. A large listed firm, not an SME: read it for the direction only. This cannot lift a stance. <span class="src"><a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1745469_24102026084847_WEB.xml" target="_blank" rel="noopener">NSE filing, Kajaria Ceramics</a> · data to Jul to Sep 2026; <a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1551012_16102025101041_WEB.xml" target="_blank" rel="noopener">NSE filing, Kajaria Ceramics</a> · data to Jul to Sep 2025</span></li>
+    </ul>
+    <p class="nd">Insufficient data: there is no separate official series here for ceramic-product exports (HS chapter 69) only — the available trade figures mix salt and cement, stone, glass and ceramics. No quarterly results in this file for other listed tile makers (Somany Ceramics, Asian Granito, Varmora, Exxaro Tiles, Cera, Nitco). India’s non-metallic mineral factory output was up 6.9% year on year in Sep 2026; that series also includes cement and glass, so it is not used as a Morbi score.</p>
+    <div class="news"><b>In the news</b> <span class="meta">News, not data: unverified, never raises a view, and it reads worse than the data. Items older than 90 days are greyed out.</span>
+      <ul>
+        <li><a href="https://cofacto.ai/market-news/kajariacer-q2-fy27-earnings-call" target="_blank" rel="noopener">Cofacto: Kajaria Q2 FY27 earnings call summary (chairman on Morbi)</a> <span class="meta">news · 26 Oct 2026</span></li>
+        <li><a href="https://morbimirror.com/inflation-hits-morbis-ceramic-industry-propane-gas-cross" target="_blank" rel="noopener">Propane crosses ₹100 (Morbi Mirror)</a> <span class="meta">news · 22 Oct 2026</span></li>
+        <li><a href="https://www.divyabhaskar.co.in/local/gujarat/morbi/news/morbi-packaging-associat" target="_blank" rel="noopener">મોરબી પેકેજિંગ એસોસિએશને બાકી પેમેન્ટ ચૂકવવા માટે એકમોને મુદત આપી: સમયસર પેમેન્ટ ન કરનાર એકમો થશે બ્લેકલિસ્ટ, કોઈ કંપની</a> <span class="meta">news · 19 Sep 2026</span></li>
+        <li class="stale"><a href="https://www.icra.in/Rating/GetRationalReportFilePdf?id=115908" target="_blank" rel="noopener">ICRA rationale: Eros for Sanitarywares, Morbi</a> <span class="meta">news · 21 Nov 2022 · stale</span></li>
+      </ul>
+    </div>
+  </section>
+  <section class="cs"><h3><span>5</span>What to monitor</h3>
+    <p class="sh">Check with the borrower</p>
+    <ul>
+      <li>Gas or propane cost per square metre against selling price, every month.</li>
+      <li>Kiln running days and planned shutdowns.</li>
+      <li>Dealer receivable days and stock of finished tiles.</li>
+      <li>Export orders under anti-dumping or tariff action.</li>
+    </ul>
+    <p class="sh">What would move the view</p>
+    <p class="nd">Get a local note or a branch view before relying on any stance for this industry here. If this industry later had an OK to lend score, the LNG move of 55% in three months would cut it to Caution under the rule above.</p>
+  </section>
+  <p class="upd">Existing card updated 21 Nov 2026, 10:16 IST. New Why lines from the Smart Money export of 22 Nov 2026, 15:48. Decision aid, not a substitute for credit judgment.</p>
+</div>
+</div>
+</div>
+
+<div class="stance"><b>Would the stance change?</b> No. The live card is not scored, and a caution flag is not allowed to create a new score. The LNG rise of 55% in three months is one caution flag. Kajaria’s stronger sales and margin do not lift anything. If Morbi ceramics later had an OK to lend score, this flag would cut it to Caution.</div>
+
+<p class="meta"><b>Mapping used.</b> Commodity: IMF Asia LNG (FRED series PNGASJPUSDM), applied because the existing card states that about 370 Morbi units run fully on gas and fuel is about a quarter of expenses. Listed peer: Kajaria Ceramics Ltd. (NSE:KAJARIACER), classified in Smart Money as consumer durables, not construction materials; it is the only Nifty 500 tile maker with results in <code>fundamentals.json</code>. IIP backdrop (not used as a flag): MoSPI “Manufacture of Other Non-metallic Mineral Products,” +6.9% year on year in Sep 2026. Trade: HS 25, 68, 69 and 70 are bundled, so ceramic-only exports are insufficient data.</p>
+
+<!-- =================== SURAT =================== -->
+<h2 id="surat">2. Surat · MMF / polyester weaving and processing</h2>
+<p class="sub">Chosen because India has a clear textiles factory-output series and a textiles trade basket. The usual Surat yarn inputs — PTA and MEG (purified terephthalic acid and mono-ethylene glycol) — are not in the Smart Money commodity file, so they stay grey. Cotton is shown only as a weaker map.</p>
+
+<div class="pair">
+<div>
+<div class="coltag">Now on Lending Radar</div>
+<div class="card">
+  <div class="ctitle">Textiles - MMF / Polyester Weaving &amp; Processing <span>· Surat, Gujarat</span></div>
+  <section class="cs"><h3><span>1</span>What it is</h3>
+    <p>Polyester yarn, made from crude-oil derivatives, is woven into grey fabric on powerlooms, often as job-work, then dyed, printed, embroidered and finished for dress-material traders and garment buyers.</p>
+    <p>Surat makes about 65% of India's synthetic textiles, with yearly sales of about Rs 85,000 crore (as cited by the Southern Gujarat Chamber of Commerce and Industry). <span class="src"><a href="https://frontline.thehindu.com/the-nation/surat-embroidery-workers-labour-rights/article71644077.ece" target="_blank" rel="noopener">Frontline</a> · data to Oct 2026</span></p>
+  </section>
+  <section class="cs"><h3><span>2</span>How it makes money</h3>
+    <ul>
+      <li>The margin is in processing and finishing; grey fabric is a commodity. Pure job-work units earn only a conversion charge and have no pricing power.</li>
+      <li>Yarn and power decide the margin. Yarn follows crude oil, so a unit must pass price rises on quickly or absorb them.</li>
+      <li>Listed peer Filatex India (polyester yarn): operating margin (EBITDA) 7.0% in Jul to Sep 2026, down from 8.3% a year earlier (quarter worked out from a half-year filing). A large listed firm, not an SME: read it for the direction of margins only. <span class="src"><a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1757623_13112026061710_WEB.xml" target="_blank" rel="noopener">NSE filing, Filatex India</a> · data to Jul to Sep 2026; <a href="https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1565005_04112025063746_WEB.xml" target="_blank" rel="noopener">NSE filing, Filatex India</a> · data to Jul to Sep 2025</span></li>
+    </ul>
+  </section>
+  <section class="cs"><h3><span>3</span>Our view</h3>
+    <div class="top"><span class="badge caution">Caution</span><span class="score">66<small>/100</small></span></div>
+    <p class="meta">OK to lend at 65 or above · Caution 45 to 64 · Avoid below 45. India score 56, Gujarat adjustment +10 (capped at ±10). <span class="src"><a href="https://cakashoza-cmyk.github.io/india-regime-engine/methodology.html" target="_blank" rel="noopener">Lending Radar method</a> · data to 21 Nov 2026</span></p>
+    <p class="note">The data alone says OK to lend (score 66), but recent local news reads worse, so the view is cut to Caution. News can only make a view more cautious.</p>
+    <p><b>Confidence: low.</b> The figures are national (6 current series) and Gujarat-wide (2 series); there is no Surat-only data for this industry. The score is 1 point from a cut-off.</p>
+  </section>
+  <section class="cs"><h3><span>4</span>Why</h3>
+    <ul class="why">
+      <li><i class="up">▲</i>Gujarat: GST collections +11.9% so far this financial year vs India +6.1% (5.8 percentage points faster than India): helps. <span class="src"><a href="https://tutorial.gst.gov.in/downloads/news/final_gst_revenue_report_for_publishing_monthly_sep_2026.pdf" target="_blank" rel="noopener">GSTN state-wise GST collections</a> · data to Sep 2026</span></li>
+      <li><i class="up">▲</i>Gujarat: electricity demand +14.3% so far this financial year vs India +11.5% (2.8 percentage points faster than India): helps. <span class="src"><a href="https://cea.nic.in/api/dashboardReports/download-pdf/en/2996e061-524e-4a6d-8660-625de5430c90" target="_blank" rel="noopener">CEA Power Supply Position</a> · data to Oct 2026</span></li>
+      <li><i class="dn">▼</i>Rating agencies, Gujarat (Surat MMF: weaving, processing, embroidery): 3 of 13 rating actions in the last year were negative (0 downgrades, 3 negative outlooks or watches, 0 upgrades). A watch flag only. <span class="src"><a href="https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/GtexFabricsPrivateLimited_October%2007_%202026_RR_406366.html" target="_blank" rel="noopener">CRISIL rating rationale, Gtex Fabrics Private Limited</a> · data to Nov 2026</span></li>
+      <li><i class="up">▲</i>India: IIP factory output (industry code 13) +17.4% on a year earlier. <span class="src"><a href="https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2329475&amp;reg=48&amp;lang=2#4" target="_blank" rel="noopener">IIP, MoSPI</a> · data to Sep 2026</span></li>
+    </ul>
+    <div class="news"><b>In the news</b> <span class="meta">News, not data: unverified, never raises a view, and it reads worse than the data. Items older than 90 days are greyed out.</span>
+      <ul>
+        <li><a href="https://english.loktej.com/article/34187/surat--major-changes-in-textile-pli-sch" target="_blank" rel="noopener">Surat: Major Changes in Textile PLI Scheme</a> <span class="meta">news · 31 Oct 2026</span></li>
+        <li><a href="https://urbanacres.in/surat-weavers-protest-as-textile-dues-cross-200-days-ahead" target="_blank" rel="noopener">Surat Weavers Protest Over 200-Day Textile Dues</a> <span class="meta">news · 31 Oct 2026</span></li>
+        <li><a href="https://frontline.thehindu.com/the-nation/surat-embroidery-workers-labour-rights/article71644077.ece" target="_blank" rel="noopener">Migrant Workers in Surat Fight for Rest and Fair Wages</a> <span class="meta">news · 30 Oct 2026</span></li>
+        <li><a href="https://indianexpress.com/article/cities/ahmedabad/after-august-unrest-surat-tex" target="_blank" rel="noopener">After August unrest, Surat textile units brace for fresh wave of stir</a> <span class="meta">news · 29 Oct 2026</span></li>
+      </ul>
+    </div>
+  </section>
+  <section class="cs"><h3><span>5</span>What to monitor</h3>
+    <p class="sh">Check with the borrower</p>
+    <ul>
+      <li>Power bills against the shift register, every month: falling machine hours mean a slowdown.</li>
+      <li>Yarn purchase register against the stock statement, every month: yarn piling up while sales stay flat means the unit is funding inventory instead of selling.</li>
+      <li>Wage, EPF (Employees' Provident Fund) and ESI (Employees' State Insurance) payments on time: late payments are an early sign of stress or a strike.</li>
+      <li>Any FIR or labour department notice against the unit.</li>
+    </ul>
+    <p class="sh">What would move the view</p>
+    <ul>
+      <li>Score 66: 2 points above the OK cut-off (65), 22 points above Avoid (below 45).</li>
+      <li><i class="up">▲</i>If the export trend turns positive (now neutral): about +10 points, to 76, still OK to lend. <span class="src"><a href="https://www.commerce.gov.in/files/2026-10/Quick%20Estimates%20September%202026.pdf" target="_blank" rel="noopener">The export trend</a> · data to Sep 2026</span></li>
+      <li><i class="dn">▼</i>Rupee 5% weaker: about -2 points, to 64, moves to Caution.</li>
+      <li><i class="dn">▼</i>Crude oil (Brent) 20% higher: about -5 points, to 61, moves to Caution.</li>
+      <li>Fresh local news that conditions are worse would turn OK into Caution. News can never raise a view.</li>
+    </ul>
+  </section>
+  <p class="upd">Updated 21 Nov 2026, 10:16 IST · company filings checked 15 Nov 2026. Decision aid, not a substitute for credit judgment.</p>
+</div>
+</div>
+
+<div>
+<div class="coltag new">Sample: with Smart Money lines</div>
+<div class="card sample">
+  <div class="ctitle">Textiles - MMF / Polyester Weaving &amp; Processing <span>· Surat, Gujarat</span></div>
+  <section class="cs"><h3><span>1</span>What it is</h3>
+    <p>Polyester yarn, made from crude-oil derivatives, is woven into grey fabric on powerlooms, often as job-work, then dyed, printed, embroidered and finished for dress-material traders and garment buyers.</p>
+    <p>Surat makes about 65% of India's synthetic textiles, with yearly sales of about Rs 85,000 crore (as cited by the Southern Gujarat Chamber of Commerce and Industry). <span class="src"><a href="https://frontline.thehindu.com/the-nation/surat-embroidery-workers-labour-rights/article71644077.ece" target="_blank" rel="noopener">Frontline</a> · data to Oct 2026</span></p>
+  </section>
+  <section class="cs"><h3><span>2</span>How it makes money</h3>
+    <ul>
+      <li>The margin is in processing and finishing; grey fabric is a commodity. Pure job-work units earn only a conversion charge and have no pricing power.</li>
+      <li>Yarn and power decide the margin. Yarn follows crude oil, so a unit must pass price rises on quickly or absorb them.</li>
+      <li>Listed peer Filatex India (polyester yarn): operating margin (EBITDA) 7.0% in Jul to Sep 2026, down from 8.3% a year earlier (quarter worked out from a half-year filing). A large listed firm, not an SME: read it for the direction of margins only. <span class="src"><a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1757623_13112026061710_WEB.xml" target="_blank" rel="noopener">NSE filing, Filatex India</a> · data to Jul to Sep 2026</span></li>
+    </ul>
+  </section>
+  <section class="cs"><h3><span>3</span>Our view</h3>
+    <div class="top"><span class="badge caution">Caution</span><span class="score">66<small>/100</small></span></div>
+    <p class="meta">OK to lend at 65 or above · Caution 45 to 64 · Avoid below 45. India score 56, Gujarat adjustment +10. The new lines do not move this view.</p>
+    <p class="note">The data alone says OK to lend (score 66), but recent local news reads worse, so the view is cut to Caution. News can only make a view more cautious.</p>
+    <p><b>Confidence: low.</b> The figures are national (6 current series) and Gujarat-wide (2 series); there is no Surat-only data for this industry. The score is 1 point from a cut-off.</p>
+  </section>
+  <section class="cs"><h3><span>4</span>Why</h3>
+    <ul class="why">
+      <li><i class="up">▲</i>Gujarat: GST collections +11.9% so far this financial year vs India +6.1% (5.8 percentage points faster than India): helps. <span class="src"><a href="https://tutorial.gst.gov.in/downloads/news/final_gst_revenue_report_for_publishing_monthly_sep_2026.pdf" target="_blank" rel="noopener">GSTN state-wise GST collections</a> · data to Sep 2026</span></li>
+      <li><i class="up">▲</i>Gujarat: electricity demand +14.3% so far this financial year vs India +11.5% (2.8 percentage points faster than India): helps. <span class="src"><a href="https://cea.nic.in/api/dashboardReports/download-pdf/en/2996e061-524e-4a6d-8660-625de5430c90" target="_blank" rel="noopener">CEA Power Supply Position</a> · data to Oct 2026</span></li>
+      <li><i class="dn">▼</i>Rating agencies, Gujarat (Surat MMF: weaving, processing, embroidery): 3 of 13 rating actions in the last year were negative (0 downgrades, 3 negative outlooks or watches, 0 upgrades). A watch flag only. <span class="src"><a href="https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/GtexFabricsPrivateLimited_October%2007_%202026_RR_406366.html" target="_blank" rel="noopener">CRISIL rating rationale, Gtex Fabrics Private Limited</a> · data to Nov 2026</span></li>
+      <li><i class="up">▲</i>India: IIP factory output (industry code 13) +17.4% on a year earlier. <span class="src"><a href="https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2329475&amp;reg=48&amp;lang=2#4" target="_blank" rel="noopener">IIP, MoSPI</a> · data to Sep 2026</span></li>
+      <li class="newwhy"><i class="nt">•</i>India’s textile exports (HS chapters 50 to 63, covering cotton, man-made filament and staple, and garments) were US$ 36,184 million in FY 2025-26, 2.1% lower than a year earlier. Imports in the same basket rose 16.9% to US$ 11,420 million. <span class="src"><a href="https://tradestat.commerce.gov.in/eidb/commodity_wise_export?year=2025&amp;level=2&amp;unit=usd_mn" target="_blank" rel="noopener">Ministry of Commerce TradeStat</a> · data to Mar 2026</span></li>
+      <li class="newwhy"><i class="nt">•</i>Cotton prices were 95.8 US cents per pound in Sep 2026, up 11.1% from Jun 2026. This is a weaker map for Surat’s polyester cluster than for cotton spinning, and the 11.1% rise is below the 20% caution threshold. <span class="src"><a href="https://fred.stlouisfed.org/series/PCOTTINDUSDM" target="_blank" rel="noopener">IMF commodity price via FRED (PCOTTINDUSDM)</a> · data to Sep 2026</span></li>
+    </ul>
+    <p class="nd">Insufficient data: PTA and MEG prices, the usual inputs for Surat polyester yarn, are not in the Smart Money commodity file. No quarterly results in that file for listed polyester-yarn companies such as Filatex India (Filatex is already shown above from Lending Radar’s own filing store). K.P.R. Mill and Page Industries are in the file but are not Surat MMF peers, so they are not used here.</p>
+    <div class="news"><b>In the news</b> <span class="meta">News, not data: unverified, never raises a view, and it reads worse than the data.</span>
+      <ul>
+        <li><a href="https://english.loktej.com/article/34187/surat--major-changes-in-textile-pli-sch" target="_blank" rel="noopener">Surat: Major Changes in Textile PLI Scheme</a> <span class="meta">news · 31 Oct 2026</span></li>
+        <li><a href="https://urbanacres.in/surat-weavers-protest-as-textile-dues-cross-200-days-ahead" target="_blank" rel="noopener">Surat Weavers Protest Over 200-Day Textile Dues</a> <span class="meta">news · 31 Oct 2026</span></li>
+        <li><a href="https://frontline.thehindu.com/the-nation/surat-embroidery-workers-labour-rights/article71644077.ece" target="_blank" rel="noopener">Migrant Workers in Surat Fight for Rest and Fair Wages</a> <span class="meta">news · 30 Oct 2026</span></li>
+        <li><a href="https://indianexpress.com/article/cities/ahmedabad/after-august-unrest-surat-tex" target="_blank" rel="noopener">After August unrest, Surat textile units brace for fresh wave of stir</a> <span class="meta">news · 29 Oct 2026</span></li>
+      </ul>
+    </div>
+  </section>
+  <section class="cs"><h3><span>5</span>What to monitor</h3>
+    <p class="sh">Check with the borrower</p>
+    <ul>
+      <li>Power bills against the shift register, every month: falling machine hours mean a slowdown.</li>
+      <li>Yarn purchase register against the stock statement, every month: yarn piling up while sales stay flat means the unit is funding inventory instead of selling.</li>
+      <li>Wage, EPF and ESI payments on time: late payments are an early sign of stress or a strike.</li>
+      <li>Any FIR or labour department notice against the unit.</li>
+    </ul>
+    <p class="sh">What would move the view</p>
+    <p class="nd">The new Smart Money lines do not meet the caution thresholds, and they cannot lift this view back to OK to lend.</p>
+  </section>
+  <p class="upd">Existing card updated 21 Nov 2026, 10:16 IST. New Why lines from the Smart Money export of 22 Nov 2026, 15:48. Decision aid, not a substitute for credit judgment.</p>
+</div>
+</div>
+</div>
+
+<div class="stance"><b>Would the stance change?</b> No. The live view is already Caution, because local news cut an OK to lend score of 66. Textile factory output is up 17.4%, so there is no output flag. Cotton is up 11.1%, below the 20% input-cost threshold, and is only a weak map for polyester. Exports are down 2.1%, which is not used as a flag. Nothing here can lift the view back to OK.</div>
+
+<p class="meta"><b>Mapping used.</b> IIP: MoSPI “Manufacture of Textiles,” +17.4% year on year in Sep 2026 (already on the live card; not repeated as a new claim). Trade: Commerce Ministry HS chapters 50–63 as a sector basket, not a Surat-only or polyester-only series. Commodity: IMF cotton (FRED PCOTTINDUSDM), marked as a weak map; PTA/MEG is the tight map and is missing. Listed peers in Smart Money fundamentals: none that are tightly mapped to Surat MMF.</p>
+
+<!-- =================== VAPI =================== -->
+<h2 id="vapi">3. Vapi · Chemicals, dyes and intermediates</h2>
+<p class="sub">Chosen because India has a chemicals factory-output series, and Atul Ltd. — already the listed peer on this Lending Radar card — is a Valsad-based company next to Vapi. Ankleshwar’s card would look the same. Asia LNG is mapped in Smart Money as fertiliser and petrochemical feedstock, which is a weak map for dye units, so it is shown as grey and does not change the stance.</p>
+
+<div class="pair">
+<div>
+<div class="coltag">Now on Lending Radar</div>
+<div class="card">
+  <div class="ctitle">Chemicals, Dyes &amp; Intermediates <span>· Vapi, Gujarat</span></div>
+  <section class="cs"><h3><span>1</span>What it is</h3>
+    <p>Plants in GIDC estates make dyes, dye intermediates, pigments and other chemicals for textile, pharma and agrochemical buyers in India and abroad, sharing common effluent treatment plants.</p>
+    <p>Gujarat makes nearly 75% of India's dyes and dye intermediates; Ankleshwar and Vapi are its main clusters. <span class="src"><a href="https://www.indianchemicalnews.com/opinion/colors-of-opportunity-indias-expanding-dye-and-dyestuff-industry-27154" target="_blank" rel="noopener">Indian Chemical News</a> · data to Aug 2025</span></p>
+    <p>Gujarat earned 46.16% of India's chemical exports in 2024-25. <span class="src"><a href="https://timesofindia.indiatimes.com/city/ahmedabad/gujarat-retains-its-chemicals-exports-crown-with-46-share/articleshow/120908910.cms" target="_blank" rel="noopener">Times of India</a> · data to 2024-25, published May 2025</span></p>
+  </section>
+  <section class="cs"><h3><span>2</span>How it makes money</h3>
+    <ul>
+      <li>The margin is the spread between crude-linked raw materials and product prices, which Chinese supply often sets.</li>
+      <li>Raw-material prices, China's export prices, and effluent and pollution compliance costs decide it; a closure order stops income.</li>
+      <li>Listed peer Atul (chemicals &amp; dyes): operating margin (EBITDA) 13.1% in Jul to Sep 2026, down from 17.2% a year earlier. A large listed firm, not an SME: read it for the direction of margins only. <span class="src"><a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1744960_23102026065526_WEB.xml" target="_blank" rel="noopener">NSE filing, Atul</a> · data to Jul to Sep 2026; <a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1551863_17102025035733_WEB.xml" target="_blank" rel="noopener">NSE filing, Atul</a> · data to Jul to Sep 2025</span></li>
+      <li>Listed peer Aarti Industries (benzene intermediates): operating margin (EBITDA) 11.5% in Jul to Sep 2026, down from 13.6% a year earlier (quarter worked out from a half-year filing). A large listed firm, not an SME: read it for the direction of margins only. <span class="src"><a href="https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1750382_30102026072933_WEB.xml" target="_blank" rel="noopener">NSE filing, Aarti Industries</a> · data to Jul to Sep 2026</span></li>
+    </ul>
+  </section>
+  <section class="cs"><h3><span>3</span>Our view</h3>
+    <div class="top"><span class="badge ok">OK to lend</span><span class="score">66<small>/100</small></span></div>
+    <p class="meta">OK to lend at 65 or above · Caution 45 to 64 · Avoid below 45. India score 56, Gujarat adjustment +10 (capped at ±10). <span class="src"><a href="https://cakashoza-cmyk.github.io/india-regime-engine/methodology.html" target="_blank" rel="noopener">Lending Radar method</a> · data to 21 Nov 2026</span></p>
+    <p><b>Confidence: low.</b> The figures are national (6 current series) and Gujarat-wide (2 series); there is no Vapi-only data for this industry. The score is 1 point from a cut-off.</p>
+  </section>
+  <section class="cs"><h3><span>4</span>Why</h3>
+    <ul class="why">
+      <li><i class="up">▲</i>Gujarat: GST collections +11.9% so far this financial year vs India +6.1% (5.8 percentage points faster than India): helps. <span class="src"><a href="https://tutorial.gst.gov.in/downloads/news/final_gst_revenue_report_for_publishing_monthly_sep_2026.pdf" target="_blank" rel="noopener">GSTN state-wise GST collections</a> · data to Sep 2026</span></li>
+      <li><i class="up">▲</i>Gujarat: electricity demand +14.3% so far this financial year vs India +11.5% (2.8 percentage points faster than India): helps. <span class="src"><a href="https://cea.nic.in/api/dashboardReports/download-pdf/en/2996e061-524e-4a6d-8660-625de5430c90" target="_blank" rel="noopener">CEA Power Supply Position</a> · data to Oct 2026</span></li>
+      <li><i class="up">▲</i>India: exports +15.6% so far this financial year in USD (Rs 156,272 Cr FYTD). <span class="src"><a href="https://www.commerce.gov.in/files/2026-10/Quick%20Estimates%20September%202026.pdf" target="_blank" rel="noopener">Dept of Commerce</a> · data to Sep 2026</span></li>
+      <li><i class="up">▲</i>India: bank GNPA ratio (chemicals) 0.7% in Mar-26 vs 1.1% in Mar-25 (−0.4 percentage points), RBI FSR. <span class="src"><a href="https://rbidocs.rbi.org.in/rdocs//PublicationReport/Pdfs/0FSRJUNE2026_300626A120EF6C37694C8C933181147F1379D7.PDF" target="_blank" rel="noopener">RBI FSR</a> · data to Mar 2026</span></li>
+      <li><i class="dn">▼</i>Interest rates and the rupee: Repo 5.5% (from 5.25%), RBI stance tightening; Rupee 92.67/USD, 4.7% weaker than a year ago. For this industry that takes 5 points off the score. <span class="src"><a href="https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63742" target="_blank" rel="noopener">RBI</a> · data to Oct 2026</span></li>
+    </ul>
+  </section>
+  <section class="cs"><h3><span>5</span>What to monitor</h3>
+    <p class="sh">Check with the borrower</p>
+    <ul>
+      <li>Pollution board consents, effluent plant dues and any closure notice.</li>
+      <li>Raw-material cost against selling price, every quarter.</li>
+      <li>Export receivable days and the share of a few buyers.</li>
+      <li>Inventory days of raw material and finished goods.</li>
+    </ul>
+    <p class="sh">What would move the view</p>
+    <ul>
+      <li>Score 66: 2 points above the OK cut-off (65), 22 points above Avoid (below 45).</li>
+      <li><i class="up">▲</i>If the factory-output trend (IIP) turns positive (now negative): about +10 points, to 76, still OK to lend. <span class="src"><a href="https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2329475&amp;reg=48&amp;lang=2#4" target="_blank" rel="noopener">The factory-output trend (IIP)</a> · data to Sep 2026</span></li>
+      <li><i class="dn">▼</i>Rupee 5% weaker: about −2 points, to 64, moves to Caution.</li>
+      <li><i class="dn">▼</i>Crude oil (Brent) 20% higher: about −5 points, to 61, moves to Caution.</li>
+      <li>Fresh local news that conditions are worse would turn OK into Caution. News can never raise a view.</li>
+    </ul>
+  </section>
+  <p class="upd">Updated 21 Nov 2026, 10:16 IST · company filings checked 15 Nov 2026. Decision aid, not a substitute for credit judgment.</p>
+</div>
+</div>
+
+<div>
+<div class="coltag new">Sample: with Smart Money lines</div>
+<div class="card sample">
+  <div class="ctitle">Chemicals, Dyes &amp; Intermediates <span>· Vapi, Gujarat</span></div>
+  <section class="cs"><h3><span>1</span>What it is</h3>
+    <p>Plants in GIDC estates make dyes, dye intermediates, pigments and other chemicals for textile, pharma and agrochemical buyers in India and abroad, sharing common effluent treatment plants.</p>
+    <p>Gujarat makes nearly 75% of India's dyes and dye intermediates; Ankleshwar and Vapi are its main clusters. <span class="src"><a href="https://www.indianchemicalnews.com/opinion/colors-of-opportunity-indias-expanding-dye-and-dyestuff-industry-27154" target="_blank" rel="noopener">Indian Chemical News</a> · data to Aug 2025</span></p>
+    <p>Gujarat earned 46.16% of India's chemical exports in 2024-25. <span class="src"><a href="https://timesofindia.indiatimes.com/city/ahmedabad/gujarat-retains-its-chemicals-exports-crown-with-46-share/articleshow/120908910.cms" target="_blank" rel="noopener">Times of India</a> · data to 2024-25, published May 2025</span></p>
+  </section>
+  <section class="cs"><h3><span>2</span>How it makes money</h3>
+    <ul>
+      <li>The margin is the spread between crude-linked raw materials and product prices, which Chinese supply often sets.</li>
+      <li>Raw-material prices, China's export prices, and effluent and pollution compliance costs decide it; a closure order stops income.</li>
+      <li>Listed peer Atul (chemicals &amp; dyes): operating margin (EBITDA) 13.1% in Jul to Sep 2026, down from 17.2% a year earlier. A large listed firm, not an SME: read it for the direction of margins only. <span class="src"><a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1744960_23102026065526_WEB.xml" target="_blank" rel="noopener">NSE filing, Atul</a> · data to Jul to Sep 2026; <a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1551863_17102025035733_WEB.xml" target="_blank" rel="noopener">NSE filing, Atul</a> · data to Jul to Sep 2025</span></li>
+      <li>Listed peer Aarti Industries (benzene intermediates): operating margin (EBITDA) 11.5% in Jul to Sep 2026, down from 13.6% a year earlier (quarter worked out from a half-year filing). A large listed firm, not an SME: read it for the direction of margins only.</li>
+    </ul>
+  </section>
+  <section class="cs"><h3><span>3</span>Our view</h3>
+    <div class="top"><span class="badge ok">OK to lend</span><span class="score">66<small>/100</small></span></div>
+    <p class="meta">OK to lend at 65 or above · Caution 45 to 64 · Avoid below 45. India score 56, Gujarat adjustment +10. The new lines do not meet the caution thresholds, so the view stays OK to lend.</p>
+    <p><b>Confidence: low.</b> The figures are national (6 current series) and Gujarat-wide (2 series); there is no Vapi-only data for this industry. The score is 1 point from a cut-off.</p>
+  </section>
+  <section class="cs"><h3><span>4</span>Why</h3>
+    <ul class="why">
+      <li><i class="up">▲</i>Gujarat: GST collections +11.9% so far this financial year vs India +6.1% (5.8 percentage points faster than India): helps. <span class="src"><a href="https://tutorial.gst.gov.in/downloads/news/final_gst_revenue_report_for_publishing_monthly_sep_2026.pdf" target="_blank" rel="noopener">GSTN state-wise GST collections</a> · data to Sep 2026</span></li>
+      <li><i class="up">▲</i>Gujarat: electricity demand +14.3% so far this financial year vs India +11.5% (2.8 percentage points faster than India): helps. <span class="src"><a href="https://cea.nic.in/api/dashboardReports/download-pdf/en/2996e061-524e-4a6d-8660-625de5430c90" target="_blank" rel="noopener">CEA Power Supply Position</a> · data to Oct 2026</span></li>
+      <li><i class="up">▲</i>India: exports +15.6% so far this financial year in USD (Rs 156,272 Cr FYTD). <span class="src"><a href="https://www.commerce.gov.in/files/2026-10/Quick%20Estimates%20September%202026.pdf" target="_blank" rel="noopener">Dept of Commerce</a> · data to Sep 2026</span></li>
+      <li><i class="up">▲</i>India: bank GNPA ratio (chemicals) 0.7% in Mar-26 vs 1.1% in Mar-25 (−0.4 percentage points), RBI FSR. <span class="src"><a href="https://rbidocs.rbi.org.in/rdocs//PublicationReport/Pdfs/0FSRJUNE2026_300626A120EF6C37694C8C933181147F1379D7.PDF" target="_blank" rel="noopener">RBI FSR</a> · data to Mar 2026</span></li>
+      <li class="newwhy"><i class="nt">•</i>India’s factory output of chemicals and chemical products was 0.6% lower than a year earlier in Sep 2026. That is a mild decline and is below the 5% caution threshold. (The live card already notes that the IIP trend is negative; this line puts the latest figure in Why.) <span class="src"><a href="https://api.mospi.gov.in/api/iip/getIipData?base_year=2022-23&amp;frequency=Monthly&amp;year=2026&amp;type=All&amp;Format=JSON&amp;limit=200" target="_blank" rel="noopener">MoSPI IIP (base 2022-23), Manufacture of Chemicals and Chemical Products</a> · data to Sep 2026</span></li>
+      <li class="newwhy"><i class="nt">•</i>Atul Ltd. (already the listed peer on this card; a Valsad-based company next to Vapi): sales were up 21.0% year on year in Jul to Sep 2026, while operating margin (EBITDA) fell 4.1 percentage points to 13.1%. A large listed firm, not an SME: read it for the direction of margins only. One peer does not raise a caution flag. <span class="src"><a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1744960_23102026065526_WEB.xml" target="_blank" rel="noopener">NSE filing, Atul Ltd.</a> · data to Jul to Sep 2026; <a href="https://nsearchives.nseindia.in/corporate/xbrl/INTEGRATED_FILING_INDAS_1551863_17102025035733_WEB.xml" target="_blank" rel="noopener">NSE filing, Atul Ltd.</a> · data to Jul to Sep 2025</span></li>
+    </ul>
+    <p class="nd">Insufficient data for a tight input-cost flag: Asia LNG was up 55% in three months to Sep 2026, but Smart Money maps that series as fertiliser and petrochemical feedstock cost, which is a weak map for dye and intermediate units in Vapi, so it is not used to change the stance. Benzene, aniline and other dye-chain prices are not in the file. Across 24 listed chemical companies in the file, sales were up 19.3% and the EBITDA margin was 15.2%, down 1.1 percentage points — a broad sector figure, not a Vapi-only one, and not enough to flag.</p>
+  </section>
+  <section class="cs"><h3><span>5</span>What to monitor</h3>
+    <p class="sh">Check with the borrower</p>
+    <ul>
+      <li>Pollution board consents, effluent plant dues and any closure notice.</li>
+      <li>Raw-material cost against selling price, every quarter.</li>
+      <li>Export receivable days and the share of a few buyers.</li>
+      <li>Inventory days of raw material and finished goods.</li>
+    </ul>
+    <p class="sh">What would move the view</p>
+    <p class="nd">The new lines do not meet the caution thresholds, so they would not cut OK to lend to Caution. Chemical exports in the Smart Money trade basket were almost unchanged in FY 2025-26 (US$ 48,018 million, up 0.3%).</p>
+  </section>
+  <p class="upd">Existing card updated 21 Nov 2026, 10:16 IST. New Why lines from the Smart Money export of 22 Nov 2026, 15:48. Decision aid, not a substitute for credit judgment.</p>
+</div>
+</div>
+</div>
+
+<div class="stance"><b>Would the stance change?</b> No. The live view is OK to lend at 66. Chemical factory output is down only 0.6%, below the 5% threshold. Atul’s margin is down 4.1 percentage points, but one tightly mapped peer is not enough for a peer flag, and its sales were up 21%. LNG is not applied, because the map to dye units is weak. The view stays OK to lend.</div>
+
+<p class="meta"><b>Mapping used.</b> IIP: MoSPI “Manufacture of Chemicals and Chemical Products,” −0.6% year on year in Sep 2026 (rubber and plastics output, which was up 19.9%, is not mixed in). Listed peer: Atul Ltd. (NSE:ATUL), already used on the live card and headquartered in Valsad, next to Vapi. Aarti Industries is kept on the existing card but is not treated as a second tight Vapi peer. Trade: Commerce Ministry chemicals basket (HS 28, 29, 31, 32, 38, 39, 40). Commodity: LNG is disclosed, not applied.</p>
+
+<!-- =================== GAPS =================== -->
+<h2 id="gaps">Data gaps, back-testing, and rollout</h2>
+
+<div class="box">
+  <p><b>Where the map is missing or weak</b></p>
+  <ul class="plain">
+    <li>Ceramic-only exports (HS 69) are not available separately. PTA and MEG prices are not in the commodity file. Dye-chain feedstock prices (benzene and similar) are not in the file.</li>
+    <li>Most listed tile makers and Surat polyester names are not in the Nifty 500 results extract. Somany and Filatex already appear on the live Lending Radar card from its own filing store, but they are absent from Smart Money <code>fundamentals.json</code>.</li>
+    <li>IIP, trade and commodity series are national, not Morbi-, Surat- or Vapi-only. Capacity utilisation (RBI OBICUS) is manufacturing-wide, so it is not used as a cluster line.</li>
+    <li>Company results in Smart Money start with the quarter ended Mar 2025, so year-on-year growth only begins with Mar 2026 — about three comparable quarters.</li>
+  </ul>
+</div>
+
+<div class="box">
+  <p><b>What a back-test would need before this layer could ever lift a stance toward OK</b></p>
+  <p>The same official series would be lined up against later stress: RBI Financial Stability Report sector bad-loan (GNPA) ratios, and rating-agency upgrades versus downgrades, the way Lending Radar already uses those sources. IIP and IMF commodity prices in the file go back about two to three years; trade figures go back to FY 2018-19. Listed-company results are too short on their own. Until that test is done, the rule stays one-way: it may add caution, never comfort.</p>
+</div>
+
+<div class="box">
+  <p><b>Effort to roll this out to all clusters</b></p>
+  <p>Lending Radar already has sourced local write-ups for a few dozen city × industry cards, and many more scored pairs without a local write-up. A rollout would need a simple mapping table for each industry: which IIP series, which trade chapters, which commodity, and which listed peers count as tight. Many cards would stay grey on at least one of those legs, as this sample does for PTA and HS 69. The engineering work is modest if the new lines are added only to Why, with the caution-only flag, and the five-section layout is left alone. The slower work is agreeing the maps, keeping them tight, and running the back-test before any upward move is allowed.</p>
+  <p>Ankleshwar chemicals would use the same lines as Vapi. Other fair next clusters, if the maps stay tight, would be Ahmedabad cotton textiles (cotton prices plus the textiles IIP) and Dahej petrochemicals (Brent and, with a clearer feedstock map, LNG).</p>
+</div>
+
+<div class="disc">
+  <p><b>Educational and research purposes only.</b> This is a sample of how public data could appear on a credit decision-aid card. It is not a substitute for credit judgment, not an offer to lend, and not investment advice. Valuation or investment views are not made here. All figures are from public official or market sources and listed-company filings, with a source link and a date. No bank customer or confidential information is used or shown. The live Lending Radar site has not been changed.</p>
+  <p style="margin:8px 0 0">Sources for the new lines: NSE integrated filings (XBRL); MoSPI Index of Industrial Production, base 2022-23; Ministry of Commerce TradeStat; IMF primary commodity prices via FRED. Smart Money export timestamp: 22 Nov 2026, 15:48. Lending Radar cards: 21 Nov 2026, 10:16 IST.</p>
+</div>
+</main>
+</body>
+</html>
