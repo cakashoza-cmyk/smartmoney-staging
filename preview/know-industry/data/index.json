@@ -1,0 +1,368 @@
+{
+ "updated": "27 Nov 2026",
+ "status_note": "Only industries marked LIVE have a page. The rest are PLANNED. The plan is a starting list from general knowledge and has not yet been checked against MSME-DI, GIDC or iNDEXTb cluster lists, except where a note says so.",
+ "chains": {
+  "surat-textiles": {
+   "title": "Surat textile value chain",
+   "order": [
+    "surat-yarn-poy-fdy",
+    "surat-texturising",
+    "surat-mmf-weaving",
+    "surat-processing-dyeing",
+    "surat-embroidery",
+    "surat-textile-trading"
+   ]
+  }
+ },
+ "clusters": [
+  {
+   "name": "Surat: textiles (full chain)",
+   "items": [
+    {
+     "slug": "surat-yarn-poy-fdy",
+     "title": "Polyester yarn (POY / FDY)",
+     "cluster": "Surat",
+     "status": "planned",
+     "priority": "normal",
+     "note": "Large-company segment; mainly for context"
+    },
+    {
+     "slug": "surat-texturising",
+     "title": "Texturising (DTY)",
+     "cluster": "Surat",
+     "status": "planned",
+     "priority": "high",
+     "note": ""
+    },
+    {
+     "slug": "surat-mmf-weaving",
+     "title": "MMF weaving (water-jet, rapier, air-jet)",
+     "cluster": "Surat",
+     "status": "live",
+     "priority": "high",
+     "note": ""
+    },
+    {
+     "slug": "surat-processing-dyeing",
+     "title": "Processing: dyeing and printing",
+     "cluster": "Surat",
+     "status": "planned",
+     "priority": "high",
+     "note": ""
+    },
+    {
+     "slug": "surat-embroidery",
+     "title": "Embroidery",
+     "cluster": "Surat",
+     "status": "planned",
+     "priority": "high",
+     "note": ""
+    },
+    {
+     "slug": "surat-zari",
+     "title": "Zari",
+     "cluster": "Surat",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "surat-garmenting",
+     "title": "Garmenting",
+     "cluster": "Surat",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "surat-textile-trading",
+     "title": "Textile traders and brokers",
+     "cluster": "Surat",
+     "status": "planned",
+     "priority": "high",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "Surat: diamonds and jewellery",
+   "items": [
+    {
+     "slug": "surat-diamond-cutting-polishing",
+     "title": "Natural diamond cutting and polishing",
+     "cluster": "Surat",
+     "status": "planned",
+     "priority": "high",
+     "note": "",
+     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list) (Varachha, Surat)"
+    },
+    {
+     "slug": "surat-lab-grown-diamond",
+     "title": "Lab-grown diamonds (CVD / HPHT)",
+     "cluster": "Surat / Navsari",
+     "status": "planned",
+     "priority": "high",
+     "note": "",
+     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list) (Surat and Navsari)"
+    },
+    {
+     "slug": "surat-jewellery",
+     "title": "Jewellery",
+     "cluster": "Surat",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "Surat: other MSME clusters",
+   "items": [
+    {
+     "slug": "surat-engineering",
+     "title": "Engineering (Varachha)",
+     "cluster": "Surat",
+     "status": "planned",
+     "priority": "normal",
+     "note": "",
+     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list)"
+    },
+    {
+     "slug": "surat-metal-fabrication",
+     "title": "Metal fabrication (aluminium / steel)",
+     "cluster": "Surat",
+     "status": "planned",
+     "priority": "normal",
+     "note": "",
+     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list)"
+    },
+    {
+     "slug": "surat-food-processing",
+     "title": "Food processing",
+     "cluster": "Surat",
+     "status": "planned",
+     "priority": "normal",
+     "note": "",
+     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list)"
+    }
+   ]
+  },
+  {
+   "name": "Hazira",
+   "items": [
+    {
+     "slug": "hazira-steel",
+     "title": "Steel",
+     "cluster": "Hazira",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "hazira-refining-petchem",
+     "title": "Refining and petrochemicals",
+     "cluster": "Hazira",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "hazira-lng",
+     "title": "LNG",
+     "cluster": "Hazira",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "hazira-heavy-engineering",
+     "title": "Heavy engineering",
+     "cluster": "Hazira",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "hazira-fertiliser",
+     "title": "Fertiliser",
+     "cluster": "Hazira",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "hazira-port-logistics",
+     "title": "Port and logistics",
+     "cluster": "Hazira",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "Bharuch, Ankleshwar, Dahej",
+   "items": [
+    {
+     "slug": "bharuch-bulk-chemicals",
+     "title": "Bulk chemicals",
+     "cluster": "Bharuch / Ankleshwar / Dahej",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "bharuch-dyes-pigments",
+     "title": "Dyes and pigments",
+     "cluster": "Ankleshwar",
+     "status": "planned",
+     "priority": "high",
+     "note": ""
+    },
+    {
+     "slug": "bharuch-dye-intermediates",
+     "title": "Dye intermediates",
+     "cluster": "Ankleshwar",
+     "status": "planned",
+     "priority": "high",
+     "note": ""
+    },
+    {
+     "slug": "bharuch-pharma-api",
+     "title": "Pharma APIs",
+     "cluster": "Ankleshwar / Dahej",
+     "status": "planned",
+     "priority": "high",
+     "note": ""
+    },
+    {
+     "slug": "bharuch-agrochemicals",
+     "title": "Agrochemicals",
+     "cluster": "Ankleshwar / Dahej",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "bharuch-specialty-chemicals",
+     "title": "Specialty chemicals",
+     "cluster": "Ankleshwar / Dahej",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "Vapi, Valsad, Sarigam, Umbergaon",
+   "items": [
+    {
+     "slug": "vapi-chemicals",
+     "title": "Chemicals",
+     "cluster": "Vapi / Sarigam",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "vapi-pharma",
+     "title": "Pharma",
+     "cluster": "Vapi",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "vapi-paper-board",
+     "title": "Paper and board",
+     "cluster": "Vapi",
+     "status": "planned",
+     "priority": "high",
+     "note": ""
+    },
+    {
+     "slug": "vapi-plastics-packaging",
+     "title": "Plastics and packaging",
+     "cluster": "Vapi / Umbergaon",
+     "status": "planned",
+     "priority": "high",
+     "note": ""
+    },
+    {
+     "slug": "vapi-engineering",
+     "title": "Engineering",
+     "cluster": "Vapi / Valsad",
+     "status": "planned",
+     "priority": "high",
+     "note": ""
+    },
+    {
+     "slug": "vapi-fans-appliances",
+     "title": "Fans and appliances",
+     "cluster": "Valsad / Vapi",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "Navsari, Bardoli, Tapi",
+   "items": [
+    {
+     "slug": "navsari-sugar-coop",
+     "title": "Sugar co-operatives",
+     "cluster": "Bardoli / Tapi",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "navsari-food-fruit-processing",
+     "title": "Food and fruit processing",
+     "cluster": "Navsari / Bardoli",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "navsari-shrimp-aquaculture",
+     "title": "Shrimp and aquaculture",
+     "cluster": "Navsari / Valsad",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "Vadodara",
+   "items": [
+    {
+     "slug": "vadodara-engineering",
+     "title": "Engineering",
+     "cluster": "Vadodara",
+     "status": "planned",
+     "priority": "high",
+     "note": ""
+    },
+    {
+     "slug": "vadodara-power-equipment",
+     "title": "Power equipment",
+     "cluster": "Vadodara",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    },
+    {
+     "slug": "vadodara-pharma",
+     "title": "Pharma",
+     "cluster": "Vadodara",
+     "status": "planned",
+     "priority": "normal",
+     "note": ""
+    }
+   ]
+  }
+ ]
+}
