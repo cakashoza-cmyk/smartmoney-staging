@@ -61,6 +61,12 @@ body.onlyunk .snap{display:none}
 .idx .vf{font-size:12px;color:var(--mut);flex-basis:100%}
 .nav{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin:10px 0}
 .nav a,.nav span{font-size:13.5px}
+.pt th:nth-child(5),.pt td:nth-child(5){white-space:nowrap}
+.tr-up{color:#b91c1c;font-weight:700}.tr-down{color:#15803d;font-weight:700}.tr-flat{color:#64748b;font-weight:700}
+.pt .pu{display:none;color:#64748b;font-size:12.5px}
+@media(max-width:640px){.pt thead{display:none}.pt tr{display:flex;flex-wrap:wrap;gap:2px 10px;padding:8px 6px;border-bottom:1px solid var(--line)}.pt td{border:0;padding:0}.pt td.pi{flex-basis:100%}.pt td.pp{flex-basis:100%;font-size:15px}.pt .pu{display:inline}.pt td.pu2{display:none}.pt td.pd{color:#64748b;font-size:12.5px}.pt .grp td{flex-basis:100%;padding:4px 6px}.pt tr.grp{padding:0}}
+.pt .grp td{background:#f8fafc;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.3px;color:#475569}
+.side{font-size:13.5px;margin:4px 0 0;padding:8px 10px;border:1px dashed #94a3b8;border-radius:10px;background:#fff}
 @media print{.toc,.btn,.banner,.nav{display:none}body{background:#fff}.card{break-inside:avoid}}
 </style>
 </head>
@@ -82,13 +88,13 @@ function renderIndex(idx,msg){
  var h='<h1>Know the Industry: South Gujarat</h1><p class="sub">Plain-English industry primers for credit officers. Same nine sections for every industry. Updated '+esc(idx.updated)+'.</p>';
  h+='<div class="banner">Sample for review on the staging site only. The live Lending Radar has not been changed.</div>';
  if(msg)h+='<div class="note">'+esc(msg)+'</div>';
- h+='<div class="card"><b>The nine sections on every page</b><ol style="margin:6px 0 0;padding-left:20px"><li>What it is</li><li>Sub-segments, and which one the page covers</li><li>Where it sits in the value chain</li><li>What the unit actually does</li><li>Raw materials</li><li>Bottlenecks (pollution, licences, machinery, labour, power)</li><li>Sales: who buys, how, credit periods</li><li>Unit economics</li><li>Fragility points and early warning signs</li></ol><p class="sub" style="margin-top:8px">Plus a source list and a last-checked date. '+esc(idx.status_note)+'</p></div>';
+ h+='<div class="card"><b>The nine sections on every page</b><ol style="margin:6px 0 0;padding-left:20px"><li>What it is</li><li>Sub-segments, and which one the page covers</li><li>Where it sits in the value chain</li><li>What the unit actually does</li><li>Raw materials and prices (inputs and sale price, with dates)</li><li>Bottlenecks (pollution, licences, machinery, labour, power)</li><li>Sales: who buys, how, credit periods</li><li>Unit economics</li><li>Fragility points and early warning signs</li></ol><p class="sub" style="margin-top:8px">Plus a source list and a last-checked date. '+esc(idx.status_note)+'</p></div>';
  h+=LEG;
  var live={};idx.clusters.forEach(function(c){c.items.forEach(function(i){live[i.slug]=i})});
  Object.keys(idx.chains||{}).forEach(function(k){var ch=idx.chains[k];h+='<div class="card"><h2>'+esc(ch.title)+'</h2><p class="sub">Each stage feeds the next. Tap a LIVE stage to open it.</p><div class="chain">';
   ch.order.forEach(function(s,n){var it=live[s]||{title:s,status:'planned'};if(n)h+='<div class="arrow"><span>then</span></div>';
    h+='<div class="stage"><b>'+(it.status==='live'?'<a href="?i='+esc(s)+'">'+esc(it.title)+'</a>':esc(it.title))+'</b><span>'+(it.status==='live'?'LIVE':'planned')+'</span></div>'});
-  h+='</div></div>'});
+  h+='</div>';(ch.side||[]).forEach(function(x){var it=live[x.slug]||{title:x.slug,status:'planned'};h+='<div class="side">Side input: '+(it.status==='live'?'<a href="?i='+esc(x.slug)+'">'+esc(it.title)+'</a>':esc(it.title))+' &middot; '+esc(x.text)+'</div>'});if(ch.note)h+='<p class="sub" style="margin-top:8px">'+esc(ch.note)+'</p>';h+='</div>'});
  idx.clusters.forEach(function(c){h+='<div class="card clus"><h2>'+esc(c.name)+'</h2><ul class="cl idx">';
   c.items.forEach(function(i){var pl=i.status!=='live';
    h+='<li class="'+(pl?'pl':'')+'"><span class="nm">'+(pl?esc(i.title):'<a href="?i='+esc(i.slug)+'">'+esc(i.title)+'</a>')+'</span><span class="tag t-'+(pl?'planned':'live')+'">'+(pl?'planned':'live')+'</span>'+(i.priority==='high'&&pl?'<span class="tag t-pri">proposed early</span>':'')+(i.note?'<span class="sub" style="margin:0">'+esc(i.note)+'</span>':'')+(i.verified?'<span class="vf">'+esc(i.verified)+'</span>':'')+'</li>'});
@@ -106,7 +112,8 @@ function renderPage(d,idx){
  var ch=idx&&idx.chains&&idx.chains[d.chain_group];
  if(ch){var p=ch.order.indexOf(d.slug),li={};idx.clusters.forEach(function(c){c.items.forEach(function(i){li[i.slug]=i})});
   function lk(s,pre){if(!s)return '<span></span>';var it=li[s]||{title:s,status:'planned'};return it.status==='live'?'<a href="?i='+esc(s)+'">'+pre+esc(it.title)+'</a>':'<span class="sub" style="margin:0">'+pre+esc(it.title)+' (planned)</span>'}
-  h+='<div class="nav">'+lk(ch.order[p-1],'&larr; Before: ')+lk(ch.order[p+1],'Next: ')+'</div>'}
+  if(p>=0)h+='<div class="nav">'+lk(ch.order[p-1],'&larr; Before: ')+lk(ch.order[p+1],'Next: ')+'</div>';
+  else h+='<div class="nav"><span>Side input to the chain: '+ch.order.map(function(x){return lk(x,'')}).filter(function(x,i){var o=ch.order[i];return o==='surat-mmf-weaving'||o==='surat-embroidery'}).join(' &middot; ')+'</span></div>'}
  h+='<div class="card"><b>This page covers:</b> '+esc(d.covers)+'</div>';
  if(d.snapshot&&d.snapshot.length)h+='<div class="card snap"><b>Read this first (30 seconds)</b>'+items(d.snapshot)+'</div>';
  h+=LEG;
@@ -119,6 +126,10 @@ function renderPage(d,idx){
    else if(b.type==='group'){body+='<h3>'+esc(b.title)+'</h3>';b.items.forEach(function(x){tally(x.tag)});body+=items(b.items)}
    else if(b.type==='note'){body+='<div class="note">'+esc(b.text)+'</div>'}
    else if(b.type==='table'){body+='<div class="tw"><table><thead><tr>'+b.head.map(function(x){return '<th>'+esc(x)+'</th>'}).join('')+'<th>Tag</th></tr></thead><tbody>'+b.rows.map(function(r){tally(r.tag);return '<tr data-tag="'+esc(r.tag)+'">'+r.cells.map(function(x,k){return '<td>'+(k===0?'<b>'+esc(x)+'</b>':esc(x))+(k===r.cells.length-1?cites(r.src):'')+'</td>'}).join('')+'<td>'+chip(r.tag)+'</td></tr>'}).join('')+'</tbody></table></div>'}
+   else if(b.type==='prices'){var TR={up:'<span class="tr-up">&#9650; rising</span>',down:'<span class="tr-down">&#9660; falling</span>',flat:'<span class="tr-flat">&#9654; steady</span>'};
+    var rowp=function(r){tally(r.tag);return '<tr data-tag="'+esc(r.tag)+'"><td class="pi"><b>'+esc(r.item)+'</b></td><td class="pp">'+esc(r.price)+(r.unit?' <span class="pu">'+esc(r.unit)+'</span>':'')+cites(r.src)+'</td><td class="pu2">'+esc(r.unit||'')+'</td><td class="pd">'+esc(r.date||'')+'</td><td>'+(TR[r.trend]||'<span class="tr-flat">no series</span>')+'</td><td>'+chip(r.tag)+'</td></tr>'};
+    var ins=b.rows.filter(function(r){return r.kind!=='output'}),outs=b.rows.filter(function(r){return r.kind==='output'});
+    body+='<h3>'+esc(b.title||'Prices')+'</h3>'+(b.note?'<p class="sub">'+esc(b.note)+'</p>':'')+'<div class="tw"><table class="pt"><thead><tr><th>Item</th><th>Latest public price</th><th>Unit</th><th>Date</th><th>Trend</th><th>Tag</th></tr></thead><tbody>'+(ins.length?'<tr class="grp"><td colspan="6">Inputs</td></tr>'+ins.map(rowp).join(''):'')+(outs.length?'<tr class="grp"><td colspan="6">Output / sale price</td></tr>'+outs.map(rowp).join(''):'')+'</tbody></table></div>'}
    else if(b.type==='chain'){tally(b.tag);body+='<div class="chain">'+b.stages.map(function(x,k){return (k?'<div class="arrow"><span>then</span></div>':'')+'<div class="stage'+(x.here?' here':'')+'"><b>'+esc(x.label)+'</b><span>'+esc(x.sub||'')+'</span></div>'}).join('')+'</div><p class="sub">Stage order and names: '+chip(b.tag)+cites(b.src)+'</p>'}
    else if(b.type==='steps'){tally(b.tag);body+=(b.note?'<div class="note">'+chip(b.tag)+' '+esc(b.note)+'</div>':'')+'<ol class="steps">'+b.steps.map(function(x){return '<li><b>'+esc(x.t)+'</b><br>'+esc(x.d)+'</li>'}).join('')+'</ol>'}
   });

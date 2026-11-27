@@ -1,0 +1,618 @@
+{
+ "slug": "surat-yarn-poy-fdy",
+ "title": "Polyester filament yarn makers (POY / FDY)",
+ "subtitle": "Large continuous-process plants turning PTA and MEG into polyester yarn",
+ "cluster": "Surat",
+ "chain_group": "surat-textiles",
+ "last_checked": "27 Nov 2026",
+ "audience": "Bank credit officers, South Gujarat",
+ "covers": "This page covers polyester filament yarn manufacturing (POY and FDY). It is mostly a large-company segment; banks in the region meet it as the main supplier to their MSME borrowers. Texturising (DTY) has its own page.",
+ "snapshot": [
+  {
+   "tag": "fact",
+   "text": "A few large companies dominate: the top five hold over 65% of capacity, and Reliance has close to 40% of the POY market.",
+   "src": [
+    "crisil"
+   ]
+  },
+  {
+   "tag": "reported",
+   "text": "Reliance's list prices on 21 Nov 2026: PTA Rs 93.90/kg, MEG Rs 71/kg, polyester melt Rs 104.89/kg, all falling through November.",
+   "src": [
+    "f2f_pta"
+   ]
+  },
+  {
+   "tag": "inference",
+   "text": "For a credit officer this page matters mostly as context: yarn makers' price decisions set the margins of texturisers and weavers downstream."
+  }
+ ],
+ "sections": [
+  {
+   "id": "what",
+   "title": "What it is",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "POY (partially oriented yarn) and FDY (fully drawn yarn) are continuous polyester filaments made by melting polymer and spinning it through fine holes. POY is mainly sold to texturisers; FDY goes straight to weavers and knitters."
+      },
+      {
+       "tag": "fact",
+       "text": "The Textile Commissioner's old Surat profile counted 3 synthetic staple fibre / filament yarn manufacturing units in the cluster (data about 2004-05).",
+       "src": [
+        "txc"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sub",
+   "title": "Sub-segments, and which one this page covers",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Segment",
+      "What it does",
+      "This page?"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Polymer (PTA + MEG to melt or chips)",
+        "Chemical step, usually inside the same large plant",
+        "Context only"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "POY",
+        "Feed yarn for texturising",
+        "YES"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "FDY",
+        "Yarn used directly in weaving and knitting",
+        "YES"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "DTY (texturised)",
+        "Done by texturisers",
+        "No - see texturising page"
+       ],
+       "tag": "inference"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chain",
+   "title": "Where it sits in the value chain",
+   "blocks": [
+    {
+     "type": "chain",
+     "stages": [
+      {
+       "label": "Yarn makers",
+       "sub": "POY / FDY from PTA + MEG",
+       "here": true
+      },
+      {
+       "label": "Texturisers and twisters",
+       "sub": "DTY, twisted yarn"
+      },
+      {
+       "label": "Weavers",
+       "sub": "Grey fabric"
+      },
+      {
+       "label": "Process houses",
+       "sub": "Dyeing and printing (job-work)"
+      },
+      {
+       "label": "Embroidery units",
+       "sub": "Value addition (job-work)"
+      },
+      {
+       "label": "Garment makers",
+       "sub": "Ready garments"
+      },
+      {
+       "label": "Traders",
+       "sub": "Buy, coordinate and sell across India"
+      }
+     ],
+     "tag": "inference",
+     "src": [
+      "crisil",
+      "sgcci"
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "Named large producers: Reliance Industries, Indo Rama Synthetics, Century Enka, JBF Industries and Garden Silk Mills (top five, over 65% of capacity).",
+       "src": [
+        "crisil"
+       ]
+      },
+      {
+       "tag": "fact",
+       "text": "Sumeet Industries, a Surat-based maker, is rated by CRISIL with about 52,500 tonnes a year of POY and 45,500 tonnes a year of FDY capacity.",
+       "src": [
+        "crisil"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "process",
+   "title": "What the unit actually does",
+   "blocks": [
+    {
+     "type": "steps",
+     "tag": "inference",
+     "note": "General description of a polyester filament plant. Confirm with the customer's project report.",
+     "steps": [
+      {
+       "t": "Polymerisation",
+       "d": "PTA and MEG react to form polyester melt (or chips are bought and remelted)."
+      },
+      {
+       "t": "Melt spinning",
+       "d": "Melt is pushed through spinnerets into fine filaments and cooled."
+      },
+      {
+       "t": "Take-up",
+       "d": "Filaments are wound as POY, or drawn further to make FDY."
+      },
+      {
+       "t": "Quality and packing",
+       "d": "Denier, lustre and lot checked; packed on bobbins for dispatch."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "raw",
+   "title": "Raw materials and prices",
+   "blocks": [
+    {
+     "type": "prices",
+     "title": "Raw material and sale prices",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "rows": [
+      {
+       "item": "PTA (Reliance domestic list)",
+       "price": "Rs 93.90",
+       "unit": "per kg",
+       "date": "21 Nov 2026",
+       "trend": "down",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "f2f_pta"
+       ]
+      },
+      {
+       "item": "MEG (Reliance domestic list)",
+       "price": "Rs 71",
+       "unit": "per kg",
+       "date": "21 Nov 2026",
+       "trend": "flat",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "f2f_pta"
+       ]
+      },
+      {
+       "item": "Polyester melt (Reliance list)",
+       "price": "Rs 104.89",
+       "unit": "per kg",
+       "date": "21 Nov 2026",
+       "trend": "down",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "f2f_pta"
+       ]
+      },
+      {
+       "item": "PTA, CFR China",
+       "price": "USD 860",
+       "unit": "per tonne",
+       "date": "20 Nov 2026",
+       "trend": "down",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "f2f_pta"
+       ]
+      },
+      {
+       "item": "MEG, CFR China",
+       "price": "USD 695",
+       "unit": "per tonne",
+       "date": "20 Nov 2026",
+       "trend": "down",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "f2f_pta"
+       ]
+      },
+      {
+       "item": "POY 130/34 (sale price, Surat market)",
+       "price": "Rs 178-180",
+       "unit": "per kg",
+       "date": "30 Oct 2026",
+       "trend": "flat",
+       "kind": "output",
+       "tag": "reported",
+       "src": [
+        "biz_yarn"
+       ]
+      },
+      {
+       "item": "FDY (sale price, Surat market)",
+       "price": "Rs 186-192",
+       "unit": "per kg",
+       "date": "30 Oct 2026",
+       "trend": "flat",
+       "kind": "output",
+       "tag": "reported",
+       "src": [
+        "biz_yarn"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "SGCCI says the basic customs duty exemption on MEG and PTA ended on 15 Jul 2026 (chamber's statement; customs notification not checked).",
+       "src": [
+        "sgcci"
+       ]
+      },
+      {
+       "tag": "fact",
+       "text": "BIS quality control orders on polyester fibre, polyester yarns (including POY and filament yarn), PTA and MEG were withdrawn on 12 Nov 2025; the viscose staple fibre QCO was withdrawn on 18 Nov 2025.",
+       "src": [
+        "hindu_qco",
+        "gaz_psf",
+        "gaz_vsf",
+        "pib_vsf"
+       ]
+      },
+      {
+       "tag": "fact",
+       "text": "GST on man-made fibre was cut from 18% to 5% and on man-made yarn from 12% to 5% (GST Council, 3 Sep 2025).",
+       "src": [
+        "pib_gst"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bottle",
+   "title": "Bottlenecks",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Licences and pollution",
+     "items": [
+      {
+       "tag": "unknown",
+       "text": "Pollution category and environmental clearance for a polymer and yarn plant were not checked. Ask for the GPCB consent and any environmental clearance."
+      },
+      {
+       "tag": "inference",
+       "text": "These are capital-heavy continuous plants; a stoppage is costly, so power and raw-material supply contracts matter."
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Power",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "Power: GERC's FY2025-26 DGVCL tariff schedule lists the Non-RGP rate (loads up to 40 kW) at 435 paise a unit up to 10 kW and 465 paise above 10 kW, plus fixed charges and 45 paise extra in peak hours. Larger loads fall in other categories. A new FY2026-27 order was issued on 25 Mar 2026, so confirm current rates from the customer's bills.",
+       "src": [
+        "gerc_sched",
+        "gerc_orders"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sales",
+   "title": "Sales: who buys, how, and credit periods",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Buyers are texturisers (POY), and weavers and knitters (FDY). Surat's cluster uses about 1.52 lakh tonnes of polyester yarn a month, about 60% as DTY.",
+       "src": [
+        "sgcci"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Yarn dealers reportedly charge downstream weavers 1.5% a month on late payment, which suggests a credit chain from maker to dealer to weaver.",
+       "src": [
+        "nie_sep"
+       ]
+      },
+      {
+       "tag": "fact",
+       "text": "CRISIL on one Surat yarn maker (FY2025): debtors 31 days, inventory 39 days, gross current assets 99 days; it must give credit because its customers are small and medium players.",
+       "src": [
+        "crisil"
+       ]
+      },
+      {
+       "tag": "unknown",
+       "text": "Credit terms of other yarn makers and dealers: not public. Collect from the customer."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "econ",
+   "title": "Unit economics",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "Unit economics for large yarn plants come from company filings, not from public cluster data."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Item",
+      "What we know",
+      "Status"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Melt-to-POY conversion spread",
+        "SGCCI says normally Rs 15-16/kg including reasonable profit, but about Rs 29.07/kg in Aug 2026 (chamber's calculation)",
+        "Reported"
+       ],
+       "tag": "reported",
+       "src": [
+        "sgcci"
+       ]
+      },
+      {
+       "cells": [
+        "Melt price vs crude",
+        "SGCCI: a USD 5/barrel crude move should shift melt by about Rs 2/kg (chamber's rule of thumb)",
+        "Reported"
+       ],
+       "tag": "reported",
+       "src": [
+        "sgcci"
+       ]
+      },
+      {
+       "cells": [
+        "Reference: one rated Surat yarn maker",
+        "Operating margin 1.25% in FY2025; gross current assets 99 days (debtors 31, inventory 39)",
+        "Fact (rating report)"
+       ],
+       "tag": "fact",
+       "src": [
+        "crisil"
+       ]
+      },
+      {
+       "cells": [
+        "Operating margin of other yarn units",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Working-capital cycle of the customer",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fragile",
+   "title": "Fragility points and early warning signs for a lender",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Where this business breaks",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Crude oil, PTA and MEG prices move the cost base every week; the chamber says domestic prices can stay above import parity for a while.",
+       "src": [
+        "sgcci",
+        "f2f_pta"
+       ]
+      },
+      {
+       "tag": "fact",
+       "text": "Import policy changes (QCO removal in Nov 2025) let cheaper imported yarn compete with domestic makers.",
+       "src": [
+        "hindu_qco"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Downstream demand stress: weavers reported running near half capacity in 2026, which cuts yarn offtake.",
+       "src": [
+        "nie_may"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Early warning signs (checklist)",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Cheque returns or frequent overdraws; cash credit used near the limit all month."
+      },
+      {
+       "tag": "inference",
+       "text": "Electricity units falling month on month, or a shift stopped, without a matching fall in loan outstanding."
+      },
+      {
+       "tag": "inference",
+       "text": "Creditor days stretching; suppliers charging late-payment interest; purchases switched to cash from new sources."
+      },
+      {
+       "tag": "inference",
+       "text": "Stock or receivables building up; sales concentrated on one or two parties or brokers."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "crisil",
+   "label": "CRISIL rating rationale (polyester yarn industry structure)",
+   "publisher": "CRISIL Ratings",
+   "date": "6 Aug 2025",
+   "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/SumeetIndustriesLimited_August%2006_%202025_RR_374297.html"
+  },
+  {
+   "id": "f2f_pta",
+   "label": "India's polyester raw material prices fall as PTA, PSF weaken (RIL list prices effective 21 Nov 2026)",
+   "publisher": "Fibre2Fashion",
+   "date": "23 Nov 2026",
+   "url": "https://www.fibre2fashion.com/news/textile-news/india-s-polyester-raw-material-prices-fall-as-pta-psf-weaken-315225-newsdetails.htm"
+  },
+  {
+   "id": "txc",
+   "label": "Surat, the Silk City of India (cluster profile, data about 2004-05)",
+   "publisher": "Office of the Textile Commissioner, Ministry of Textiles",
+   "date": "undated (old)",
+   "url": "https://www.txcindia.gov.in/html/D_%20Surat.pdf"
+  },
+  {
+   "id": "sgcci",
+   "label": "Crisis in textile industry due to rise in polyester yarn prices: SGCCI report to Union Textile Minister",
+   "publisher": "Loktej English",
+   "date": "1 Sep 2026",
+   "url": "https://english.loktej.com/article/31755/surat--crisis-in-textile-industry-due-to-unprecedented-rise-in-polyester-yarn-prices--chamber-sends-report-to-central-minister"
+  },
+  {
+   "id": "biz_yarn",
+   "label": "Polyester yarn rates steady as crude cools (Surat yarn market quotes)",
+   "publisher": "BizTorq / Texmandi (trade news site)",
+   "date": "30 Oct 2026",
+   "url": "https://texmandi.com/news/polyester-yarn-rates-steady-crude-cools-surat-weavers-relief-2026/"
+  },
+  {
+   "id": "hindu_qco",
+   "label": "Government revokes Quality Control Orders on polyester fibre and yarn, PTA, MEG",
+   "publisher": "The Hindu",
+   "date": "13 Nov 2025",
+   "url": "https://www.thehindu.com/business/Industry/government-revokes-quality-control-order-on-polyester-fibre-and-yarn/article70274117.ece"
+  },
+  {
+   "id": "gaz_psf",
+   "label": "Gazette order rescinding QCOs on polyester staple fibre, spun yarn and industrial yarn",
+   "publisher": "Ministry of Chemicals and Fertilizers, via BIS",
+   "date": "12 Nov 2025",
+   "url": "https://www.bis.gov.in/wp-content/uploads/2025/11/Polyester-Staple-Fibres-PSF-Rescind-Order-2025.pdf"
+  },
+  {
+   "id": "gaz_vsf",
+   "label": "Gazette order rescinding the Viscose Staple Fibres QCO (S.O. 5267(E))",
+   "publisher": "Ministry of Textiles, via BIS",
+   "date": "18 Nov 2025",
+   "url": "https://www.bis.gov.in/wp-content/uploads/2025/11/Viscose-Staple-Fibres-Rescind-Order-2025.pdf"
+  },
+  {
+   "id": "pib_vsf",
+   "label": "Central Government has rescinded the QCO requirement for Viscose Staple Fibre",
+   "publisher": "Press Information Bureau",
+   "date": "18 Nov 2025",
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2191408&lang=2&reg=3"
+  },
+  {
+   "id": "pib_gst",
+   "label": "Recommendations of the 56th GST Council meeting",
+   "publisher": "Press Information Bureau",
+   "date": "3 Sep 2025",
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163555&lang=35&reg=38"
+  },
+  {
+   "id": "gerc_sched",
+   "label": "Tariff schedule of DGVCL, MGVCL, PGVCL and UGVCL, effective 1 Apr 2025",
+   "publisher": "Gujarat Electricity Regulatory Commission",
+   "date": "1 Apr 2025",
+   "url": "https://gercin.org/wp-content/uploads/2025/04/Tariff-Schedule-of-DGVCL-MGVCL-PGVCL-UGVCL-w.e.f.-01.04.2025.pdf",
+   "note": "GERC website was slow or blocked when we tried to open it on 27 Nov 2026; the figures were read from the document via search. Open the link and confirm."
+  },
+  {
+   "id": "gerc_orders",
+   "label": "GERC tariff orders page (DGVCL order for FY2026-27, Case 2581/2025, 25 Mar 2026)",
+   "publisher": "Gujarat Electricity Regulatory Commission",
+   "date": "25 Mar 2026",
+   "url": "https://gercin.org/order-category/tariff-orders/",
+   "note": "GERC website was slow or blocked when we tried to open it on 27 Nov 2026; the figures were read from the document via search. Open the link and confirm."
+  },
+  {
+   "id": "nie_sep",
+   "label": "Gujarat weavers reel under soaring yarn prices, seek State govt intervention",
+   "publisher": "The New Indian Express",
+   "date": "22 Sep 2026",
+   "url": "https://www.newindianexpress.com/states/gujarat/2026/Sep/22/gujarat-weavers-reel-under-soaring-yarn-prices-seek-state-govt-intervention"
+  },
+  {
+   "id": "nie_may",
+   "label": "Rising input costs and global headwinds strain Gujarat's textile backbone",
+   "publisher": "The New Indian Express",
+   "date": "13 May 2026",
+   "url": "https://www.newindianexpress.com/states/gujarat/2026/May/13/rising-input-costs-and-global-headwinds-strain-gujarats-textile-backbone"
+  }
+ ]
+}

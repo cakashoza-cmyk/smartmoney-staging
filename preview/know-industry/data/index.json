@@ -1,6 +1,6 @@
 {
  "updated": "27 Nov 2026",
- "status_note": "Only industries marked LIVE have a page. The rest are PLANNED. The plan is a starting list from general knowledge and has not yet been checked against MSME-DI, GIDC or iNDEXTb cluster lists, except where a note says so.",
+ "status_note": "Pages marked LIVE are built. The rest are PLANNED and will follow after review. The planned list has not yet been checked against MSME-DI, GIDC or iNDEXTb cluster lists, except where a note says so.",
  "chains": {
   "surat-textiles": {
    "title": "Surat textile value chain",
@@ -10,8 +10,16 @@
     "surat-mmf-weaving",
     "surat-processing-dyeing",
     "surat-embroidery",
+    "surat-garmenting",
     "surat-textile-trading"
-   ]
+   ],
+   "side": [
+    {
+     "slug": "surat-zari",
+     "text": "Zari thread feeds weaving (borders, brocade) and embroidery"
+    }
+   ],
+   "note": "Traders coordinate across the chain: they buy grey fabric and send it to process houses and embroidery units on job-work. Warping and sizing are not a separate page: they are mostly done inside weaving units."
   }
  },
  "clusters": [
@@ -22,17 +30,17 @@
      "slug": "surat-yarn-poy-fdy",
      "title": "Polyester yarn (POY / FDY)",
      "cluster": "Surat",
-     "status": "planned",
+     "status": "live",
      "priority": "normal",
      "note": "Large-company segment; mainly for context"
     },
     {
      "slug": "surat-texturising",
-     "title": "Texturising (DTY)",
+     "title": "Texturising and twisting (DTY)",
      "cluster": "Surat",
-     "status": "planned",
+     "status": "live",
      "priority": "high",
-     "note": ""
+     "note": "Twisting merged here; warping and sizing are covered on the weaving page"
     },
     {
      "slug": "surat-mmf-weaving",
@@ -44,9 +52,9 @@
     },
     {
      "slug": "surat-processing-dyeing",
-     "title": "Processing: dyeing and printing",
+     "title": "Processing: dyeing and printing (job-work)",
      "cluster": "Surat",
-     "status": "planned",
+     "status": "live",
      "priority": "high",
      "note": ""
     },
@@ -54,7 +62,7 @@
      "slug": "surat-embroidery",
      "title": "Embroidery",
      "cluster": "Surat",
-     "status": "planned",
+     "status": "live",
      "priority": "high",
      "note": ""
     },
@@ -62,7 +70,7 @@
      "slug": "surat-zari",
      "title": "Zari",
      "cluster": "Surat",
-     "status": "planned",
+     "status": "live",
      "priority": "normal",
      "note": ""
     },
@@ -70,7 +78,7 @@
      "slug": "surat-garmenting",
      "title": "Garmenting",
      "cluster": "Surat",
-     "status": "planned",
+     "status": "live",
      "priority": "normal",
      "note": ""
     },
@@ -78,7 +86,7 @@
      "slug": "surat-textile-trading",
      "title": "Textile traders and brokers",
      "cluster": "Surat",
-     "status": "planned",
+     "status": "live",
      "priority": "high",
      "note": ""
     }

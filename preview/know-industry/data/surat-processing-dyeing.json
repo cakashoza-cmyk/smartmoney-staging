@@ -1,0 +1,658 @@
+{
+ "slug": "surat-processing-dyeing",
+ "title": "Processing: dyeing and printing (job-work)",
+ "subtitle": "Process houses that dye, print and finish grey fabric for traders",
+ "cluster": "Surat",
+ "chain_group": "surat-textiles",
+ "last_checked": "27 Nov 2026",
+ "audience": "Bank credit officers, South Gujarat",
+ "covers": "This page covers dyeing, printing and finishing units (process houses). Most work on job-work: the trader owns the fabric and pays a per-metre charge. Weaving and embroidery have their own pages.",
+ "snapshot": [
+  {
+   "tag": "reported",
+   "text": "About 400-425 process houses operate around Pandesara, Sachin, Kadodara and Palsana; most process grey fabric on job-work for traders.",
+   "src": [
+    "sgtpa",
+    "toi_2day"
+   ]
+  },
+  {
+   "tag": "reported",
+   "text": "Costs jumped in 2026: boiler coal reported at Rs 11,000 rising to Rs 13,000 a tonne in Nov 2026; processors raised job-work charges by 15% from 7 Sep 2026.",
+   "src": [
+    "biz_coal",
+    "toi_proc15"
+   ]
+  },
+  {
+   "tag": "fact",
+   "text": "Dyeing and printing are in CPCB's RED pollution category; effluent treatment (CETP) and water supply decide whether a unit can run at all.",
+   "src": [
+    "cpcb25"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "what",
+   "title": "What it is",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "A process house takes grey fabric and dyes, bleaches, prints and finishes it so it can be sold or embroidered. It needs boilers (steam), lots of water, dyes and chemicals, and an effluent treatment link."
+      },
+      {
+       "tag": "fact",
+       "text": "SGTPA says most units process grey fabric on job-work, receiving it from traders and merchant-manufacturers and processing it to their requirement.",
+       "src": [
+        "sgtpa"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sub",
+   "title": "Sub-segments, and which one this page covers",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Segment",
+      "What it does",
+      "This page?"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Dyeing",
+        "Colours whole fabric",
+        "YES"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "Printing (rotary, flat-bed, digital)",
+        "Prints designs",
+        "YES"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "Finishing",
+        "Softening, setting width (stenter)",
+        "YES"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "Yarn dyeing",
+        "Colours yarn before weaving",
+        "No"
+       ],
+       "tag": "inference"
+      }
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Number of process houses: about 450 (2026 SITEX profile), about 425 (SGTPA via TOI, Mar 2026), 350-400 (SGTPA website). Sources differ.",
+       "src": [
+        "sitex",
+        "toi_2day",
+        "sgtpa"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chain",
+   "title": "Where it sits in the value chain",
+   "blocks": [
+    {
+     "type": "chain",
+     "stages": [
+      {
+       "label": "Yarn makers",
+       "sub": "POY / FDY from PTA + MEG"
+      },
+      {
+       "label": "Texturisers and twisters",
+       "sub": "DTY, twisted yarn"
+      },
+      {
+       "label": "Weavers",
+       "sub": "Grey fabric"
+      },
+      {
+       "label": "Process houses",
+       "sub": "Dyeing and printing (job-work)",
+       "here": true
+      },
+      {
+       "label": "Embroidery units",
+       "sub": "Value addition (job-work)"
+      },
+      {
+       "label": "Garment makers",
+       "sub": "Ready garments"
+      },
+      {
+       "label": "Traders",
+       "sub": "Buy, coordinate and sell across India"
+      }
+     ],
+     "tag": "inference",
+     "src": [
+      "sgtpa",
+      "txc"
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "Merchants (traders) send grey fabric for processing and negotiate the job charges hard (old Textile Commissioner profile).",
+       "src": [
+        "txc"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "process",
+   "title": "What the unit actually does",
+   "blocks": [
+    {
+     "type": "steps",
+     "tag": "inference",
+     "note": "General process-house flow. Confirm on a site visit.",
+     "steps": [
+      {
+       "t": "Grey receipt",
+       "d": "Trader's grey lot received against a challan; checked and recorded."
+      },
+      {
+       "t": "Pre-treatment",
+       "d": "Scouring and bleaching to clean the fabric."
+      },
+      {
+       "t": "Dyeing or printing",
+       "d": "Jet dyeing, or rotary / digital printing, as the trader orders."
+      },
+      {
+       "t": "Finishing",
+       "d": "Stentering, softening, folding."
+      },
+      {
+       "t": "Effluent",
+       "d": "Waste water goes to the unit's ETP and the common CETP."
+      },
+      {
+       "t": "Return to trader",
+       "d": "Finished lot returned with the job-work bill."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "raw",
+   "title": "Raw materials and prices",
+   "blocks": [
+    {
+     "type": "prices",
+     "title": "Raw material and sale prices",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "rows": [
+      {
+       "item": "Boiler coal (imported / steam)",
+       "price": "Rs 13,000 (from Rs 11,000)",
+       "unit": "per tonne",
+       "date": "18 Nov 2026",
+       "trend": "up",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "biz_coal"
+       ]
+      },
+      {
+       "item": "Non-coking coal (earlier quote)",
+       "price": "Rs 9,500 (from about Rs 6,000)",
+       "unit": "per tonne",
+       "date": "Oct 2026",
+       "trend": "up",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "biz_proc"
+       ]
+      },
+      {
+       "item": "Dyes and chemicals",
+       "price": "Rising (no public price list)",
+       "unit": "",
+       "date": "Mar 2026",
+       "trend": "up",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "toi_2day"
+       ]
+      },
+      {
+       "item": "Processing job-work charge (sale price)",
+       "price": "About Rs 10-15 before the hike; +15% from 7 Sep 2026",
+       "unit": "per metre",
+       "date": "Sep-Oct 2026",
+       "trend": "up",
+       "kind": "output",
+       "tag": "reported",
+       "src": [
+        "biz_proc",
+        "toi_proc15"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Much of the coal is imported from Indonesia, and the 2026 maritime disruption hit both supply and cost.",
+       "src": [
+        "toi_2day"
+       ]
+      },
+      {
+       "tag": "fact",
+       "text": "Old Textile Commissioner reference (about 2005): dyeing Rs 4.50-7.00 and printing Rs 5-10 per linear metre. Shows how charges are quoted; not a current price.",
+       "src": [
+        "txc"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bottle",
+   "title": "Bottlenecks",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Pollution, CETP and water",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "CPCB's 2025 list puts textile processing that involves bleaching, dyeing, printing or colouring in the RED category (consent needed and strict monitoring).",
+       "src": [
+        "cpcb25"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "In July 2026 floods closed all 129 processing units in Pandesara GIDC; the CETP was damaged, and even after repair units could not restart because treated water from the city was not available. About 135 processing units in Kadodara also shut.",
+       "src": [
+        "toi_flood"
+       ]
+      },
+      {
+       "tag": "inference",
+       "text": "Ask for: GPCB consent with validity, CETP membership and dues, water-supply source and allocation, and any closure notices in the last 3 years."
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Coal and fuel",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Processors moved to two closure days a week in Mar 2026 because of coal shortages and costs.",
+       "src": [
+        "toi_2day"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Power and labour",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "Power: GERC's FY2025-26 DGVCL tariff schedule lists the Non-RGP rate (loads up to 40 kW) at 435 paise a unit up to 10 kW and 465 paise above 10 kW, plus fixed charges and 45 paise extra in peak hours. Larger loads fall in other categories. A new FY2026-27 order was issued on 25 Mar 2026, so confirm current rates from the customer's bills.",
+       "src": [
+        "gerc_sched",
+        "gerc_orders"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Labour is largely migrant. About 30% of migrant workers reportedly did not return after the 2024 election and wedding season, and some units stopped night shifts.",
+       "src": [
+        "desh_lab"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sales",
+   "title": "Sales: who buys, how, and credit periods",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "Customers are traders and merchant-manufacturers from Surat's markets, who own the fabric.",
+       "src": [
+        "sgtpa"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Traders' federation FOSTTA opposed the Sep 2026 hike, showing how hard it is for processors to pass on costs.",
+       "src": [
+        "biz_proc"
+       ]
+      },
+      {
+       "tag": "unknown",
+       "text": "Payment terms processors get from traders, and bad-debt history: no public figure. Read from the customer's ledger."
+      }
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Because the fabric belongs to the trader, a processor's receivables are job charges only; its stock is mainly coal, dyes and chemicals. Do not count customers' fabric in the processor's stock statement."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "econ",
+   "title": "Unit economics",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "No verified public margin or working-capital figure exists for Surat process houses."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Item",
+      "What we know",
+      "Status"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Job charge",
+        "About Rs 10-15/m before a 15% hike (Sep 2026)",
+        "Reported"
+       ],
+       "tag": "reported",
+       "src": [
+        "biz_proc",
+        "toi_proc15"
+       ]
+      },
+      {
+       "cells": [
+        "Fuel cost direction",
+        "Coal up sharply through 2026",
+        "Reported"
+       ],
+       "tag": "reported",
+       "src": [
+        "biz_coal",
+        "toi_2day"
+       ]
+      },
+      {
+       "cells": [
+        "Operating margin",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Working-capital cycle",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Fuel + power share of cost",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Capacity use (metres a day vs capacity)",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "State incentives",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "Dyeing and processing are 'Activity 2' under Gujarat Textile Policy 2024, but units inside a Municipal Corporation area are eligible only if the activity is Green or White category; processing is normally Red, so check eligibility.",
+       "src": [
+        "gtp",
+        "cpcb25"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fragile",
+   "title": "Fragility points and early warning signs for a lender",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Where this business breaks",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Environmental shutdowns: CETP damage, water shortage or a GPCB closure stops the whole unit regardless of orders.",
+       "src": [
+        "toi_flood"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Fuel shocks: coal supply and price swings can force closures (two days a week in Mar 2026).",
+       "src": [
+        "toi_2day",
+        "biz_coal"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Weak pricing power: traders resist job-charge hikes.",
+       "src": [
+        "biz_proc"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Demand: traders reluctant to send speculative lots for dyeing when old stock is unsold (Nov 2026).",
+       "src": [
+        "biz_coal"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Early warning signs (checklist)",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "GPCB notices, CETP dues unpaid, or water supply disputes."
+      },
+      {
+       "tag": "inference",
+       "text": "Cheque returns or frequent overdraws; cash credit used near the limit all month."
+      },
+      {
+       "tag": "inference",
+       "text": "Electricity units falling month on month, or a shift stopped, without a matching fall in loan outstanding."
+      },
+      {
+       "tag": "inference",
+       "text": "Creditor days stretching; suppliers charging late-payment interest; purchases switched to cash from new sources."
+      },
+      {
+       "tag": "inference",
+       "text": "Stock or receivables building up; sales concentrated on one or two parties or brokers."
+      },
+      {
+       "tag": "inference",
+       "text": "Wages paid late or labour leaving; regular weekly closures."
+      },
+      {
+       "tag": "inference",
+       "text": "New borrowing from private lenders or related parties; machines rented out or sold."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "sgtpa",
+   "label": "About SGTPA (South Gujarat Textile Processors Association)",
+   "publisher": "SGTPA website",
+   "date": "undated",
+   "url": "https://www.sgtpa.com/page/about-us.html"
+  },
+  {
+   "id": "toi_2day",
+   "label": "Surat textile processing units to shut for two days each week",
+   "publisher": "Times of India",
+   "date": "24 Mar 2026",
+   "url": "https://timesofindia.indiatimes.com/city/surat/surat-textile-processing-units-to-shut-for-two-days-each-week/articleshow/129760946.cms"
+  },
+  {
+   "id": "biz_coal",
+   "label": "Surat boiler coal hits Rs 13,000 a tonne amid lignite shortage",
+   "publisher": "BizTorq / Texmandi (trade news site)",
+   "date": "18 Nov 2026",
+   "url": "https://texmandi.com/news/surat-boiler-coal-hits-13000-tonne-lignite-shortage-wedding-stock-2026/"
+  },
+  {
+   "id": "toi_proc15",
+   "label": "Textile processors hike job work charges by 15%",
+   "publisher": "Times of India",
+   "date": "28 Aug 2026",
+   "url": "https://timesofindia.indiatimes.com/city/surat/textile-processors-hike-job-work-charges-by-15/articleshow/133576972.cms"
+  },
+  {
+   "id": "cpcb25",
+   "label": "CPCB Red/Orange/Green/White categorisation 2025 (explainer with lists)",
+   "publisher": "QHSE Alert (copy of CPCB lists)",
+   "date": "2025",
+   "url": "https://legalupdate.qhsealert.com/file/316_CPCB_Industry_Categorization_Red_to_White_Explained.pdf"
+  },
+  {
+   "id": "sitex",
+   "label": "Surat Textile Cluster: India's Man-Made Textile Powerhouse (cites 2026 SITEX profile)",
+   "publisher": "Textiles Resources (trade site)",
+   "date": "18 Aug 2026",
+   "url": "https://www.textilesresources.com/articles/surat-textile-industry/"
+  },
+  {
+   "id": "txc",
+   "label": "Surat, the Silk City of India (cluster profile, data about 2004-05)",
+   "publisher": "Office of the Textile Commissioner, Ministry of Textiles",
+   "date": "undated (old)",
+   "url": "https://www.txcindia.gov.in/html/D_%20Surat.pdf"
+  },
+  {
+   "id": "biz_proc",
+   "label": "Surat processing charges up 15% (also lists yarn, coal, power, wage and grey prices)",
+   "publisher": "BizTorq (trade news site)",
+   "date": "15 Oct 2026",
+   "url": "https://directory.biztorq.com/news/surat-textile-processing-job-charges-up-15-percent/"
+  },
+  {
+   "id": "toi_flood",
+   "label": "Floods close country's pioneer textile processing cluster",
+   "publisher": "Times of India",
+   "date": "12 Jul 2026",
+   "url": "https://timesofindia.indiatimes.com/city/surat/floods-close-countrys-pioneer-textile-processing-cluster/articleshow/132336926.cms"
+  },
+  {
+   "id": "gerc_sched",
+   "label": "Tariff schedule of DGVCL, MGVCL, PGVCL and UGVCL, effective 1 Apr 2025",
+   "publisher": "Gujarat Electricity Regulatory Commission",
+   "date": "1 Apr 2025",
+   "url": "https://gercin.org/wp-content/uploads/2025/04/Tariff-Schedule-of-DGVCL-MGVCL-PGVCL-UGVCL-w.e.f.-01.04.2025.pdf",
+   "note": "GERC website was slow or blocked when we tried to open it on 27 Nov 2026; the figures were read from the document via search. Open the link and confirm."
+  },
+  {
+   "id": "gerc_orders",
+   "label": "GERC tariff orders page (DGVCL order for FY2026-27, Case 2581/2025, 25 Mar 2026)",
+   "publisher": "Gujarat Electricity Regulatory Commission",
+   "date": "25 Mar 2026",
+   "url": "https://gercin.org/order-category/tariff-orders/",
+   "note": "GERC website was slow or blocked when we tried to open it on 27 Nov 2026; the figures were read from the document via search. Open the link and confirm."
+  },
+  {
+   "id": "desh_lab",
+   "label": "Shortage of migrant labourers hit Surat textile industry",
+   "publisher": "DeshGujarat",
+   "date": "15 Jun 2024",
+   "url": "https://deshgujarat.com/2024/06/15/shortage-of-migrant-labourers-hit-surat-textile-industry/"
+  },
+  {
+   "id": "gtp",
+   "label": "Gujarat Textile Policy 2024 (policy summary PDF hosted by a subsidy consultant; confirm against the Industries Commissionerate resolution)",
+   "publisher": "Government of Gujarat policy, via MAC Ancillary Services",
+   "date": "Oct 2024",
+   "url": "https://www.macancillary.com/policies/gujarat/GUJARAT_TEXTILE_POLICY__2024.pdf"
+  }
+ ]
+}

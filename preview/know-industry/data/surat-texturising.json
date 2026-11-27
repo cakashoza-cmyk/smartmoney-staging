@@ -1,0 +1,624 @@
+{
+ "slug": "surat-texturising",
+ "title": "Texturising and twisting (DTY)",
+ "subtitle": "Turning POY into stretch yarn (DTY) and twisting yarn for weavers",
+ "cluster": "Surat",
+ "chain_group": "surat-textiles",
+ "last_checked": "27 Nov 2026",
+ "audience": "Bank credit officers, South Gujarat",
+ "covers": "This page covers texturising (POY to DTY) and yarn twisting units. Twisting, warping and sizing are not given separate pages: the Textile Commissioner groups texturising and twisting together, and warping and sizing are usually done inside weaving units (see the weaving page).",
+ "snapshot": [
+  {
+   "tag": "reported",
+   "text": "DTY is about 60% of the 1.52 lakh tonnes of polyester yarn Surat uses a month (SGCCI, Aug 2026).",
+   "src": [
+    "sgcci"
+   ]
+  },
+  {
+   "tag": "reported",
+   "text": "POY, the main input, rose from Rs 140-150/kg to about Rs 180/kg between June and October 2026; texturised yarn traded at Rs 195-205/kg in late October.",
+   "src": [
+    "biz_proc",
+    "biz_yarn"
+   ]
+  },
+  {
+   "tag": "unknown",
+   "text": "Texturising job-work charges and margins: no reliable public figure. Collect from the customer."
+  }
+ ],
+ "sections": [
+  {
+   "id": "what",
+   "title": "What it is",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "A texturiser heats and twists POY so the flat filament becomes bulky and stretchy (DTY). Twisting units add twist to filament yarn for strength or crepe effects. Both supply weavers and knitters."
+      },
+      {
+       "tag": "fact",
+       "text": "The Textile Commissioner's old profile counted about 350 texturising and twisting units in Surat with about 2,500 texturising, draw-twisting and crimping machines, producing about 6 lakh tonnes of yarn a year (data about 2004-05).",
+       "src": [
+        "txc"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sub",
+   "title": "Sub-segments, and which one this page covers",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Segment",
+      "What it does",
+      "This page?"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Texturising (DTY)",
+        "POY to stretch yarn",
+        "YES"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "Twisting (TFO twisters)",
+        "Adds twist to yarn",
+        "YES"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "Warping and sizing",
+        "Prepares beams for looms",
+        "No - mostly inside weaving units"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "Yarn dyeing",
+        "Colours yarn",
+        "No (not covered yet)"
+       ],
+       "tag": "inference"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chain",
+   "title": "Where it sits in the value chain",
+   "blocks": [
+    {
+     "type": "chain",
+     "stages": [
+      {
+       "label": "Yarn makers",
+       "sub": "POY / FDY from PTA + MEG"
+      },
+      {
+       "label": "Texturisers and twisters",
+       "sub": "DTY, twisted yarn",
+       "here": true
+      },
+      {
+       "label": "Weavers",
+       "sub": "Grey fabric"
+      },
+      {
+       "label": "Process houses",
+       "sub": "Dyeing and printing (job-work)"
+      },
+      {
+       "label": "Embroidery units",
+       "sub": "Value addition (job-work)"
+      },
+      {
+       "label": "Garment makers",
+       "sub": "Ready garments"
+      },
+      {
+       "label": "Traders",
+       "sub": "Buy, coordinate and sell across India"
+      }
+     ],
+     "tag": "inference",
+     "src": [
+      "txc",
+      "sgcci"
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Some texturisers work on job-work (yarn owner supplies POY, pays per kg); others buy POY and sell DTY. The second carries POY price risk. Share of each: Unknown - ask the customer."
+      },
+      {
+       "tag": "fact",
+       "text": "The old Textile Commissioner profile notes that twisters and texturisers import POY when imports are cheaper than Indian yarn.",
+       "src": [
+        "txc"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "process",
+   "title": "What the unit actually does",
+   "blocks": [
+    {
+     "type": "steps",
+     "tag": "inference",
+     "note": "General texturising flow. Confirm on a site visit.",
+     "steps": [
+      {
+       "t": "POY receipt",
+       "d": "POY bobbins checked for denier and lot."
+      },
+      {
+       "t": "Texturising",
+       "d": "Yarn is drawn, heated and false-twisted on the texturising machine, then wound as DTY."
+      },
+      {
+       "t": "Twisting (where done)",
+       "d": "TFO twisters add the required twist per metre."
+      },
+      {
+       "t": "Testing and packing",
+       "d": "Denier, twist and oil content checked; cones packed for weavers and knitters."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "raw",
+   "title": "Raw materials and prices",
+   "blocks": [
+    {
+     "type": "prices",
+     "title": "Raw material and sale prices",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "rows": [
+      {
+       "item": "POY 130/34 (main input)",
+       "price": "Rs 178-180",
+       "unit": "per kg",
+       "date": "30 Oct 2026",
+       "trend": "flat",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "biz_yarn"
+       ]
+      },
+      {
+       "item": "POY (earlier level)",
+       "price": "Rs 140-150",
+       "unit": "per kg",
+       "date": "before Jun 2026",
+       "trend": "up",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "biz_proc"
+       ]
+      },
+      {
+       "item": "PTY / DTY 80/72 (sale price)",
+       "price": "Rs 195-205",
+       "unit": "per kg",
+       "date": "30 Oct 2026",
+       "trend": "flat",
+       "kind": "output",
+       "tag": "reported",
+       "src": [
+        "biz_yarn"
+       ]
+      },
+      {
+       "item": "Texturising job-work charge",
+       "price": "No reliable public quote",
+       "unit": "per kg",
+       "date": "",
+       "trend": "",
+       "kind": "output",
+       "tag": "unknown"
+      }
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "The gap between the two late-October trade quotes (about Rs 15-27 a kg) is NOT a margin: it must also pay for power, labour, waste, oil, interest and depreciation, and the quotes are for different deniers."
+      },
+      {
+       "tag": "reported",
+       "text": "SGCCI asked the government to allow easier import of POY and DTY to increase competition, and says Chinese makers get POY about Rs 15/kg cheaper.",
+       "src": [
+        "sgcci"
+       ]
+      },
+      {
+       "tag": "fact",
+       "text": "BIS quality control orders on polyester fibre, polyester yarns (including POY and filament yarn), PTA and MEG were withdrawn on 12 Nov 2025; the viscose staple fibre QCO was withdrawn on 18 Nov 2025.",
+       "src": [
+        "hindu_qco",
+        "gaz_psf",
+        "gaz_vsf",
+        "pib_vsf"
+       ]
+      },
+      {
+       "tag": "fact",
+       "text": "GST on man-made fibre was cut from 18% to 5% and on man-made yarn from 12% to 5% (GST Council, 3 Sep 2025).",
+       "src": [
+        "pib_gst"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bottle",
+   "title": "Bottlenecks",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Pollution and licences",
+     "items": [
+      {
+       "tag": "unknown",
+       "text": "Pollution category for texturising and twisting was not found in the lists checked. Ask for the GPCB consent or White-category intimation."
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Machinery",
+     "items": [
+      {
+       "tag": "unknown",
+       "text": "Make, age and cost of texturising machines and TFO twisters: collect invoices and a valuer's report."
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Power and labour",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "Power: GERC's FY2025-26 DGVCL tariff schedule lists the Non-RGP rate (loads up to 40 kW) at 435 paise a unit up to 10 kW and 465 paise above 10 kW, plus fixed charges and 45 paise extra in peak hours. Larger loads fall in other categories. A new FY2026-27 order was issued on 25 Mar 2026, so confirm current rates from the customer's bills.",
+       "src": [
+        "gerc_sched",
+        "gerc_orders"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Labour is largely migrant. About 30% of migrant workers reportedly did not return after the 2024 election and wedding season, and some units stopped night shifts.",
+       "src": [
+        "desh_lab"
+       ]
+      },
+      {
+       "tag": "inference",
+       "text": "Texturising runs heaters and high-speed spindles round the clock, so power is likely a large cost; the actual share is Unknown - read it from the customer's bills."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sales",
+   "title": "Sales: who buys, how, and credit periods",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Buyers are weavers (water-jet, rapier, air-jet) and knitters in Surat, often through yarn dealers."
+      },
+      {
+       "tag": "reported",
+       "text": "Yarn dealers reportedly charge weavers 1.5% a month on late payment, while weavers themselves wait 60-120 days for traders. Texturisers selling to weavers sit inside this squeezed chain.",
+       "src": [
+        "nie_sep"
+       ]
+      },
+      {
+       "tag": "unknown",
+       "text": "Customer's buyer list, credit days given, and share of job-work vs own sales."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "econ",
+   "title": "Unit economics",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "No verified public margin or working-capital figure exists for Surat texturisers."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Item",
+      "What we know",
+      "Status"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Input vs output prices",
+        "POY Rs 178-180/kg; PTY Rs 195-205/kg (30 Oct 2026)",
+        "Reported"
+       ],
+       "tag": "reported",
+       "src": [
+        "biz_yarn"
+       ]
+      },
+      {
+       "cells": [
+        "Conversion cost per kg (power, labour, waste)",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Operating margin",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Working-capital cycle",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Capacity use",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "State incentives",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "Texturising and twisting are 'Activity 2' under Gujarat Textile Policy 2024: capital subsidy of 20% / 18% / 10% of eligible investment by taluka category (term loan required), interest subsidy up to 7%, and Rs 1/unit power subsidy for 5 years.",
+       "src": [
+        "gtp"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fragile",
+   "title": "Fragility points and early warning signs for a lender",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Where this business breaks",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Squeeze between POY price (set by a few makers) and what weavers can pay; weavers resolved to stop stocking yarn in Sep 2026, cutting offtake.",
+       "src": [
+        "crisil",
+        "toi_mahamanthan"
+       ]
+      },
+      {
+       "tag": "fact",
+       "text": "Cheaper imports: QCO removal in Nov 2025 made imported yarn easier to bring in.",
+       "src": [
+        "hindu_qco"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Weak weaving demand (units near half capacity in 2026) means lower DTY offtake.",
+       "src": [
+        "nie_may"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Early warning signs (checklist)",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Cheque returns or frequent overdraws; cash credit used near the limit all month."
+      },
+      {
+       "tag": "inference",
+       "text": "Electricity units falling month on month, or a shift stopped, without a matching fall in loan outstanding."
+      },
+      {
+       "tag": "inference",
+       "text": "Creditor days stretching; suppliers charging late-payment interest; purchases switched to cash from new sources."
+      },
+      {
+       "tag": "inference",
+       "text": "Stock or receivables building up; sales concentrated on one or two parties or brokers."
+      },
+      {
+       "tag": "inference",
+       "text": "Wages paid late or labour leaving; regular weekly closures."
+      },
+      {
+       "tag": "inference",
+       "text": "New borrowing from private lenders or related parties; machines rented out or sold."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "sgcci",
+   "label": "Crisis in textile industry due to rise in polyester yarn prices: SGCCI report to Union Textile Minister",
+   "publisher": "Loktej English",
+   "date": "1 Sep 2026",
+   "url": "https://english.loktej.com/article/31755/surat--crisis-in-textile-industry-due-to-unprecedented-rise-in-polyester-yarn-prices--chamber-sends-report-to-central-minister"
+  },
+  {
+   "id": "biz_proc",
+   "label": "Surat processing charges up 15% (also lists yarn, coal, power, wage and grey prices)",
+   "publisher": "BizTorq (trade news site)",
+   "date": "15 Oct 2026",
+   "url": "https://directory.biztorq.com/news/surat-textile-processing-job-charges-up-15-percent/"
+  },
+  {
+   "id": "biz_yarn",
+   "label": "Polyester yarn rates steady as crude cools (Surat yarn market quotes)",
+   "publisher": "BizTorq / Texmandi (trade news site)",
+   "date": "30 Oct 2026",
+   "url": "https://texmandi.com/news/polyester-yarn-rates-steady-crude-cools-surat-weavers-relief-2026/"
+  },
+  {
+   "id": "txc",
+   "label": "Surat, the Silk City of India (cluster profile, data about 2004-05)",
+   "publisher": "Office of the Textile Commissioner, Ministry of Textiles",
+   "date": "undated (old)",
+   "url": "https://www.txcindia.gov.in/html/D_%20Surat.pdf"
+  },
+  {
+   "id": "hindu_qco",
+   "label": "Government revokes Quality Control Orders on polyester fibre and yarn, PTA, MEG",
+   "publisher": "The Hindu",
+   "date": "13 Nov 2025",
+   "url": "https://www.thehindu.com/business/Industry/government-revokes-quality-control-order-on-polyester-fibre-and-yarn/article70274117.ece"
+  },
+  {
+   "id": "gaz_psf",
+   "label": "Gazette order rescinding QCOs on polyester staple fibre, spun yarn and industrial yarn",
+   "publisher": "Ministry of Chemicals and Fertilizers, via BIS",
+   "date": "12 Nov 2025",
+   "url": "https://www.bis.gov.in/wp-content/uploads/2025/11/Polyester-Staple-Fibres-PSF-Rescind-Order-2025.pdf"
+  },
+  {
+   "id": "gaz_vsf",
+   "label": "Gazette order rescinding the Viscose Staple Fibres QCO (S.O. 5267(E))",
+   "publisher": "Ministry of Textiles, via BIS",
+   "date": "18 Nov 2025",
+   "url": "https://www.bis.gov.in/wp-content/uploads/2025/11/Viscose-Staple-Fibres-Rescind-Order-2025.pdf"
+  },
+  {
+   "id": "pib_vsf",
+   "label": "Central Government has rescinded the QCO requirement for Viscose Staple Fibre",
+   "publisher": "Press Information Bureau",
+   "date": "18 Nov 2025",
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2191408&lang=2&reg=3"
+  },
+  {
+   "id": "pib_gst",
+   "label": "Recommendations of the 56th GST Council meeting",
+   "publisher": "Press Information Bureau",
+   "date": "3 Sep 2025",
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163555&lang=35&reg=38"
+  },
+  {
+   "id": "gerc_sched",
+   "label": "Tariff schedule of DGVCL, MGVCL, PGVCL and UGVCL, effective 1 Apr 2025",
+   "publisher": "Gujarat Electricity Regulatory Commission",
+   "date": "1 Apr 2025",
+   "url": "https://gercin.org/wp-content/uploads/2025/04/Tariff-Schedule-of-DGVCL-MGVCL-PGVCL-UGVCL-w.e.f.-01.04.2025.pdf",
+   "note": "GERC website was slow or blocked when we tried to open it on 27 Nov 2026; the figures were read from the document via search. Open the link and confirm."
+  },
+  {
+   "id": "gerc_orders",
+   "label": "GERC tariff orders page (DGVCL order for FY2026-27, Case 2581/2025, 25 Mar 2026)",
+   "publisher": "Gujarat Electricity Regulatory Commission",
+   "date": "25 Mar 2026",
+   "url": "https://gercin.org/order-category/tariff-orders/",
+   "note": "GERC website was slow or blocked when we tried to open it on 27 Nov 2026; the figures were read from the document via search. Open the link and confirm."
+  },
+  {
+   "id": "desh_lab",
+   "label": "Shortage of migrant labourers hit Surat textile industry",
+   "publisher": "DeshGujarat",
+   "date": "15 Jun 2024",
+   "url": "https://deshgujarat.com/2024/06/15/shortage-of-migrant-labourers-hit-surat-textile-industry/"
+  },
+  {
+   "id": "nie_sep",
+   "label": "Gujarat weavers reel under soaring yarn prices, seek State govt intervention",
+   "publisher": "The New Indian Express",
+   "date": "22 Sep 2026",
+   "url": "https://www.newindianexpress.com/states/gujarat/2026/Sep/22/gujarat-weavers-reel-under-soaring-yarn-prices-seek-state-govt-intervention"
+  },
+  {
+   "id": "gtp",
+   "label": "Gujarat Textile Policy 2024 (policy summary PDF hosted by a subsidy consultant; confirm against the Industries Commissionerate resolution)",
+   "publisher": "Government of Gujarat policy, via MAC Ancillary Services",
+   "date": "Oct 2024",
+   "url": "https://www.macancillary.com/policies/gujarat/GUJARAT_TEXTILE_POLICY__2024.pdf"
+  },
+  {
+   "id": "crisil",
+   "label": "CRISIL rating rationale (polyester yarn industry structure)",
+   "publisher": "CRISIL Ratings",
+   "date": "6 Aug 2025",
+   "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/SumeetIndustriesLimited_August%2006_%202025_RR_374297.html"
+  },
+  {
+   "id": "toi_mahamanthan",
+   "label": "Weavers seek to mend market threads (Weavers Mahamanthan 2026)",
+   "publisher": "Times of India",
+   "date": "24 Sep 2026",
+   "url": "https://timesofindia.indiatimes.com/city/surat/weavers-seek-to-mend-market-threads/articleshow/134445162.cms"
+  },
+  {
+   "id": "nie_may",
+   "label": "Rising input costs and global headwinds strain Gujarat's textile backbone",
+   "publisher": "The New Indian Express",
+   "date": "13 May 2026",
+   "url": "https://www.newindianexpress.com/states/gujarat/2026/May/13/rising-input-costs-and-global-headwinds-strain-gujarats-textile-backbone"
+  }
+ ]
+}

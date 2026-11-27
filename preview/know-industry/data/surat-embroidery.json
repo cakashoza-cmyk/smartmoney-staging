@@ -1,0 +1,575 @@
+{
+ "slug": "surat-embroidery",
+ "title": "Embroidery (machine, job-work)",
+ "subtitle": "Computerised multi-head embroidery on fabric for sarees, dress material and garments",
+ "cluster": "Surat",
+ "chain_group": "surat-textiles",
+ "last_checked": "27 Nov 2026",
+ "audience": "Bank credit officers, South Gujarat",
+ "covers": "This page covers machine embroidery units. Most do job-work for traders, charged per 1,000 stitches. Hand embroidery and zari thread making are not covered here (zari has its own page).",
+ "snapshot": [
+  {
+   "tag": "reported",
+   "text": "Surat is estimated to have about 40,000 embroidery units (TOI, Sep 2026) and about 1.5 lakh embroidery machines (2026 SITEX profile).",
+   "src": [
+    "toi_thread",
+    "sitex"
+   ]
+  },
+  {
+   "tag": "reported",
+   "text": "Embroidery thread got costlier in 2026: viscose embroidery yarn up about 12% in four months, polyester and spun embroidery yarn up to 35%.",
+   "src": [
+    "toi_thread"
+   ]
+  },
+  {
+   "tag": "reported",
+   "text": "A 2026 labour dispute over weekly offs led to machines standing idle in some units; most workers are migrants from Bihar, UP and Jharkhand.",
+   "src": [
+    "bbc_emb"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "what",
+   "title": "What it is",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "An embroidery unit runs computerised multi-head machines that stitch designs onto processed fabric or garment panels, often adding sequins and cords."
+      },
+      {
+       "tag": "reported",
+       "text": "Units are spread across Katargam, Varachha, Pandesara and other areas.",
+       "src": [
+        "emb_rate"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sub",
+   "title": "Sub-segments, and which one this page covers",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Segment",
+      "What it does",
+      "This page?"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Multi-head machine embroidery",
+        "Stitches designs at scale",
+        "YES"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "Sequin / cording add-ons",
+        "Extra devices per head",
+        "YES"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "Hand embroidery, zardozi",
+        "Hand work",
+        "No"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "Embroidery thread and zari making",
+        "Supplies thread",
+        "No - see zari page"
+       ],
+       "tag": "inference"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chain",
+   "title": "Where it sits in the value chain",
+   "blocks": [
+    {
+     "type": "chain",
+     "stages": [
+      {
+       "label": "Yarn makers",
+       "sub": "POY / FDY from PTA + MEG"
+      },
+      {
+       "label": "Texturisers and twisters",
+       "sub": "DTY, twisted yarn"
+      },
+      {
+       "label": "Weavers",
+       "sub": "Grey fabric"
+      },
+      {
+       "label": "Process houses",
+       "sub": "Dyeing and printing (job-work)"
+      },
+      {
+       "label": "Embroidery units",
+       "sub": "Value addition (job-work)",
+       "here": true
+      },
+      {
+       "label": "Garment makers",
+       "sub": "Ready garments"
+      },
+      {
+       "label": "Traders",
+       "sub": "Buy, coordinate and sell across India"
+      }
+     ],
+     "tag": "inference",
+     "src": [
+      "toi_thread"
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Embroidery units pass higher thread costs on to their textile-trader clients, which shows traders are the main customers.",
+       "src": [
+        "toi_thread"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "process",
+   "title": "What the unit actually does",
+   "blocks": [
+    {
+     "type": "steps",
+     "tag": "inference",
+     "note": "General embroidery flow. Confirm on a site visit.",
+     "steps": [
+      {
+       "t": "Design punching",
+       "d": "Design is digitised into a machine file and a sample is run."
+      },
+      {
+       "t": "Loading",
+       "d": "Trader's fabric is framed on the multi-head machine."
+      },
+      {
+       "t": "Stitching",
+       "d": "All heads stitch the same design; sequins or cords are added where ordered."
+      },
+      {
+       "t": "Checking and return",
+       "d": "Pieces checked, counted and returned with the job-work bill."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "raw",
+   "title": "Raw materials and prices",
+   "blocks": [
+    {
+     "type": "prices",
+     "title": "Raw material and sale prices",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "rows": [
+      {
+       "item": "Viscose embroidery yarn",
+       "price": "Up about 12% in four months",
+       "unit": "",
+       "date": "Sep 2026",
+       "trend": "up",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "toi_thread"
+       ]
+      },
+      {
+       "item": "Polyester and spun embroidery yarn",
+       "price": "Up to 35%",
+       "unit": "",
+       "date": "Sep 2026",
+       "trend": "up",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "toi_thread"
+       ]
+      },
+      {
+       "item": "Other embroidery materials",
+       "price": "Up to 20% (association)",
+       "unit": "",
+       "date": "Sep 2026",
+       "trend": "up",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "toi_thread"
+       ]
+      },
+      {
+       "item": "Embroidery job-work (sale price)",
+       "price": "About Rs 0.20-0.50 per 1,000 stitches (trade-site FAQ)",
+       "unit": "per 1,000 stitches",
+       "date": "2026",
+       "trend": "",
+       "kind": "output",
+       "tag": "reported",
+       "src": [
+        "emb_rate"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Absolute rupee prices for embroidery thread were not found in public sources; collect the customer's purchase bills."
+      },
+      {
+       "tag": "fact",
+       "text": "GST on man-made fibre was cut from 18% to 5% and on man-made yarn from 12% to 5% (GST Council, 3 Sep 2025).",
+       "src": [
+        "pib_gst"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bottle",
+   "title": "Bottlenecks",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Pollution and licences",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "CPCB's White list includes hand embroidery and zari work units; machine embroidery was not found by name in the lists checked, so its category is Unknown.",
+       "src": [
+        "cpcb25"
+       ]
+      },
+      {
+       "tag": "fact",
+       "text": "GPCB's June 2025 order exempts White-category units from Consent to Establish and Consent to Operate, but they must inform GPCB and self-declare compliance.",
+       "src": [
+        "gpcb_white"
+       ]
+      },
+      {
+       "tag": "unknown",
+       "text": "Ask for the GPCB intimation or consent and the factory licence status."
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Labour",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Workers reported 12-hour shifts with no paid weekly off; after a 2026 dispute the units' association announced 8-hour shifts at minimum wage. Some units had machines idle as workers left.",
+       "src": [
+        "bbc_emb"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Labour is largely migrant. About 30% of migrant workers reportedly did not return after the 2024 election and wedding season, and some units stopped night shifts.",
+       "src": [
+        "desh_lab"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Machinery and power",
+     "items": [
+      {
+       "tag": "unknown",
+       "text": "Make, age and price of multi-head machines: collect invoices and valuation."
+      },
+      {
+       "tag": "fact",
+       "text": "Power: GERC's FY2025-26 DGVCL tariff schedule lists the Non-RGP rate (loads up to 40 kW) at 435 paise a unit up to 10 kW and 465 paise above 10 kW, plus fixed charges and 45 paise extra in peak hours. Larger loads fall in other categories. A new FY2026-27 order was issued on 25 Mar 2026, so confirm current rates from the customer's bills.",
+       "src": [
+        "gerc_sched",
+        "gerc_orders"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sales",
+   "title": "Sales: who buys, how, and credit periods",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Customers are mainly textile traders, who own the fabric and pay a job charge.",
+       "src": [
+        "toi_thread"
+       ]
+      },
+      {
+       "tag": "unknown",
+       "text": "Payment terms from traders and bad-debt history: no public figure. Read from the customer's ledger."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "econ",
+   "title": "Unit economics",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "No verified public margin or working-capital figure exists for Surat embroidery units."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Item",
+      "What we know",
+      "Status"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Job charge",
+        "About Rs 0.20-0.50 per 1,000 stitches (trade-site FAQ, unverified)",
+        "Reported"
+       ],
+       "tag": "reported",
+       "src": [
+        "emb_rate"
+       ]
+      },
+      {
+       "cells": [
+        "Operating margin",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Working-capital cycle",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Machine utilisation (hours a day)",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Labour cost share",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "State incentives",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "Embroidery is 'Activity 2' under Gujarat Textile Policy 2024 (capital subsidy 20% / 18% / 10% by taluka category, interest subsidy, power subsidy).",
+       "src": [
+        "gtp"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fragile",
+   "title": "Fragility points and early warning signs for a lender",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Where this business breaks",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Thread cost spikes that units can pass on only partly.",
+       "src": [
+        "toi_thread"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Labour disputes and migrant workers leaving.",
+       "src": [
+        "bbc_emb"
+       ]
+      },
+      {
+       "tag": "inference",
+       "text": "Fashion risk: demand depends on traders' saree and dress orders; when traders hold old stock, embroidery orders dry up first."
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Early warning signs (checklist)",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Cheque returns or frequent overdraws; cash credit used near the limit all month."
+      },
+      {
+       "tag": "inference",
+       "text": "Electricity units falling month on month, or a shift stopped, without a matching fall in loan outstanding."
+      },
+      {
+       "tag": "inference",
+       "text": "Creditor days stretching; suppliers charging late-payment interest; purchases switched to cash from new sources."
+      },
+      {
+       "tag": "inference",
+       "text": "Stock or receivables building up; sales concentrated on one or two parties or brokers."
+      },
+      {
+       "tag": "inference",
+       "text": "Wages paid late or labour leaving; regular weekly closures."
+      },
+      {
+       "tag": "inference",
+       "text": "New borrowing from private lenders or related parties; machines rented out or sold."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "toi_thread",
+   "label": "Rising raw material cost push up prices across city's textile value chain (embroidery thread, embroidery units)",
+   "publisher": "Times of India",
+   "date": "16 Sep 2026",
+   "url": "https://timesofindia.indiatimes.com/city/surat/rising-raw-material-cost-push-up-prices-across-citys-textile-value-chain/articleshow/134294992.cms"
+  },
+  {
+   "id": "sitex",
+   "label": "Surat Textile Cluster: India's Man-Made Textile Powerhouse (cites 2026 SITEX profile)",
+   "publisher": "Textiles Resources (trade site)",
+   "date": "18 Aug 2026",
+   "url": "https://www.textilesresources.com/articles/surat-textile-industry/"
+  },
+  {
+   "id": "bbc_emb",
+   "label": "Why are lakhs of workers leaving Surat before Diwali? (embroidery units, Hindi)",
+   "publisher": "BBC News Hindi",
+   "date": "15 Oct 2026",
+   "url": "https://www.bbc.com/hindi/articles/cx62yv481jlgo.lite"
+  },
+  {
+   "id": "emb_rate",
+   "label": "How is computerised multi-head embroidery job work priced in Surat?",
+   "publisher": "Texmandi (trade site FAQ)",
+   "date": "2026",
+   "url": "https://texmandi.com/faq/how-is-computerized-embroidery-job-work-priced-in-surat/"
+  },
+  {
+   "id": "pib_gst",
+   "label": "Recommendations of the 56th GST Council meeting",
+   "publisher": "Press Information Bureau",
+   "date": "3 Sep 2025",
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163555&lang=35&reg=38"
+  },
+  {
+   "id": "cpcb25",
+   "label": "CPCB Red/Orange/Green/White categorisation 2025 (explainer with lists)",
+   "publisher": "QHSE Alert (copy of CPCB lists)",
+   "date": "2025",
+   "url": "https://legalupdate.qhsealert.com/file/316_CPCB_Industry_Categorization_Red_to_White_Explained.pdf"
+  },
+  {
+   "id": "gpcb_white",
+   "label": "GPCB office order exempting White category industries from CTE/CTO, with list",
+   "publisher": "Gujarat Pollution Control Board (copy hosted by a compliance firm)",
+   "date": "Jun 2025",
+   "url": "https://uncomplycate.com/wp-content/uploads/2025/06/GPCB-exempts-White-Category-Industries-from-Requirement-of-Consent-to-Establish-and-Consent-to-Operate-June192025.pdf"
+  },
+  {
+   "id": "desh_lab",
+   "label": "Shortage of migrant labourers hit Surat textile industry",
+   "publisher": "DeshGujarat",
+   "date": "15 Jun 2024",
+   "url": "https://deshgujarat.com/2024/06/15/shortage-of-migrant-labourers-hit-surat-textile-industry/"
+  },
+  {
+   "id": "gerc_sched",
+   "label": "Tariff schedule of DGVCL, MGVCL, PGVCL and UGVCL, effective 1 Apr 2025",
+   "publisher": "Gujarat Electricity Regulatory Commission",
+   "date": "1 Apr 2025",
+   "url": "https://gercin.org/wp-content/uploads/2025/04/Tariff-Schedule-of-DGVCL-MGVCL-PGVCL-UGVCL-w.e.f.-01.04.2025.pdf",
+   "note": "GERC website was slow or blocked when we tried to open it on 27 Nov 2026; the figures were read from the document via search. Open the link and confirm."
+  },
+  {
+   "id": "gerc_orders",
+   "label": "GERC tariff orders page (DGVCL order for FY2026-27, Case 2581/2025, 25 Mar 2026)",
+   "publisher": "Gujarat Electricity Regulatory Commission",
+   "date": "25 Mar 2026",
+   "url": "https://gercin.org/order-category/tariff-orders/",
+   "note": "GERC website was slow or blocked when we tried to open it on 27 Nov 2026; the figures were read from the document via search. Open the link and confirm."
+  },
+  {
+   "id": "gtp",
+   "label": "Gujarat Textile Policy 2024 (policy summary PDF hosted by a subsidy consultant; confirm against the Industries Commissionerate resolution)",
+   "publisher": "Government of Gujarat policy, via MAC Ancillary Services",
+   "date": "Oct 2024",
+   "url": "https://www.macancillary.com/policies/gujarat/GUJARAT_TEXTILE_POLICY__2024.pdf"
+  }
+ ]
+}

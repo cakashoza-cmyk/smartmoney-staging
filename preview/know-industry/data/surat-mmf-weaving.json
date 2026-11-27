@@ -12,23 +12,23 @@
    "tag": "reported",
    "text": "Surat's weaving units are under stress now: yarn prices were reported up 40-45% in two months while grey fabric rose only about 10%, and many units were reported running near half capacity.",
    "src": [
-    "s8",
-    "s9"
+    "nie_sep",
+    "nie_may"
    ]
   },
   {
    "tag": "reported",
    "text": "Weavers report getting paid by traders after 60-120 days; trader credit of 90-180 days is also reported. Payment delay is the main cash-flow risk in this segment.",
    "src": [
-    "s8",
-    "s13"
+    "nie_sep",
+    "toi_rjwas"
    ]
   },
   {
    "tag": "fact",
    "text": "Pollution category depends on the loom: CPCB's 2025 list puts water-jet grey-fabric weaving in the Orange category (GPCB consent needed), while dry power-loom weaving is Green or White. Check the customer's GPCB papers.",
    "src": [
-    "s27"
+    "cpcb25"
    ]
   },
   {
@@ -52,16 +52,16 @@
        "tag": "reported",
        "text": "Surat is India's biggest man-made-fabric hub. A 2026 industry profile (SITEX) reports about 6 lakh looms of all types and about 6 crore metres of fabric a day. Older reports give lower numbers (3.5 crore m/day in 2021, 4 crore m/day in 2022), so treat the figure as indicative.",
        "src": [
-        "s1",
-        "s3",
-        "s4"
+        "sitex",
+        "fourtex",
+        "toi_china"
        ]
       },
       {
        "tag": "fact",
        "text": "The Textile Commissioner's Surat cluster profile says weavers sell fabric to merchants, who get it processed and sell it in the markets. The profile is old (data around 2004-05) but the structure it describes still matches current news.",
        "src": [
-        "s5"
+        "txc"
        ]
       }
      ]
@@ -90,7 +90,7 @@
        ],
        "tag": "fact",
        "src": [
-        "s6"
+        "crisil"
        ]
       },
       {
@@ -102,7 +102,7 @@
        ],
        "tag": "reported",
        "src": [
-        "s7"
+        "sgcci"
        ]
       },
       {
@@ -114,7 +114,7 @@
        ],
        "tag": "reported",
        "src": [
-        "s1"
+        "sitex"
        ]
       },
       {
@@ -126,7 +126,7 @@
        ],
        "tag": "reported",
        "src": [
-        "s1"
+        "sitex"
        ]
       },
       {
@@ -138,7 +138,7 @@
        ],
        "tag": "reported",
        "src": [
-        "s1"
+        "sitex"
        ]
       },
       {
@@ -150,7 +150,7 @@
        ],
        "tag": "reported",
        "src": [
-        "s1"
+        "sitex"
        ]
       },
       {
@@ -162,7 +162,7 @@
        ],
        "tag": "reported",
        "src": [
-        "s1"
+        "sitex"
        ]
       },
       {
@@ -174,7 +174,7 @@
        ],
        "tag": "reported",
        "src": [
-        "s1"
+        "sitex"
        ]
       },
       {
@@ -186,7 +186,7 @@
        ],
        "tag": "reported",
        "src": [
-        "s1"
+        "sitex"
        ]
       }
      ]
@@ -197,6 +197,18 @@
       {
        "tag": "inference",
        "text": "How each loom type works and what it suits is general textile knowledge, not from a Surat survey. Check the loom list in the customer's machinery schedule."
+      }
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Warping, sizing and twisting are preparatory steps. Most are done inside weaving units or by texturising and twisting units, so they are covered on this page and on the texturising page, not as a separate page. Some firms offer them as job-work; how many is Unknown.",
+       "src": [
+        "txc"
+       ]
       }
      ]
     }
@@ -211,40 +223,40 @@
      "stages": [
       {
        "label": "Yarn makers",
-       "sub": "POY / FDY: Reliance, Indo Rama, Century Enka, JBF, Garden Silk"
+       "sub": "POY / FDY from PTA + MEG"
       },
       {
-       "label": "Texturisers",
-       "sub": "DTY (stretch yarn)"
+       "label": "Texturisers and twisters",
+       "sub": "DTY, twisted yarn"
       },
       {
-       "label": "WEAVING UNIT",
-       "sub": "Buys yarn, weaves grey fabric",
+       "label": "Weavers",
+       "sub": "Grey fabric",
        "here": true
       },
       {
-       "label": "Grey traders / brokers",
-       "sub": "Buy grey, arrange processing"
-      },
-      {
        "label": "Process houses",
-       "sub": "Dyeing and printing"
+       "sub": "Dyeing and printing (job-work)"
       },
       {
-       "label": "Embroidery and finishing",
-       "sub": "Value addition"
+       "label": "Embroidery units",
+       "sub": "Value addition (job-work)"
       },
       {
-       "label": "Wholesalers and retailers",
-       "sub": "Surat markets and other states"
+       "label": "Garment makers",
+       "sub": "Ready garments"
+      },
+      {
+       "label": "Traders",
+       "sub": "Buy, coordinate and sell across India"
       }
      ],
+     "tag": "inference",
      "src": [
-      "s5",
-      "s6",
-      "s7"
-     ],
-     "tag": "reported"
+      "txc",
+      "crisil",
+      "sgcci"
+     ]
     },
     {
      "type": "items",
@@ -253,7 +265,7 @@
        "tag": "fact",
        "text": "Named yarn makers and their market position come from a CRISIL rating report: the top five hold over 65% of industry capacity, and Reliance alone has close to 40% of the POY market.",
        "src": [
-        "s6"
+        "crisil"
        ]
       },
       {
@@ -316,8 +328,97 @@
   },
   {
    "id": "raw",
-   "title": "Raw materials",
+   "title": "Raw materials and prices",
    "blocks": [
+    {
+     "type": "prices",
+     "title": "Raw material and sale prices",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "rows": [
+      {
+       "item": "Polyester POY 130/34",
+       "price": "Rs 178-180",
+       "unit": "per kg",
+       "date": "30 Oct 2026",
+       "trend": "flat",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "biz_yarn"
+       ]
+      },
+      {
+       "item": "Polyester FDY",
+       "price": "Rs 186-192",
+       "unit": "per kg",
+       "date": "30 Oct 2026",
+       "trend": "flat",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "biz_yarn"
+       ]
+      },
+      {
+       "item": "Polyester texturised yarn (PTY 80/72)",
+       "price": "Rs 195-205",
+       "unit": "per kg",
+       "date": "30 Oct 2026",
+       "trend": "flat",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "biz_yarn"
+       ]
+      },
+      {
+       "item": "POY (earlier level)",
+       "price": "Rs 140-150 rising to about Rs 180",
+       "unit": "per kg",
+       "date": "Jun to Oct 2026",
+       "trend": "up",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "biz_proc",
+        "biz_yarn"
+       ]
+      },
+      {
+       "item": "Viscose filament yarn",
+       "price": "No public quote found",
+       "unit": "",
+       "date": "",
+       "trend": "",
+       "kind": "input",
+       "tag": "unknown"
+      },
+      {
+       "item": "Weaving wage (piece rate)",
+       "price": "Rs 1.80 to 1.95",
+       "unit": "per metre",
+       "date": "Oct 2026",
+       "trend": "up",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "biz_proc"
+       ]
+      },
+      {
+       "item": "Grey fabric (sale price)",
+       "price": "About Rs 12.80 (from about Rs 13)",
+       "unit": "per metre",
+       "date": "Oct 2026",
+       "trend": "down",
+       "kind": "output",
+       "tag": "reported",
+       "src": [
+        "biz_proc"
+       ]
+      }
+     ]
+    },
     {
      "type": "items",
      "items": [
@@ -325,38 +426,38 @@
        "tag": "reported",
        "text": "Main raw material is polyester filament yarn. Surat's textile cluster uses about 1.52 lakh tonnes of polyester yarn a month, about 60% of it DTY (SGCCI, Aug 2026). The same chamber says about 80% of domestic polyester melt is held by one large manufacturer.",
        "src": [
-        "s7"
+        "sgcci"
        ]
       },
       {
        "tag": "fact",
        "text": "Supplier concentration: the top five yarn makers (Reliance, Indo Rama Synthetics, Century Enka, JBF, Garden Silk) hold over 65% of capacity. Reliance alone has close to 40% of the POY market. Small buyers are price-takers.",
        "src": [
-        "s6"
+        "crisil"
        ]
       },
       {
        "tag": "reported",
        "text": "Price now: POY is reported at about Rs 180 a kg, against Rs 140-150 earlier. Weavers say it has not come down even though crude oil has eased.",
        "src": [
-        "s11"
+        "biz_proc"
        ]
       },
       {
        "tag": "reported",
        "text": "Yarn dealers reportedly charge 1.5% a month (18% a year) on late payment.",
        "src": [
-        "s8"
+        "nie_sep"
        ]
       },
       {
        "tag": "fact",
        "text": "BIS quality control orders (QCOs) on polyester staple fibre, polyester spun yarn, polyester filament yarn, POY, industrial yarn, and on the chemicals PTA and MEG were withdrawn on 12 Nov 2025. The viscose staple fibre QCO was withdrawn on 18 Nov 2025. Yarn and fibre therefore no longer need a BIS mark under those orders.",
        "src": [
-        "s15",
-        "s16",
-        "s17",
-        "s18"
+        "hindu_qco",
+        "gaz_psf",
+        "gaz_vsf",
+        "pib_vsf"
        ]
       },
       {
@@ -367,22 +468,22 @@
        "tag": "fact",
        "text": "Anti-dumping duty: India's trade remedies body (DGTR) recommended duties on Chinese viscose filament yarn (USD 386-1,071 a tonne), nylon filament yarn and spandex yarn in March 2026. The Finance Ministry did not notify them by the deadline (19 Jun 2026), so no duty applies. A future notification could still change input cost.",
        "src": [
-        "s19",
-        "s20"
+        "toi_add",
+        "bl_add"
        ]
       },
       {
        "tag": "reported",
        "text": "SGCCI says the basic customs duty exemption on MEG and PTA ended on 15 Jul 2026, and links this to higher polyester prices. This is the chamber's statement. The customs notification itself was not checked.",
        "src": [
-        "s7"
+        "sgcci"
        ]
       },
       {
        "tag": "fact",
        "text": "GST on man-made fibre was cut from 18% to 5%, and on man-made yarn from 12% to 5%, as recommended by the GST Council on 3 Sep 2025. This removed a long-standing inverted duty problem.",
        "src": [
-        "s21"
+        "pib_gst"
        ]
       },
       {
@@ -405,15 +506,15 @@
        "tag": "fact",
        "text": "CPCB's 2025 category list puts 'Yarn to grey fabric manufacturing with water jet machines' in the ORANGE category. Orange units need GPCB Consent to Establish and Consent to Operate. The same list puts textile spinning, sizing and weaving mills that generate 10 KLD or more of wastewater in Orange too.",
        "src": [
-        "s27"
+        "cpcb25"
        ]
       },
       {
        "tag": "fact",
        "text": "The same CPCB list puts 'Power looms (without dye and bleaching)' in Green, and 'Manufacturing of grey cloth using power looms (only dry process)' in White. GPCB's June 2025 order says White-category units are exempt from Consent to Establish and Consent to Operate, but must inform GPCB and self-declare compliance.",
        "src": [
-        "s27",
-        "s26"
+        "cpcb25",
+        "gpcb_white"
        ]
       },
       {
@@ -424,7 +525,7 @@
        "tag": "fact",
        "text": "Gujarat Textile Policy 2024: units located inside a Municipal Corporation area are eligible for incentives only if the activity is non-polluting, meaning Green or White GPCB category (or equivalent). Whether a water-jet unit classed Orange inside a corporation area qualifies is therefore a question to confirm with the Industries Commissionerate. Units outside corporation limits are treated under the taluka categories.",
        "src": [
-        "s24"
+        "gtp"
        ]
       }
      ]
@@ -447,14 +548,14 @@
        "tag": "reported",
        "text": "In 2021 SGCCI reported that automated looms (air-jet, water-jet, rapier) were coming into Surat from China and Japan, mostly China, about 300 a month. It put conventional looms at about Rs 1.5 lakh and automated looms at Rs 6 lakh to Rs 50 lakh each. This is a 2021 figure; do not use it for current valuation.",
        "src": [
-        "s4"
+        "toi_china"
        ]
       },
       {
        "tag": "fact",
        "text": "The Textile Commissioner's old profile says shuttleless looms in the cluster were mostly second-hand and technically trained manpower was a problem. It is dated, but the second-hand point is worth checking in every case.",
        "src": [
-        "s5"
+        "txc"
        ]
       },
       {
@@ -471,15 +572,15 @@
        "tag": "reported",
        "text": "Surat's textile industry depends on migrant workers. In June 2024 about 30% reportedly had not returned after election and wedding season, and some units stopped night shifts.",
        "src": [
-        "s28"
+        "desh_lab"
        ]
       },
       {
        "tag": "reported",
        "text": "Weavers are paid by the metre, about Rs 1-2 a metre; in Dec 2024 workers asked for Rs 2-2.15 and a strike hit Pandesara and Bamroli. In 2026 some units reportedly pay Rs 1.95 a metre, up from Rs 1.80.",
        "src": [
-        "s29",
-        "s11"
+        "ie_strike",
+        "biz_proc"
        ]
       }
      ]
@@ -492,7 +593,7 @@
        "tag": "fact",
        "text": "GERC's tariff schedule for FY2025-26, applicable to DGVCL, lists the 'Non-RGP' rate (installations up to 40 kW) at 435 paise a unit up to 10 kW load and 465 paise a unit above 10 kW, plus fixed charges of Rs 50 per kW (first 10 kW) and Rs 85 per kW (next 30 kW), and 45 paise extra in peak hours (07-11 and 18-22). Taxes and electricity duty are extra.",
        "src": [
-        "s22"
+        "gerc_sched"
        ]
       },
       {
@@ -503,21 +604,21 @@
        "tag": "fact",
        "text": "GERC issued a new DGVCL tariff order for FY2026-27 on 25 Mar 2026. The FY2025-26 rates above may have changed.",
        "src": [
-        "s23"
+        "gerc_orders"
        ]
       },
       {
        "tag": "reported",
        "text": "A trade site reported DGVCL's cost rising from Rs 7.30 to Rs 9.15 a unit. This does not match the tariff schedule above and is probably an all-in cost; it is unverified.",
        "src": [
-        "s11"
+        "biz_proc"
        ]
       },
       {
        "tag": "fact",
        "text": "Gujarat Textile Policy 2024 offers eligible new weaving units a power tariff subsidy of Rs 1 per unit for 5 years (cap Rs 15 crore a year), only on DISCOM or open-access renewable power and only against bills in the unit's name.",
        "src": [
-        "s24"
+        "gtp"
        ]
       }
      ]
@@ -535,43 +636,43 @@
        "tag": "fact",
        "text": "Weavers sell grey fabric mainly to merchants, who get it processed and sell it in the markets; weavers were described as weak on working capital. (Dated Textile Commissioner profile.)",
        "src": [
-        "s5"
+        "txc"
        ]
       },
       {
        "tag": "reported",
        "text": "Brokers (dalals) arrange many deals. Weavers' associations have said that syndicates of traders and brokers have cheated several weavers, and associations have started publishing defaulter lists and building an app to check brokers.",
        "src": [
-        "s13",
-        "s12"
+        "toi_rjwas",
+        "toi_mahamanthan"
        ]
       },
       {
        "tag": "reported",
        "text": "Weavers report receiving payment from traders after 60 to 120 days, with no interest for the delay.",
        "src": [
-        "s8"
+        "nie_sep"
        ]
       },
       {
        "tag": "reported",
        "text": "A weavers' association reported traders taking goods on 90 to 180 days' credit, with some weavers unpaid for over eight months (Aug 2024).",
        "src": [
-        "s13"
+        "toi_rjwas"
        ]
       },
       {
        "tag": "reported",
        "text": "At Weavers Mahamanthan 2026 (Sep 2026), weaving units resolved to give a maximum of 30 days' credit and to charge interest after that. This is a resolution, not evidence of what is actually happening.",
        "src": [
-        "s12"
+        "toi_mahamanthan"
        ]
       },
       {
        "tag": "reported",
        "text": "One level down the chain, textile traders say distributors order on 180 days' credit; FOSTTA discussed limiting credit to 70 days (Jan 2026). This shows how long money stays stuck in the market.",
        "src": [
-        "s14"
+        "toi_fostta"
        ]
       },
       {
@@ -606,7 +707,7 @@
        ],
        "tag": "reported",
        "src": [
-        "s8"
+        "nie_sep"
        ]
       },
       {
@@ -617,7 +718,7 @@
        ],
        "tag": "reported",
        "src": [
-        "s11"
+        "biz_proc"
        ]
       },
       {
@@ -628,7 +729,7 @@
        ],
        "tag": "reported",
        "src": [
-        "s11"
+        "biz_proc"
        ]
       },
       {
@@ -639,7 +740,7 @@
        ],
        "tag": "fact",
        "src": [
-        "s5"
+        "txc"
        ]
       },
       {
@@ -650,8 +751,19 @@
        ],
        "tag": "reported",
        "src": [
-        "s9",
-        "s8"
+        "nie_may",
+        "nie_sep"
+       ]
+      },
+      {
+       "cells": [
+        "Reference: one large listed weaver (FY26)",
+        "Borana Weaves (about 1,208 water-jet looms): EBITDA margin 23.55%, average capacity use 80.93%. Large, new, integrated unit; NOT typical of an MSME weaver",
+        "Fact (company disclosure)"
+       ],
+       "tag": "fact",
+       "src": [
+        "borana"
        ]
       },
       {
@@ -670,7 +782,7 @@
        ],
        "tag": "unknown",
        "src": [
-        "s8"
+        "nie_sep"
        ]
       },
       {
@@ -697,7 +809,7 @@
        ],
        "tag": "reported",
        "src": [
-        "s4"
+        "toi_china"
        ]
       }
      ]
@@ -710,14 +822,14 @@
        "tag": "fact",
        "text": "Capital subsidy on eligible fixed capital investment: 20% (max Rs 50 crore) in Category 1 talukas and PM MITRA Park, 18% in Category 2, 10% (max Rs 40 crore) in Category 3. Paid in five yearly instalments after commercial production, and only to units that take a term loan.",
        "src": [
-        "s24"
+        "gtp"
        ]
       },
       {
        "tag": "fact",
        "text": "Interest subsidy: 7% on term loan for 7 years (Category 1 and 2) or 5% for 5 years (Category 3), capped at 2% of eligible investment a year; the unit bears at least 2% interest itself.",
        "src": [
-        "s24"
+        "gtp"
        ]
       },
       {
@@ -758,48 +870,48 @@
        "tag": "reported",
        "text": "Input-price squeeze: yarn jumped much faster than grey fabric, so own-account weavers can be selling below cost. Industry leaders said many were selling below production cost in 2026.",
        "src": [
-        "s8",
-        "s9"
+        "nie_sep",
+        "nie_may"
        ]
       },
       {
        "tag": "reported",
        "text": "Late payment: money is stuck with traders for 60-120 days or longer, while loan instalments and yarn dealers' interest keep running. A shutdown does not stop the EMI.",
        "src": [
-        "s8",
-        "s10"
+        "nie_sep",
+        "bhaskar_oct"
        ]
       },
       {
        "tag": "fact",
        "text": "Few suppliers set the yarn price. The top five yarn makers have over 65% of capacity.",
        "src": [
-        "s6"
+        "crisil"
        ]
       },
       {
        "tag": "fact",
        "text": "Government decisions move input cost quickly: QCOs withdrawn in Nov 2025, anti-dumping recommendations not accepted in Jun 2026, MEG/PTA duty exemption reportedly ended in Jul 2026.",
        "src": [
-        "s15",
-        "s19",
-        "s7"
+        "hindu_qco",
+        "toi_add",
+        "sgcci"
        ]
       },
       {
        "tag": "reported",
        "text": "Labour: migrant workers leave around festivals and weddings and sometimes strike. Prolonged slowdowns can cause skilled workers to leave town.",
        "src": [
-        "s28",
-        "s29",
-        "s9"
+        "desh_lab",
+        "ie_strike",
+        "nie_may"
        ]
       },
       {
        "tag": "reported",
        "text": "Fraud by buyers and brokers has led to a proposed textile police station in Surat's Salabatpura market area (Jun 2026).",
        "src": [
-        "s1"
+        "sitex"
        ]
       },
       {
@@ -847,147 +959,168 @@
  ],
  "sources": [
   {
-   "id": "s1",
-   "label": "Surat Textile Cluster: India's Man-Made Textile Powerhouse (cites 2026 SITEX profile)",
-   "publisher": "Textiles Resources (trade site)",
-   "date": "18 Aug 2026",
-   "url": "https://www.textilesresources.com/articles/surat-textile-industry/"
-  },
-  {
-   "id": "s3",
-   "label": "Surat Textile Industry sees spurt in demand",
-   "publisher": "4Textile.com",
-   "date": "15 Nov 2022",
-   "url": "https://www.4textile.com/news/surat-textile-industry-sees-spurt-in-demand/"
-  },
-  {
-   "id": "s4",
-   "label": "Surat MMF sector losing out to China (SGCCI study)",
-   "publisher": "Times of India",
-   "date": "4 Feb 2021",
-   "url": "https://timesofindia.indiatimes.com/city/surat/surat-mmf-sector-losing-out-to-china/articleshow/80674655.cms"
-  },
-  {
-   "id": "s5",
-   "label": "Surat, the Silk City of India (cluster profile, data about 2004-05)",
-   "publisher": "Office of the Textile Commissioner, Ministry of Textiles",
-   "date": "undated (old)",
-   "url": "https://www.txcindia.gov.in/html/D_%20Surat.pdf"
-  },
-  {
-   "id": "s6",
-   "label": "CRISIL rating rationale (polyester yarn industry structure)",
-   "publisher": "CRISIL Ratings",
-   "date": "6 Aug 2025",
-   "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/SumeetIndustriesLimited_August%2006_%202025_RR_374297.html"
-  },
-  {
-   "id": "s7",
-   "label": "Crisis in textile industry due to rise in polyester yarn prices: SGCCI report to Union Textile Minister",
-   "publisher": "Loktej English",
-   "date": "1 Sep 2026",
-   "url": "https://english.loktej.com/article/31755/surat--crisis-in-textile-industry-due-to-unprecedented-rise-in-polyester-yarn-prices--chamber-sends-report-to-central-minister"
-  },
-  {
-   "id": "s8",
+   "id": "nie_sep",
    "label": "Gujarat weavers reel under soaring yarn prices, seek State govt intervention",
    "publisher": "The New Indian Express",
    "date": "22 Sep 2026",
    "url": "https://www.newindianexpress.com/states/gujarat/2026/Sep/22/gujarat-weavers-reel-under-soaring-yarn-prices-seek-state-govt-intervention"
   },
   {
-   "id": "s9",
+   "id": "nie_may",
    "label": "Rising input costs and global headwinds strain Gujarat's textile backbone",
    "publisher": "The New Indian Express",
    "date": "13 May 2026",
    "url": "https://www.newindianexpress.com/states/gujarat/2026/May/13/rising-input-costs-and-global-headwinds-strain-gujarats-textile-backbone"
   },
   {
-   "id": "s10",
-   "label": "Silence grips Surat's textile market ahead of Diwali",
-   "publisher": "Bhaskar English",
-   "date": "Oct 2026",
-   "url": "https://www.bhaskarenglish.in/local/gujarat/news/surat-textile-market-crisis-looms-shut-diwali-slump-139403943.html"
-  },
-  {
-   "id": "s11",
-   "label": "Surat processing charges up 15% (also lists yarn, power, wage and grey prices)",
-   "publisher": "BizTorq (trade news site)",
-   "date": "15 Oct 2026",
-   "url": "https://directory.biztorq.com/news/surat-textile-processing-job-charges-up-15-percent/"
-  },
-  {
-   "id": "s12",
-   "label": "Weavers seek to mend market threads (Weavers Mahamanthan 2026)",
-   "publisher": "Times of India",
-   "date": "24 Sep 2026",
-   "url": "https://timesofindia.indiatimes.com/city/surat/weavers-seek-to-mend-market-threads/articleshow/134445162.cms"
-  },
-  {
-   "id": "s13",
+   "id": "toi_rjwas",
    "label": "Rapier Jacquard Weavers Association to publish list of defaulters",
    "publisher": "Times of India",
    "date": "25 Aug 2024",
    "url": "https://timesofindia.indiatimes.com/city/surat/rapier-jacquard-weavers-association-to-publish-list-of-defaulters/articleshow/112773255.cms"
   },
   {
-   "id": "s14",
-   "label": "Payment crisis: FOSTTA to name textile defaulters",
-   "publisher": "Times of India",
-   "date": "10 Jan 2026",
-   "url": "https://timesofindia.indiatimes.com/city/surat/payment-crisis-fostta-to-name-textile-defaulters/articleshow/126441000.cms"
+   "id": "cpcb25",
+   "label": "CPCB Red/Orange/Green/White categorisation 2025 (explainer with lists)",
+   "publisher": "QHSE Alert (copy of CPCB lists)",
+   "date": "2025",
+   "url": "https://legalupdate.qhsealert.com/file/316_CPCB_Industry_Categorization_Red_to_White_Explained.pdf"
   },
   {
-   "id": "s15",
+   "id": "sitex",
+   "label": "Surat Textile Cluster: India's Man-Made Textile Powerhouse (cites 2026 SITEX profile)",
+   "publisher": "Textiles Resources (trade site)",
+   "date": "18 Aug 2026",
+   "url": "https://www.textilesresources.com/articles/surat-textile-industry/"
+  },
+  {
+   "id": "fourtex",
+   "label": "Surat Textile Industry sees spurt in demand",
+   "publisher": "4Textile.com",
+   "date": "15 Nov 2022",
+   "url": "https://www.4textile.com/news/surat-textile-industry-sees-spurt-in-demand/"
+  },
+  {
+   "id": "toi_china",
+   "label": "Surat MMF sector losing out to China (SGCCI study)",
+   "publisher": "Times of India",
+   "date": "4 Feb 2021",
+   "url": "https://timesofindia.indiatimes.com/city/surat/surat-mmf-sector-losing-out-to-china/articleshow/80674655.cms"
+  },
+  {
+   "id": "txc",
+   "label": "Surat, the Silk City of India (cluster profile, data about 2004-05)",
+   "publisher": "Office of the Textile Commissioner, Ministry of Textiles",
+   "date": "undated (old)",
+   "url": "https://www.txcindia.gov.in/html/D_%20Surat.pdf"
+  },
+  {
+   "id": "crisil",
+   "label": "CRISIL rating rationale (polyester yarn industry structure)",
+   "publisher": "CRISIL Ratings",
+   "date": "6 Aug 2025",
+   "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/SumeetIndustriesLimited_August%2006_%202025_RR_374297.html"
+  },
+  {
+   "id": "sgcci",
+   "label": "Crisis in textile industry due to rise in polyester yarn prices: SGCCI report to Union Textile Minister",
+   "publisher": "Loktej English",
+   "date": "1 Sep 2026",
+   "url": "https://english.loktej.com/article/31755/surat--crisis-in-textile-industry-due-to-unprecedented-rise-in-polyester-yarn-prices--chamber-sends-report-to-central-minister"
+  },
+  {
+   "id": "biz_yarn",
+   "label": "Polyester yarn rates steady as crude cools (Surat yarn market quotes)",
+   "publisher": "BizTorq / Texmandi (trade news site)",
+   "date": "30 Oct 2026",
+   "url": "https://texmandi.com/news/polyester-yarn-rates-steady-crude-cools-surat-weavers-relief-2026/"
+  },
+  {
+   "id": "biz_proc",
+   "label": "Surat processing charges up 15% (also lists yarn, coal, power, wage and grey prices)",
+   "publisher": "BizTorq (trade news site)",
+   "date": "15 Oct 2026",
+   "url": "https://directory.biztorq.com/news/surat-textile-processing-job-charges-up-15-percent/"
+  },
+  {
+   "id": "hindu_qco",
    "label": "Government revokes Quality Control Orders on polyester fibre and yarn, PTA, MEG",
    "publisher": "The Hindu",
    "date": "13 Nov 2025",
    "url": "https://www.thehindu.com/business/Industry/government-revokes-quality-control-order-on-polyester-fibre-and-yarn/article70274117.ece"
   },
   {
-   "id": "s16",
-   "label": "Gazette order rescinding QCOs on polyester staple fibre, spun yarn and industrial yarn (12 Nov 2025)",
+   "id": "gaz_psf",
+   "label": "Gazette order rescinding QCOs on polyester staple fibre, spun yarn and industrial yarn",
    "publisher": "Ministry of Chemicals and Fertilizers, via BIS",
    "date": "12 Nov 2025",
    "url": "https://www.bis.gov.in/wp-content/uploads/2025/11/Polyester-Staple-Fibres-PSF-Rescind-Order-2025.pdf"
   },
   {
-   "id": "s17",
+   "id": "gaz_vsf",
    "label": "Gazette order rescinding the Viscose Staple Fibres QCO (S.O. 5267(E))",
    "publisher": "Ministry of Textiles, via BIS",
    "date": "18 Nov 2025",
    "url": "https://www.bis.gov.in/wp-content/uploads/2025/11/Viscose-Staple-Fibres-Rescind-Order-2025.pdf"
   },
   {
-   "id": "s18",
+   "id": "pib_vsf",
    "label": "Central Government has rescinded the QCO requirement for Viscose Staple Fibre",
    "publisher": "Press Information Bureau",
    "date": "18 Nov 2025",
    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2191408&lang=2&reg=3"
   },
   {
-   "id": "s19",
+   "id": "toi_add",
    "label": "Textile players welcome no anti-dumping duty on key yarn imports",
    "publisher": "Times of India",
    "date": "24 Jun 2026",
    "url": "https://timesofindia.indiatimes.com/city/surat/textile-players-welcome-no-anti-dumping-duty-on-key-yarn-imports/articleshow/131948796.cms"
   },
   {
-   "id": "s20",
+   "id": "bl_add",
    "label": "India trade body recommends anti-dumping duty on rayon yarn imports from China",
    "publisher": "The Hindu BusinessLine (Reuters)",
    "date": "23 Mar 2026",
    "url": "https://www.thehindubusinessline.com/news/india-trade-body-recommends-anti-dumping-duty-on-rayon-yarn-imports-from-china/article70774481.ece"
   },
   {
-   "id": "s21",
+   "id": "pib_gst",
    "label": "Recommendations of the 56th GST Council meeting",
    "publisher": "Press Information Bureau",
    "date": "3 Sep 2025",
    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163555&lang=35&reg=38"
   },
   {
-   "id": "s22",
+   "id": "gpcb_white",
+   "label": "GPCB office order exempting White category industries from CTE/CTO, with list",
+   "publisher": "Gujarat Pollution Control Board (copy hosted by a compliance firm)",
+   "date": "Jun 2025",
+   "url": "https://uncomplycate.com/wp-content/uploads/2025/06/GPCB-exempts-White-Category-Industries-from-Requirement-of-Consent-to-Establish-and-Consent-to-Operate-June192025.pdf"
+  },
+  {
+   "id": "gtp",
+   "label": "Gujarat Textile Policy 2024 (policy summary PDF hosted by a subsidy consultant; confirm against the Industries Commissionerate resolution)",
+   "publisher": "Government of Gujarat policy, via MAC Ancillary Services",
+   "date": "Oct 2024",
+   "url": "https://www.macancillary.com/policies/gujarat/GUJARAT_TEXTILE_POLICY__2024.pdf"
+  },
+  {
+   "id": "desh_lab",
+   "label": "Shortage of migrant labourers hit Surat textile industry",
+   "publisher": "DeshGujarat",
+   "date": "15 Jun 2024",
+   "url": "https://deshgujarat.com/2024/06/15/shortage-of-migrant-labourers-hit-surat-textile-industry/"
+  },
+  {
+   "id": "ie_strike",
+   "label": "Thousands of textile units in Surat hit as labourers call strike to seek wage hike",
+   "publisher": "The Indian Express",
+   "date": "24 Dec 2024",
+   "url": "https://indianexpress.com/article/cities/ahmedabad/thousands-of-textile-units-in-surat-hit-as-labourers-call-strike-to-seek-wage-hike-9741256/"
+  },
+  {
+   "id": "gerc_sched",
    "label": "Tariff schedule of DGVCL, MGVCL, PGVCL and UGVCL, effective 1 Apr 2025",
    "publisher": "Gujarat Electricity Regulatory Commission",
    "date": "1 Apr 2025",
@@ -995,7 +1128,7 @@
    "note": "GERC website was slow or blocked when we tried to open it on 27 Nov 2026; the figures were read from the document via search. Open the link and confirm."
   },
   {
-   "id": "s23",
+   "id": "gerc_orders",
    "label": "GERC tariff orders page (DGVCL order for FY2026-27, Case 2581/2025, 25 Mar 2026)",
    "publisher": "Gujarat Electricity Regulatory Commission",
    "date": "25 Mar 2026",
@@ -1003,39 +1136,32 @@
    "note": "GERC website was slow or blocked when we tried to open it on 27 Nov 2026; the figures were read from the document via search. Open the link and confirm."
   },
   {
-   "id": "s24",
-   "label": "Gujarat Textile Policy 2024 (policy summary PDF hosted by a subsidy consultant; confirm against the Industries Commissionerate resolution)",
-   "publisher": "Government of Gujarat policy, via MAC Ancillary Services",
-   "date": "Oct 2024",
-   "url": "https://www.macancillary.com/policies/gujarat/GUJARAT_TEXTILE_POLICY__2024.pdf"
+   "id": "toi_mahamanthan",
+   "label": "Weavers seek to mend market threads (Weavers Mahamanthan 2026)",
+   "publisher": "Times of India",
+   "date": "24 Sep 2026",
+   "url": "https://timesofindia.indiatimes.com/city/surat/weavers-seek-to-mend-market-threads/articleshow/134445162.cms"
   },
   {
-   "id": "s26",
-   "label": "GPCB office order exempting White category industries from CTE/CTO, with list",
-   "publisher": "Gujarat Pollution Control Board (copy hosted by a compliance firm)",
-   "date": "Jun 2025",
-   "url": "https://uncomplycate.com/wp-content/uploads/2025/06/GPCB-exempts-White-Category-Industries-from-Requirement-of-Consent-to-Establish-and-Consent-to-Operate-June192025.pdf"
+   "id": "toi_fostta",
+   "label": "Payment crisis: FOSTTA to name textile defaulters",
+   "publisher": "Times of India",
+   "date": "10 Jan 2026",
+   "url": "https://timesofindia.indiatimes.com/city/surat/payment-crisis-fostta-to-name-textile-defaulters/articleshow/126441000.cms"
   },
   {
-   "id": "s27",
-   "label": "CPCB Red/Orange/Green/White categorisation 2025 (explainer with lists)",
-   "publisher": "QHSE Alert (copy of CPCB lists)",
-   "date": "2025",
-   "url": "https://legalupdate.qhsealert.com/file/316_CPCB_Industry_Categorization_Red_to_White_Explained.pdf"
+   "id": "borana",
+   "label": "Borana Weaves Ltd investor presentation Q4 FY26 (listed Surat water-jet weaver)",
+   "publisher": "Borana Weaves Ltd (company disclosure)",
+   "date": "Jun 2026",
+   "url": "https://boranagroup.in/uploads/reports/120_investor-presentation-q4-fy26.pdf"
   },
   {
-   "id": "s28",
-   "label": "Shortage of migrant labourers hit Surat textile industry",
-   "publisher": "DeshGujarat",
-   "date": "15 Jun 2024",
-   "url": "https://deshgujarat.com/2024/06/15/shortage-of-migrant-labourers-hit-surat-textile-industry/"
-  },
-  {
-   "id": "s29",
-   "label": "Thousands of textile units in Surat hit as labourers call strike to seek wage hike",
-   "publisher": "The Indian Express",
-   "date": "24 Dec 2024",
-   "url": "https://indianexpress.com/article/cities/ahmedabad/thousands-of-textile-units-in-surat-hit-as-labourers-call-strike-to-seek-wage-hike-9741256/"
+   "id": "bhaskar_oct",
+   "label": "Silence grips Surat's textile market ahead of Diwali",
+   "publisher": "Bhaskar English",
+   "date": "Oct 2026",
+   "url": "https://www.bhaskarenglish.in/local/gujarat/news/surat-textile-market-crisis-looms-shut-diwali-slump-139403943.html"
   }
  ]
 }

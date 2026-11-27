@@ -1,0 +1,446 @@
+{
+ "slug": "surat-zari",
+ "title": "Zari (metallic and imitation thread)",
+ "subtitle": "Metallic yarn, imitation (copper/brass) zari and a little real silver/gold zari",
+ "cluster": "Surat",
+ "chain_group": "surat-textiles",
+ "last_checked": "27 Nov 2026",
+ "audience": "Bank credit officers, South Gujarat",
+ "covers": "This page covers zari thread makers. Zari is an input for weaving (borders, brocades) and embroidery, so it feeds those pages rather than sitting in a straight line.",
+ "snapshot": [
+  {
+   "tag": "reported",
+   "text": "Surat is called India's zari capital: about 55-70% of India's zari production by different sources; about 800 registered units (association) or more than 15,700 units (TOI). Counts differ widely.",
+   "src": [
+    "ians_zari",
+    "toi_zari"
+   ]
+  },
+  {
+   "tag": "reported",
+   "text": "Real silver and gold zari has shrunk as metal prices rose; metallic yarn (from metallised polyester film) and imitation copper/brass zari now make up most output.",
+   "src": [
+    "toi_zari",
+    "ians_zari"
+   ]
+  },
+  {
+   "tag": "reported",
+   "text": "Surat zari has a Geographical Indication (GI) tag, received in Nov 2010 (as reported by IANS).",
+   "src": [
+    "ians_zari"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "what",
+   "title": "What it is",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Zari is decorative metallic thread. It was once made of gold and silver; today most is copper or brass wire electroplated to look like gold or silver, or metallic yarn made from metallised polyester film.",
+       "src": [
+        "toi_zari",
+        "ians_zari"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sub",
+   "title": "Sub-segments, and which one this page covers",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Segment",
+      "What it is",
+      "Share reported",
+      "This page?"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Metallic yarn zari",
+        "Metallised polyester film thread",
+        "About 50% (one industry CEO); about 80% with imitation (association)",
+        "YES"
+       ],
+       "tag": "reported",
+       "src": [
+        "toi_zari",
+        "ians_zari"
+       ]
+      },
+      {
+       "cells": [
+        "Imitation zari",
+        "Copper or brass wire, electroplated",
+        "About 40%",
+        "YES"
+       ],
+       "tag": "reported",
+       "src": [
+        "toi_zari"
+       ]
+      },
+      {
+       "cells": [
+        "Real silver / gold zari",
+        "Precious-metal thread",
+        "Under 10% silver; gold only on special order",
+        "YES"
+       ],
+       "tag": "reported",
+       "src": [
+        "toi_zari"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chain",
+   "title": "Where it sits in the value chain",
+   "blocks": [
+    {
+     "type": "chain",
+     "stages": [
+      {
+       "label": "Copper / brass wire, polyester film, silver",
+       "sub": "Inputs"
+      },
+      {
+       "label": "Zari makers",
+       "sub": "Thread",
+       "here": true
+      },
+      {
+       "label": "Weavers and embroidery units",
+       "sub": "Sarees, brocade, embroidery"
+      },
+      {
+       "label": "Traders",
+       "sub": "Sell finished goods"
+      }
+     ],
+     "tag": "inference",
+     "src": [
+      "toi_zari"
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Handloom weavers in other states (Banarasi, Kanjivaram) use Surat-made threads.",
+       "src": [
+        "ians_zari"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "process",
+   "title": "What the unit actually does",
+   "blocks": [
+    {
+     "type": "steps",
+     "tag": "inference",
+     "note": "General description. Confirm on a site visit.",
+     "steps": [
+      {
+       "t": "Wire or film",
+       "d": "Copper/brass wire is drawn and flattened, or polyester film is metallised and slit."
+      },
+      {
+       "t": "Wrapping",
+       "d": "Flattened wire or film is wrapped around a core thread."
+      },
+      {
+       "t": "Plating and colouring",
+       "d": "Imitation zari is electroplated to a gold or silver look."
+      },
+      {
+       "t": "Reeling and packing",
+       "d": "Thread wound on reels for weavers and embroiderers."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "raw",
+   "title": "Raw materials and prices",
+   "blocks": [
+    {
+     "type": "prices",
+     "title": "Raw material and sale prices",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "rows": [
+      {
+       "item": "Gold (for real zari)",
+       "price": "Rs 1,48,465",
+       "unit": "per 10 g",
+       "date": "Mar 2026",
+       "trend": "up",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "toi_zari"
+       ]
+      },
+      {
+       "item": "Copper / brass wire",
+       "price": "No public price used",
+       "unit": "",
+       "date": "",
+       "trend": "",
+       "kind": "input",
+       "tag": "unknown"
+      },
+      {
+       "item": "Metallic yarn zari (sale price)",
+       "price": "About Rs 300",
+       "unit": "per kg",
+       "date": "Mar 2026",
+       "trend": "",
+       "kind": "output",
+       "tag": "reported",
+       "src": [
+        "toi_zari"
+       ]
+      },
+      {
+       "item": "Imitation (copper/brass) zari (sale price)",
+       "price": "About Rs 2,500",
+       "unit": "per kg",
+       "date": "Mar 2026",
+       "trend": "",
+       "kind": "output",
+       "tag": "reported",
+       "src": [
+        "toi_zari"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Surat produces more than 600 tonnes a month of copper and brass zari wire (one industry CEO).",
+       "src": [
+        "toi_zari"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bottle",
+   "title": "Bottlenecks",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Pollution and licences",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "CPCB's White list includes zari work done by hand.",
+       "src": [
+        "cpcb25"
+       ]
+      },
+      {
+       "tag": "inference",
+       "text": "Electroplating is a chemical process and is likely treated differently from hand zari work. Ask for the GPCB consent; the category was not confirmed."
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Labour",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "About 1,05,000 artisans are directly employed and 50,000 indirectly; many are migrants from Bihar earning Rs 7,000-9,000 a month, often seasonally.",
+       "src": [
+        "toi_zari"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sales",
+   "title": "Sales: who buys, how, and credit periods",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Buyers are weavers and embroiderers, in Surat and in handloom centres in other states.",
+       "src": [
+        "ians_zari"
+       ]
+      },
+      {
+       "tag": "unknown",
+       "text": "Credit terms and buyer concentration: no public figure."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "econ",
+   "title": "Unit economics",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "No verified public margin or working-capital figure exists for Surat zari units."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Item",
+      "What we know",
+      "Status"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Turnover of the segment",
+        "About Rs 800-900 crore a year (association)",
+        "Reported"
+       ],
+       "tag": "reported",
+       "src": [
+        "ians_zari"
+       ]
+      },
+      {
+       "cells": [
+        "Operating margin",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Working-capital cycle",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Metal stock and price-risk policy",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fragile",
+   "title": "Fragility points and early warning signs for a lender",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Where this business breaks",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Metal price swings: gold rose from Rs 42,758 (2021) to Rs 1,48,465 per 10 g (Mar 2026), pushing real zari to a niche.",
+       "src": [
+        "toi_zari"
+       ]
+      },
+      {
+       "tag": "inference",
+       "text": "Inventory of copper or silver can lose value quickly; check how much metal stock the unit carries and whether it is hedged."
+      },
+      {
+       "tag": "inference",
+       "text": "Demand depends on the wedding and festival season for sarees and lehengas."
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Early warning signs (checklist)",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Cheque returns or frequent overdraws; cash credit used near the limit all month."
+      },
+      {
+       "tag": "inference",
+       "text": "Electricity units falling month on month, or a shift stopped, without a matching fall in loan outstanding."
+      },
+      {
+       "tag": "inference",
+       "text": "Creditor days stretching; suppliers charging late-payment interest; purchases switched to cash from new sources."
+      },
+      {
+       "tag": "inference",
+       "text": "Stock or receivables building up; sales concentrated on one or two parties or brokers."
+      },
+      {
+       "tag": "inference",
+       "text": "Wages paid late or labour leaving; regular weekly closures."
+      },
+      {
+       "tag": "inference",
+       "text": "New borrowing from private lenders or related parties; machines rented out or sold."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "ians_zari",
+   "label": "Mango festival, Zari industry to feature at Vibrant Gujarat Regional Conference in Surat",
+   "publisher": "IANS",
+   "date": "29 Apr 2026",
+   "url": "https://ianslive.in/mango-festival-zari-industry-to-feature-at-vibrant-gujarat-regional-conference-in-surat--20260429162549"
+  },
+  {
+   "id": "toi_zari",
+   "label": "Zari loses its silver lining as precious metals zoom",
+   "publisher": "Times of India",
+   "date": "18 Mar 2026",
+   "url": "https://timesofindia.indiatimes.com/times-special/zari-loses-its-silver-lining-as-precious-metals-zoom/articleshow/129646869.cms"
+  },
+  {
+   "id": "cpcb25",
+   "label": "CPCB Red/Orange/Green/White categorisation 2025 (explainer with lists)",
+   "publisher": "QHSE Alert (copy of CPCB lists)",
+   "date": "2025",
+   "url": "https://legalupdate.qhsealert.com/file/316_CPCB_Industry_Categorization_Red_to_White_Explained.pdf"
+  }
+ ]
+}

@@ -1,0 +1,460 @@
+{
+ "slug": "surat-garmenting",
+ "title": "Garmenting (ready-made garments)",
+ "subtitle": "A newer, growing segment turning Surat fabric into garments",
+ "cluster": "Surat",
+ "chain_group": "surat-textiles",
+ "last_checked": "27 Nov 2026",
+ "audience": "Bank credit officers, South Gujarat",
+ "covers": "This page covers ready-made garment units in Surat. It is a newer segment than weaving or processing, so public data is thin.",
+ "snapshot": [
+  {
+   "tag": "reported",
+   "text": "Surat's garment sector was reported at about 1 crore garments a month and about Rs 600 crore monthly turnover, mainly man-made fibre and denim (Nov 2025).",
+   "src": [
+    "ar_garment"
+   ]
+  },
+  {
+   "tag": "reported",
+   "text": "A Surat manufacturer said garments offer better value and timely payments compared with fabric, where payment delays are an issue.",
+   "src": [
+    "ar_garment"
+   ]
+  },
+  {
+   "tag": "fact",
+   "text": "Gujarat Textile Policy 2024 gives garments its highest support ('Activity 1'): capital subsidy up to 35% and payroll assistance of Rs 4,000-5,000 per worker a month for Gujarat-domicile EPF workers.",
+   "src": [
+    "gtp"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "what",
+   "title": "What it is",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "A garment unit cuts and stitches fabric into finished clothing, adds trims and packs it for brands, retailers or wholesale buyers."
+      },
+      {
+       "tag": "reported",
+       "text": "New garment hubs: Hojiwala, Sachin, Pandesara and especially the BRC Industrial Estate in Udhna.",
+       "src": [
+        "ar_garment"
+       ]
+      },
+      {
+       "tag": "fact",
+       "text": "An ISID study (Mar 2026) notes emerging garment manufacturing as one of the forces slowly formalising Surat's largely informal cluster.",
+       "src": [
+        "isid"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sub",
+   "title": "Sub-segments, and which one this page covers",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Segment",
+      "What it does",
+      "This page?"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Woven garments",
+        "Shirts, kurtis, westernwear",
+        "YES"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "Knitted garments",
+        "T-shirts, activewear",
+        "YES"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "Sarees and dress material",
+        "Fabric products, not stitched",
+        "No - traders / processing"
+       ],
+       "tag": "inference"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chain",
+   "title": "Where it sits in the value chain",
+   "blocks": [
+    {
+     "type": "chain",
+     "stages": [
+      {
+       "label": "Yarn makers",
+       "sub": "POY / FDY from PTA + MEG"
+      },
+      {
+       "label": "Texturisers and twisters",
+       "sub": "DTY, twisted yarn"
+      },
+      {
+       "label": "Weavers",
+       "sub": "Grey fabric"
+      },
+      {
+       "label": "Process houses",
+       "sub": "Dyeing and printing (job-work)"
+      },
+      {
+       "label": "Embroidery units",
+       "sub": "Value addition (job-work)"
+      },
+      {
+       "label": "Garment makers",
+       "sub": "Ready garments",
+       "here": true
+      },
+      {
+       "label": "Traders",
+       "sub": "Buy, coordinate and sell across India"
+      }
+     ],
+     "tag": "inference",
+     "src": [
+      "ar_garment"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "process",
+   "title": "What the unit actually does",
+   "blocks": [
+    {
+     "type": "steps",
+     "tag": "inference",
+     "note": "General garment flow. Confirm on a site visit.",
+     "steps": [
+      {
+       "t": "Fabric sourcing",
+       "d": "Buy processed fabric or knit fabric; check shade and quality."
+      },
+      {
+       "t": "Cutting",
+       "d": "Lay, mark and cut panels."
+      },
+      {
+       "t": "Stitching",
+       "d": "Sewing lines stitch panels; embroidery or printing may be added."
+      },
+      {
+       "t": "Finishing and packing",
+       "d": "Checking, ironing, tagging and packing per buyer order."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "raw",
+   "title": "Raw materials and prices",
+   "blocks": [
+    {
+     "type": "prices",
+     "title": "Raw material and sale prices",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "rows": [
+      {
+       "item": "Processed fabric (main input)",
+       "price": "No reliable public price",
+       "unit": "per metre",
+       "date": "",
+       "trend": "",
+       "kind": "input",
+       "tag": "unknown"
+      },
+      {
+       "item": "Trims and accessories",
+       "price": "No public price",
+       "unit": "",
+       "date": "",
+       "trend": "",
+       "kind": "input",
+       "tag": "unknown"
+      },
+      {
+       "item": "Garments (sale price)",
+       "price": "No public price; depends on buyer and product",
+       "unit": "per piece",
+       "date": "",
+       "trend": "",
+       "kind": "output",
+       "tag": "unknown"
+      }
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Public fabric quotes exist only for grey fabric (see the weaving page). Garment makers buy finished fabric, so use the customer's purchase bills."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bottle",
+   "title": "Bottlenecks",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Licences and compliance",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Brands and organised retailers often ask for social-compliance audits; ask which audits the unit holds. Pollution category depends on whether the unit washes, dyes or prints; plain cut-and-sew is usually low-polluting, but confirm with GPCB papers."
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Labour and power",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "Payroll assistance under Gujarat Textile Policy 2024 applies only to Gujarat-domicile workers registered under EPF.",
+       "src": [
+        "gtp"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Labour is largely migrant. About 30% of migrant workers reportedly did not return after the 2024 election and wedding season, and some units stopped night shifts.",
+       "src": [
+        "desh_lab"
+       ]
+      },
+      {
+       "tag": "fact",
+       "text": "Power: GERC's FY2025-26 DGVCL tariff schedule lists the Non-RGP rate (loads up to 40 kW) at 435 paise a unit up to 10 kW and 465 paise above 10 kW, plus fixed charges and 45 paise extra in peak hours. Larger loads fall in other categories. A new FY2026-27 order was issued on 25 Mar 2026, so confirm current rates from the customer's bills.",
+       "src": [
+        "gerc_sched",
+        "gerc_orders"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sales",
+   "title": "Sales: who buys, how, and credit periods",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Buyers mentioned by Surat makers: Tier-2 and Tier-3 domestic brands placing large repeat orders, online and organised retailers.",
+       "src": [
+        "ar_garment"
+       ]
+      },
+      {
+       "tag": "unknown",
+       "text": "Payment terms from brands and retailers, and dependence on one buyer: collect from the customer."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "econ",
+   "title": "Unit economics",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "No verified public margin or working-capital figure exists for Surat garment units."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Item",
+      "What we know",
+      "Status"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Segment size",
+        "About 1 crore garments a month, about Rs 600 crore a month (Nov 2025)",
+        "Reported"
+       ],
+       "tag": "reported",
+       "src": [
+        "ar_garment"
+       ]
+      },
+      {
+       "cells": [
+        "Operating margin",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Working-capital cycle",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Capacity use",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "State incentives (Activity 1)",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "Capital subsidy 35% / 30% / 20% of eligible investment (caps Rs 100 / 100 / 50 crore) by taluka category; interest subsidy 7% for 8 years (5% for 6 years in Category 3); Rs 1/unit power subsidy for 5 years; payroll assistance Rs 5,000 per female and Rs 4,000 per male worker a month for 5 years.",
+       "src": [
+        "gtp"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fragile",
+   "title": "Fragility points and early warning signs for a lender",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Where this business breaks",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Buyer concentration: one large brand order can be most of the business; a lost order hits hard."
+      },
+      {
+       "tag": "inference",
+       "text": "Fashion and returns risk: unsold or rejected goods. Ask about rejection and return rates."
+      },
+      {
+       "tag": "inference",
+       "text": "Subsidy-led investment: projects that only work with subsidy are fragile if the subsidy is delayed. Do not count unsanctioned subsidy as income."
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Early warning signs (checklist)",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Cheque returns or frequent overdraws; cash credit used near the limit all month."
+      },
+      {
+       "tag": "inference",
+       "text": "Electricity units falling month on month, or a shift stopped, without a matching fall in loan outstanding."
+      },
+      {
+       "tag": "inference",
+       "text": "Creditor days stretching; suppliers charging late-payment interest; purchases switched to cash from new sources."
+      },
+      {
+       "tag": "inference",
+       "text": "Stock or receivables building up; sales concentrated on one or two parties or brokers."
+      },
+      {
+       "tag": "inference",
+       "text": "Wages paid late or labour leaving; regular weekly closures."
+      },
+      {
+       "tag": "inference",
+       "text": "New borrowing from private lenders or related parties; machines rented out or sold."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "ar_garment",
+   "label": "Amidst global uncertainty, India's manufacturers find their growth engine at home (Surat garment section)",
+   "publisher": "Apparel Resources",
+   "date": "1 Nov 2025",
+   "url": "https://in.apparelresources.com/business-news/manufacturing/amidst-global-uncertainty-indias-manufacturers-find-their-growth-engine-at-home/"
+  },
+  {
+   "id": "gtp",
+   "label": "Gujarat Textile Policy 2024 (policy summary PDF hosted by a subsidy consultant; confirm against the Industries Commissionerate resolution)",
+   "publisher": "Government of Gujarat policy, via MAC Ancillary Services",
+   "date": "Oct 2024",
+   "url": "https://www.macancillary.com/policies/gujarat/GUJARAT_TEXTILE_POLICY__2024.pdf"
+  },
+  {
+   "id": "isid",
+   "label": "Informality and the dynamics of continuity and change: a cluster study of MMF and apparel industry in Surat (Working Paper 310)",
+   "publisher": "Institute for Studies in Industrial Development (ISID)",
+   "date": "Mar 2026",
+   "url": "https://isid.org.in/wp-content/uploads/2026/06/WP310a.pdf"
+  },
+  {
+   "id": "desh_lab",
+   "label": "Shortage of migrant labourers hit Surat textile industry",
+   "publisher": "DeshGujarat",
+   "date": "15 Jun 2024",
+   "url": "https://deshgujarat.com/2024/06/15/shortage-of-migrant-labourers-hit-surat-textile-industry/"
+  },
+  {
+   "id": "gerc_sched",
+   "label": "Tariff schedule of DGVCL, MGVCL, PGVCL and UGVCL, effective 1 Apr 2025",
+   "publisher": "Gujarat Electricity Regulatory Commission",
+   "date": "1 Apr 2025",
+   "url": "https://gercin.org/wp-content/uploads/2025/04/Tariff-Schedule-of-DGVCL-MGVCL-PGVCL-UGVCL-w.e.f.-01.04.2025.pdf",
+   "note": "GERC website was slow or blocked when we tried to open it on 27 Nov 2026; the figures were read from the document via search. Open the link and confirm."
+  },
+  {
+   "id": "gerc_orders",
+   "label": "GERC tariff orders page (DGVCL order for FY2026-27, Case 2581/2025, 25 Mar 2026)",
+   "publisher": "Gujarat Electricity Regulatory Commission",
+   "date": "25 Mar 2026",
+   "url": "https://gercin.org/order-category/tariff-orders/",
+   "note": "GERC website was slow or blocked when we tried to open it on 27 Nov 2026; the figures were read from the document via search. Open the link and confirm."
+  }
+ ]
+}

@@ -1,0 +1,531 @@
+{
+ "slug": "surat-textile-trading",
+ "title": "Textile traders and brokers",
+ "subtitle": "Merchants who buy grey fabric, get it processed, and sell across India",
+ "cluster": "Surat",
+ "chain_group": "surat-textiles",
+ "last_checked": "27 Nov 2026",
+ "audience": "Bank credit officers, South Gujarat",
+ "covers": "This page covers Surat textile traders (merchant-manufacturers and wholesalers) and the brokers who connect them. Traders coordinate the whole chain but usually own no looms or process houses.",
+ "snapshot": [
+  {
+   "tag": "fact",
+   "text": "An ISID study (Mar 2026) describes traders as the coordinating agents of Surat's fragmented cluster, with small firm size used to spread risk and inventory.",
+   "src": [
+    "isid"
+   ]
+  },
+  {
+   "tag": "reported",
+   "text": "Distributors across India often buy from Surat traders on 180 days' credit and sometimes return unsold goods after the credit period (FOSTTA, Jan 2026).",
+   "src": [
+    "toi_fostta"
+   ]
+  },
+  {
+   "tag": "reported",
+   "text": "Fraud by buyers and brokers led to a proposed textile police station in the Salabatpura market area (Jun 2026).",
+   "src": [
+    "sitex"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "what",
+   "title": "What it is",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "fact",
+       "text": "Weavers sell grey fabric to merchants, who get it processed and sell it in Surat's markets (Textile Commissioner, old profile).",
+       "src": [
+        "txc"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "One 2026 industry source cites about 240 textile markets and over 70,000 traders in Surat; other counts differ.",
+       "src": [
+        "sitex"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sub",
+   "title": "Sub-segments, and which one this page covers",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Segment",
+      "What it does",
+      "This page?"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Grey traders",
+        "Buy grey from weavers",
+        "YES"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "Merchant-manufacturers",
+        "Own the fabric through processing, embroidery; sell finished goods",
+        "YES"
+       ],
+       "tag": "inference"
+      },
+      {
+       "cells": [
+        "Brokers (dalals) and agents",
+        "Connect weavers, traders and outstation buyers; earn commission",
+        "YES"
+       ],
+       "tag": "inference"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chain",
+   "title": "Where it sits in the value chain",
+   "blocks": [
+    {
+     "type": "chain",
+     "stages": [
+      {
+       "label": "Yarn makers",
+       "sub": "POY / FDY from PTA + MEG"
+      },
+      {
+       "label": "Texturisers and twisters",
+       "sub": "DTY, twisted yarn"
+      },
+      {
+       "label": "Weavers",
+       "sub": "Grey fabric"
+      },
+      {
+       "label": "Process houses",
+       "sub": "Dyeing and printing (job-work)"
+      },
+      {
+       "label": "Embroidery units",
+       "sub": "Value addition (job-work)"
+      },
+      {
+       "label": "Garment makers",
+       "sub": "Ready garments"
+      },
+      {
+       "label": "Traders",
+       "sub": "Buy, coordinate and sell across India",
+       "here": true
+      }
+     ],
+     "tag": "inference",
+     "src": [
+      "isid",
+      "txc"
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Traders sit at both ends: they buy from weavers and send fabric to processors and embroiderers on job-work, then sell to wholesalers and retailers in other states."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "process",
+   "title": "What the unit actually does",
+   "blocks": [
+    {
+     "type": "steps",
+     "tag": "inference",
+     "note": "General trading flow. Confirm with the customer.",
+     "steps": [
+      {
+       "t": "Buy grey",
+       "d": "From weavers, often through brokers, on credit."
+      },
+      {
+       "t": "Get it processed",
+       "d": "Send to process house and embroidery units on job-work."
+      },
+      {
+       "t": "Stock and catalogue",
+       "d": "Finished goods held in market shops and godowns."
+      },
+      {
+       "t": "Sell outstation",
+       "d": "To distributors, wholesalers and retailers in other states, often on long credit."
+      },
+      {
+       "t": "Collect",
+       "d": "Collect payments; handle returns of unsold goods."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "raw",
+   "title": "Raw materials and prices",
+   "blocks": [
+    {
+     "type": "prices",
+     "title": "Raw material and sale prices",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "rows": [
+      {
+       "item": "Grey fabric (main purchase)",
+       "price": "About Rs 12.80",
+       "unit": "per metre",
+       "date": "Oct 2026",
+       "trend": "down",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "biz_proc"
+       ]
+      },
+      {
+       "item": "Processing job charge",
+       "price": "About Rs 10-15 + 15% hike",
+       "unit": "per metre",
+       "date": "Sep-Oct 2026",
+       "trend": "up",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "biz_proc",
+        "toi_proc15"
+       ]
+      },
+      {
+       "item": "Embroidery job charge",
+       "price": "About Rs 0.20-0.50 per 1,000 stitches",
+       "unit": "",
+       "date": "2026",
+       "trend": "",
+       "kind": "input",
+       "tag": "reported",
+       "src": [
+        "emb_rate"
+       ]
+      },
+      {
+       "item": "Finished fabric / saree (sale price)",
+       "price": "Example only: a saree that sold for Rs 200 last Diwali could cost about Rs 260 now (market representative)",
+       "unit": "per piece",
+       "date": "Oct 2026",
+       "trend": "up",
+       "kind": "output",
+       "tag": "reported",
+       "src": [
+        "biz_proc"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Overall finished fabric prices rose about 30% in 2026 according to a market representative, and outstation buyers in states such as Tamil Nadu and Karnataka resisted the new rates.",
+       "src": [
+        "biz_proc"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bottle",
+   "title": "Bottlenecks",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Licences",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Ask for GST registration and returns, shop / establishment registration, market shop ownership or lease, and godown details. Trading needs no pollution consent."
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Fraud and recovery",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Trader associations have started naming defaulting distributors on an app and in member groups; weaver associations publish lists of defaulting traders and brokers.",
+       "src": [
+        "toi_fostta",
+        "toi_rjwas"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sales",
+   "title": "Sales: who buys, how, and credit periods",
+   "blocks": [
+    {
+     "type": "items",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Buyers are distributors, wholesalers and retailers across India; many order on 180 days' credit. FOSTTA discussed limiting credit to 70 days and returns to 30 days.",
+       "src": [
+        "toi_fostta"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "On the buying side, weavers say traders take 60-120 days or longer to pay them; weavers resolved in Sep 2026 to cap credit at 30 days.",
+       "src": [
+        "nie_sep",
+        "toi_mahamanthan"
+       ]
+      },
+      {
+       "tag": "unknown",
+       "text": "Customer's debtor ageing, return rates and top outstation buyers: collect from the ledger and GST data."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "econ",
+   "title": "Unit economics",
+   "blocks": [
+    {
+     "type": "note",
+     "text": "No verified public margin or working-capital figure exists for Surat textile traders."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Item",
+      "What we know",
+      "Status"
+     ],
+     "rows": [
+      {
+       "cells": [
+        "Credit given to buyers",
+        "Often 180 days (FOSTTA)",
+        "Reported"
+       ],
+       "tag": "reported",
+       "src": [
+        "toi_fostta"
+       ]
+      },
+      {
+       "cells": [
+        "Credit taken from weavers",
+        "60-120 days reported",
+        "Reported"
+       ],
+       "tag": "reported",
+       "src": [
+        "nie_sep"
+       ]
+      },
+      {
+       "cells": [
+        "Gross margin",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Stock days",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      },
+      {
+       "cells": [
+        "Bad debts and returns as % of sales",
+        "No verified public figure",
+        "Unknown - collect from customer"
+       ],
+       "tag": "unknown"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fragile",
+   "title": "Fragility points and early warning signs for a lender",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Where this business breaks",
+     "items": [
+      {
+       "tag": "reported",
+       "text": "Long receivables plus returns of unsold, out-of-fashion goods after six months.",
+       "src": [
+        "toi_fostta"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Fraud by outstation buyers and brokers.",
+       "src": [
+        "sitex",
+        "toi_rjwas"
+       ]
+      },
+      {
+       "tag": "reported",
+       "text": "Cost pass-through limits: buyers in other states resisted 2026 price rises.",
+       "src": [
+        "biz_proc"
+       ]
+      },
+      {
+       "tag": "inference",
+       "text": "Thin capital: a trader may carry large stock and receivables on borrowed money and supplier credit."
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Early warning signs (checklist)",
+     "items": [
+      {
+       "tag": "inference",
+       "text": "Debtors beyond 180 days rising; frequent goods returns; weavers or processors complaining of delayed payment."
+      },
+      {
+       "tag": "inference",
+       "text": "Cheque returns or frequent overdraws; cash credit used near the limit all month."
+      },
+      {
+       "tag": "inference",
+       "text": "Electricity units falling month on month, or a shift stopped, without a matching fall in loan outstanding."
+      },
+      {
+       "tag": "inference",
+       "text": "Creditor days stretching; suppliers charging late-payment interest; purchases switched to cash from new sources."
+      },
+      {
+       "tag": "inference",
+       "text": "Stock or receivables building up; sales concentrated on one or two parties or brokers."
+      },
+      {
+       "tag": "inference",
+       "text": "Wages paid late or labour leaving; regular weekly closures."
+      },
+      {
+       "tag": "inference",
+       "text": "New borrowing from private lenders or related parties; machines rented out or sold."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "isid",
+   "label": "Informality and the dynamics of continuity and change: a cluster study of MMF and apparel industry in Surat (Working Paper 310)",
+   "publisher": "Institute for Studies in Industrial Development (ISID)",
+   "date": "Mar 2026",
+   "url": "https://isid.org.in/wp-content/uploads/2026/06/WP310a.pdf"
+  },
+  {
+   "id": "toi_fostta",
+   "label": "Payment crisis: FOSTTA to name textile defaulters",
+   "publisher": "Times of India",
+   "date": "10 Jan 2026",
+   "url": "https://timesofindia.indiatimes.com/city/surat/payment-crisis-fostta-to-name-textile-defaulters/articleshow/126441000.cms"
+  },
+  {
+   "id": "sitex",
+   "label": "Surat Textile Cluster: India's Man-Made Textile Powerhouse (cites 2026 SITEX profile)",
+   "publisher": "Textiles Resources (trade site)",
+   "date": "18 Aug 2026",
+   "url": "https://www.textilesresources.com/articles/surat-textile-industry/"
+  },
+  {
+   "id": "txc",
+   "label": "Surat, the Silk City of India (cluster profile, data about 2004-05)",
+   "publisher": "Office of the Textile Commissioner, Ministry of Textiles",
+   "date": "undated (old)",
+   "url": "https://www.txcindia.gov.in/html/D_%20Surat.pdf"
+  },
+  {
+   "id": "biz_proc",
+   "label": "Surat processing charges up 15% (also lists yarn, coal, power, wage and grey prices)",
+   "publisher": "BizTorq (trade news site)",
+   "date": "15 Oct 2026",
+   "url": "https://directory.biztorq.com/news/surat-textile-processing-job-charges-up-15-percent/"
+  },
+  {
+   "id": "toi_proc15",
+   "label": "Textile processors hike job work charges by 15%",
+   "publisher": "Times of India",
+   "date": "28 Aug 2026",
+   "url": "https://timesofindia.indiatimes.com/city/surat/textile-processors-hike-job-work-charges-by-15/articleshow/133576972.cms"
+  },
+  {
+   "id": "emb_rate",
+   "label": "How is computerised multi-head embroidery job work priced in Surat?",
+   "publisher": "Texmandi (trade site FAQ)",
+   "date": "2026",
+   "url": "https://texmandi.com/faq/how-is-computerized-embroidery-job-work-priced-in-surat/"
+  },
+  {
+   "id": "toi_rjwas",
+   "label": "Rapier Jacquard Weavers Association to publish list of defaulters",
+   "publisher": "Times of India",
+   "date": "25 Aug 2024",
+   "url": "https://timesofindia.indiatimes.com/city/surat/rapier-jacquard-weavers-association-to-publish-list-of-defaulters/articleshow/112773255.cms"
+  },
+  {
+   "id": "nie_sep",
+   "label": "Gujarat weavers reel under soaring yarn prices, seek State govt intervention",
+   "publisher": "The New Indian Express",
+   "date": "22 Sep 2026",
+   "url": "https://www.newindianexpress.com/states/gujarat/2026/Sep/22/gujarat-weavers-reel-under-soaring-yarn-prices-seek-state-govt-intervention"
+  },
+  {
+   "id": "toi_mahamanthan",
+   "label": "Weavers seek to mend market threads (Weavers Mahamanthan 2026)",
+   "publisher": "Times of India",
+   "date": "24 Sep 2026",
+   "url": "https://timesofindia.indiatimes.com/city/surat/weavers-seek-to-mend-market-threads/articleshow/134445162.cms"
+  }
+ ]
+}
