@@ -1,0 +1,6567 @@
+{
+ "source": "17-tab bank DPR + CMA model supplied by the owner (sanitised public copy: template_public.xlsx; original borrower inputs removed)",
+ "units_note": "All money in Rs lakh unless unit says otherwise; percent stored as fraction (25% = 0.25); dates as Excel serial.",
+ "blue_input_cells": 563,
+ "total_entries": 566,
+ "entries": [
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C5",
+   "label": "Name of the borrower / entity",
+   "unit": "text",
+   "type": "text",
+   "section": "1A Borrower profile & banking norms",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G5",
+   "label": "Constitution / legal status",
+   "unit": "text",
+   "type": "text",
+   "section": "1A Borrower profile & banking norms",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C6",
+   "label": "Line of business / activity",
+   "unit": "text",
+   "type": "text",
+   "section": "1A Borrower profile & banking norms",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G6",
+   "label": "Plant / unit location",
+   "unit": "text",
+   "type": "text",
+   "section": "1A Borrower profile & banking norms",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C7",
+   "label": "Statutory auditors / CA firm",
+   "unit": "text",
+   "type": "text",
+   "section": "1A Borrower profile & banking norms",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G7",
+   "label": "Last audited / provisional FY (year ending 31 March)",
+   "unit": "year",
+   "type": "integer",
+   "section": "1A Borrower profile & banking norms",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C8",
+   "label": "MPBF assessment method (Tandon 1 or 2)",
+   "unit": "choice",
+   "type": "integer",
+   "section": "1A Borrower profile & banking norms",
+   "allowed": [
+    1,
+    2
+   ],
+   "template_default_kept": true,
+   "default": 1
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G8",
+   "label": "Include TL instalment in current liabilities",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1A Borrower profile & banking norms",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "template_default_kept": true,
+   "default": "Y"
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C9",
+   "label": "Exclude usance LC creditors",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1A Borrower profile & banking norms",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "template_default_kept": true,
+   "default": "Y"
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G9",
+   "label": "Projected income tax rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1A Borrower profile & banking norms",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C10",
+   "label": "Margin % - export receivables",
+   "unit": "%",
+   "type": "percent",
+   "section": "1A Borrower profile & banking norms",
+   "template_default_kept": true,
+   "default": 0.25
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G10",
+   "label": "Margin % - domestic receivables",
+   "unit": "%",
+   "type": "percent",
+   "section": "1A Borrower profile & banking norms",
+   "template_default_kept": true,
+   "default": 0.3
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C11",
+   "label": "Margin % - raw material",
+   "unit": "%",
+   "type": "percent",
+   "section": "1A Borrower profile & banking norms",
+   "template_default_kept": true,
+   "default": 0.25
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B14",
+   "label": "BEP variable share - Raw Materials & Consumables",
+   "unit": "%",
+   "type": "percent",
+   "section": "BEP cost behaviour split",
+   "template_default_kept": true,
+   "default": 1
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B15",
+   "label": "BEP variable share - Power, Fuel, Labour & Mfg. Exp.",
+   "unit": "%",
+   "type": "percent",
+   "section": "BEP cost behaviour split",
+   "template_default_kept": true,
+   "default": 0.95
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B16",
+   "label": "BEP variable share - Selling, Gen. & Admin. (SG&A)",
+   "unit": "%",
+   "type": "percent",
+   "section": "BEP cost behaviour split",
+   "template_default_kept": true,
+   "default": 0.95
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B17",
+   "label": "BEP variable share - Interest on Working Capital & LC/BG Comm.",
+   "unit": "%",
+   "type": "percent",
+   "section": "BEP cost behaviour split",
+   "template_default_kept": true,
+   "default": 0.95
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B18",
+   "label": "BEP variable share - Interest on Term Loans",
+   "unit": "%",
+   "type": "percent",
+   "section": "BEP cost behaviour split",
+   "template_default_kept": true,
+   "default": 0
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A22",
+   "label": "Asset class name (slot 1)",
+   "unit": "text",
+   "type": "text",
+   "section": "1B Existing fixed assets",
+   "group": "asset22",
+   "template_default_kept": true,
+   "default": "Plant & Machinery"
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B22",
+   "label": "Opening WDV at base FY end - slot 1",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1B Existing fixed assets",
+   "group": "asset22",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C22",
+   "label": "WDV depreciation rate - slot 1",
+   "unit": "%",
+   "type": "percent",
+   "section": "1B Existing fixed assets",
+   "group": "asset22",
+   "template_default_kept": true,
+   "default": 0.15
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A23",
+   "label": "Asset class name (slot 2)",
+   "unit": "text",
+   "type": "text",
+   "section": "1B Existing fixed assets",
+   "group": "asset23",
+   "template_default_kept": true,
+   "default": "Construction & Elec."
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B23",
+   "label": "Opening WDV at base FY end - slot 2",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1B Existing fixed assets",
+   "group": "asset23",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C23",
+   "label": "WDV depreciation rate - slot 2",
+   "unit": "%",
+   "type": "percent",
+   "section": "1B Existing fixed assets",
+   "group": "asset23",
+   "template_default_kept": true,
+   "default": 0.35
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A24",
+   "label": "Asset class name (slot 3)",
+   "unit": "text",
+   "type": "text",
+   "section": "1B Existing fixed assets",
+   "group": "asset24",
+   "template_default_kept": true,
+   "default": "Misc. Fixed Assets"
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B24",
+   "label": "Opening WDV at base FY end - slot 3",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1B Existing fixed assets",
+   "group": "asset24",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C24",
+   "label": "WDV depreciation rate - slot 3",
+   "unit": "%",
+   "type": "percent",
+   "section": "1B Existing fixed assets",
+   "group": "asset24",
+   "template_default_kept": true,
+   "default": 0
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A25",
+   "label": "Asset class name (slot 4)",
+   "unit": "text",
+   "type": "text",
+   "section": "1B Existing fixed assets",
+   "group": "asset25",
+   "template_default_kept": true,
+   "default": "Computers & Software"
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B25",
+   "label": "Opening WDV at base FY end - slot 4",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1B Existing fixed assets",
+   "group": "asset25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C25",
+   "label": "WDV depreciation rate - slot 4",
+   "unit": "%",
+   "type": "percent",
+   "section": "1B Existing fixed assets",
+   "group": "asset25",
+   "template_default_kept": true,
+   "default": 0.4
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A26",
+   "label": "Asset class name (slot 5)",
+   "unit": "text",
+   "type": "text",
+   "section": "1B Existing fixed assets",
+   "group": "asset26",
+   "template_default_kept": true,
+   "default": "Furniture & Fixtures"
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B26",
+   "label": "Opening WDV at base FY end - slot 5",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1B Existing fixed assets",
+   "group": "asset26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C26",
+   "label": "WDV depreciation rate - slot 5",
+   "unit": "%",
+   "type": "percent",
+   "section": "1B Existing fixed assets",
+   "group": "asset26",
+   "template_default_kept": true,
+   "default": 0.1
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A27",
+   "label": "Asset class name (slot 6)",
+   "unit": "text",
+   "type": "text",
+   "section": "1B Existing fixed assets",
+   "group": "asset27",
+   "template_default_kept": true,
+   "default": "Vehicles & Transport"
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B27",
+   "label": "Opening WDV at base FY end - slot 6",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1B Existing fixed assets",
+   "group": "asset27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C27",
+   "label": "WDV depreciation rate - slot 6",
+   "unit": "%",
+   "type": "percent",
+   "section": "1B Existing fixed assets",
+   "group": "asset27",
+   "template_default_kept": true,
+   "default": 0.15
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A28",
+   "label": "Asset class name (slot 7)",
+   "unit": "text",
+   "type": "text",
+   "section": "1B Existing fixed assets",
+   "group": "asset28",
+   "template_default_kept": true,
+   "default": "Factory Building / Shed"
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B28",
+   "label": "Opening WDV at base FY end - slot 7",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1B Existing fixed assets",
+   "group": "asset28",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C28",
+   "label": "WDV depreciation rate - slot 7",
+   "unit": "%",
+   "type": "percent",
+   "section": "1B Existing fixed assets",
+   "group": "asset28",
+   "template_default_kept": true,
+   "default": 0.1
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A33",
+   "label": "Capex item 1 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B33",
+   "label": "Capex item 1 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C33",
+   "label": "Capex item 1 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D33",
+   "label": "Capex item 1 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E33",
+   "label": "Capex item 1 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F33",
+   "label": "Capex item 1 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I33",
+   "label": "Capex item 1 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J33",
+   "label": "Capex item 1 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A34",
+   "label": "Capex item 2 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B34",
+   "label": "Capex item 2 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C34",
+   "label": "Capex item 2 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D34",
+   "label": "Capex item 2 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E34",
+   "label": "Capex item 2 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F34",
+   "label": "Capex item 2 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I34",
+   "label": "Capex item 2 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J34",
+   "label": "Capex item 2 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A35",
+   "label": "Capex item 3 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B35",
+   "label": "Capex item 3 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C35",
+   "label": "Capex item 3 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D35",
+   "label": "Capex item 3 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E35",
+   "label": "Capex item 3 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F35",
+   "label": "Capex item 3 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I35",
+   "label": "Capex item 3 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J35",
+   "label": "Capex item 3 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A36",
+   "label": "Capex item 4 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B36",
+   "label": "Capex item 4 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C36",
+   "label": "Capex item 4 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D36",
+   "label": "Capex item 4 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E36",
+   "label": "Capex item 4 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F36",
+   "label": "Capex item 4 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I36",
+   "label": "Capex item 4 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J36",
+   "label": "Capex item 4 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A37",
+   "label": "Capex item 5 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B37",
+   "label": "Capex item 5 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C37",
+   "label": "Capex item 5 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D37",
+   "label": "Capex item 5 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E37",
+   "label": "Capex item 5 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F37",
+   "label": "Capex item 5 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I37",
+   "label": "Capex item 5 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J37",
+   "label": "Capex item 5 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A38",
+   "label": "Capex item 6 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B38",
+   "label": "Capex item 6 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C38",
+   "label": "Capex item 6 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D38",
+   "label": "Capex item 6 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E38",
+   "label": "Capex item 6 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F38",
+   "label": "Capex item 6 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I38",
+   "label": "Capex item 6 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J38",
+   "label": "Capex item 6 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A39",
+   "label": "Capex item 7 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B39",
+   "label": "Capex item 7 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C39",
+   "label": "Capex item 7 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D39",
+   "label": "Capex item 7 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E39",
+   "label": "Capex item 7 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F39",
+   "label": "Capex item 7 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I39",
+   "label": "Capex item 7 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J39",
+   "label": "Capex item 7 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A40",
+   "label": "Capex item 8 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B40",
+   "label": "Capex item 8 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C40",
+   "label": "Capex item 8 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D40",
+   "label": "Capex item 8 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E40",
+   "label": "Capex item 8 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F40",
+   "label": "Capex item 8 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I40",
+   "label": "Capex item 8 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J40",
+   "label": "Capex item 8 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A41",
+   "label": "Capex item 9 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B41",
+   "label": "Capex item 9 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C41",
+   "label": "Capex item 9 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D41",
+   "label": "Capex item 9 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E41",
+   "label": "Capex item 9 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F41",
+   "label": "Capex item 9 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I41",
+   "label": "Capex item 9 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J41",
+   "label": "Capex item 9 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A42",
+   "label": "Capex item 10 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B42",
+   "label": "Capex item 10 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C42",
+   "label": "Capex item 10 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D42",
+   "label": "Capex item 10 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E42",
+   "label": "Capex item 10 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F42",
+   "label": "Capex item 10 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I42",
+   "label": "Capex item 10 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J42",
+   "label": "Capex item 10 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A43",
+   "label": "Capex item 11 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B43",
+   "label": "Capex item 11 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C43",
+   "label": "Capex item 11 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D43",
+   "label": "Capex item 11 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E43",
+   "label": "Capex item 11 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F43",
+   "label": "Capex item 11 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I43",
+   "label": "Capex item 11 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J43",
+   "label": "Capex item 11 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A44",
+   "label": "Capex item 12 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex12",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B44",
+   "label": "Capex item 12 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex12",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C44",
+   "label": "Capex item 12 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex12",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D44",
+   "label": "Capex item 12 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex12",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E44",
+   "label": "Capex item 12 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex12",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F44",
+   "label": "Capex item 12 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex12",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I44",
+   "label": "Capex item 12 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex12",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J44",
+   "label": "Capex item 12 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex12",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A45",
+   "label": "Capex item 13 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex13",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B45",
+   "label": "Capex item 13 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex13",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C45",
+   "label": "Capex item 13 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex13",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D45",
+   "label": "Capex item 13 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex13",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E45",
+   "label": "Capex item 13 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex13",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F45",
+   "label": "Capex item 13 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex13",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I45",
+   "label": "Capex item 13 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex13",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J45",
+   "label": "Capex item 13 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex13",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A46",
+   "label": "Capex item 14 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B46",
+   "label": "Capex item 14 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C46",
+   "label": "Capex item 14 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D46",
+   "label": "Capex item 14 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E46",
+   "label": "Capex item 14 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F46",
+   "label": "Capex item 14 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I46",
+   "label": "Capex item 14 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J46",
+   "label": "Capex item 14 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A47",
+   "label": "Capex item 15 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B47",
+   "label": "Capex item 15 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C47",
+   "label": "Capex item 15 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D47",
+   "label": "Capex item 15 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E47",
+   "label": "Capex item 15 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F47",
+   "label": "Capex item 15 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I47",
+   "label": "Capex item 15 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J47",
+   "label": "Capex item 15 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A48",
+   "label": "Capex item 16 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B48",
+   "label": "Capex item 16 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C48",
+   "label": "Capex item 16 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D48",
+   "label": "Capex item 16 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E48",
+   "label": "Capex item 16 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F48",
+   "label": "Capex item 16 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I48",
+   "label": "Capex item 16 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J48",
+   "label": "Capex item 16 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A49",
+   "label": "Capex item 17 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B49",
+   "label": "Capex item 17 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C49",
+   "label": "Capex item 17 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D49",
+   "label": "Capex item 17 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E49",
+   "label": "Capex item 17 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F49",
+   "label": "Capex item 17 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I49",
+   "label": "Capex item 17 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J49",
+   "label": "Capex item 17 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A50",
+   "label": "Capex item 18 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B50",
+   "label": "Capex item 18 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C50",
+   "label": "Capex item 18 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D50",
+   "label": "Capex item 18 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E50",
+   "label": "Capex item 18 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F50",
+   "label": "Capex item 18 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I50",
+   "label": "Capex item 18 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J50",
+   "label": "Capex item 18 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A51",
+   "label": "Capex item 19 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B51",
+   "label": "Capex item 19 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C51",
+   "label": "Capex item 19 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D51",
+   "label": "Capex item 19 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E51",
+   "label": "Capex item 19 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F51",
+   "label": "Capex item 19 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I51",
+   "label": "Capex item 19 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J51",
+   "label": "Capex item 19 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A52",
+   "label": "Capex item 20 - supplier",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B52",
+   "label": "Capex item 20 - description",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C52",
+   "label": "Capex item 20 - asset class",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Plant & Machinery",
+    "Construction & Elec.",
+    "Misc. Fixed Assets",
+    "Computers & Software",
+    "Furniture & Fixtures",
+    "Vehicles & Transport",
+    "Factory Building / Shed"
+   ],
+   "group": "capex20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D52",
+   "label": "Capex item 20 - base cost (ex-GST)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E52",
+   "label": "Capex item 20 - currency / note",
+   "unit": "text",
+   "type": "text",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F52",
+   "label": "Capex item 20 - GST rate",
+   "unit": "%",
+   "type": "percent",
+   "section": "1C Project cost / capex schedule",
+   "group": "capex20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I52",
+   "label": "Capex item 20 - months put to use in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "capex20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "J52",
+   "label": "Capex item 20 - eligible for bank loan",
+   "unit": "Y/N",
+   "type": "choice",
+   "section": "1C Project cost / capex schedule",
+   "allowed": [
+    "Y",
+    "N"
+   ],
+   "group": "capex20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "C56",
+   "label": "Fresh promoter capital infusion (projection year 1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1D Promoter funds",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G56",
+   "label": "Fresh unsecured loan infusion (projection year 1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1D Promoter funds",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A62",
+   "label": "Facility 1 - type",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "Cash Credit",
+    "Overdraft",
+    "Term Loan",
+    "WCTL / GECL",
+    "Letter of Credit",
+    "Bank Guarantee",
+    "Bill Discounting",
+    "Other"
+   ],
+   "group": "fac1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B62",
+   "label": "Facility 1 - name / description",
+   "unit": "text",
+   "type": "text",
+   "section": "1E Credit facilities",
+   "group": "fac1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D62",
+   "label": "Facility 1 - repayment / servicing basis",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "WC Revolving",
+    "Principal Run-Down",
+    "Level EMI",
+    "Non-Fund Commission"
+   ],
+   "group": "fac1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E62",
+   "label": "Facility 1 - sanctioned / outstanding limit",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1E Credit facilities",
+   "group": "fac1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F62",
+   "label": "Facility 1 - interest / commission rate p.a.",
+   "unit": "%",
+   "type": "percent",
+   "section": "1E Credit facilities",
+   "group": "fac1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G62",
+   "label": "Facility 1 - disbursement / start date",
+   "unit": "date",
+   "type": "date",
+   "section": "1E Credit facilities",
+   "group": "fac1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "H62",
+   "label": "Facility 1 - moratorium",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I62",
+   "label": "Facility 1 - repayment tenor",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "K62",
+   "label": "Facility 1 - active months in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "fac1",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A63",
+   "label": "Facility 2 - type",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "Cash Credit",
+    "Overdraft",
+    "Term Loan",
+    "WCTL / GECL",
+    "Letter of Credit",
+    "Bank Guarantee",
+    "Bill Discounting",
+    "Other"
+   ],
+   "group": "fac2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B63",
+   "label": "Facility 2 - name / description",
+   "unit": "text",
+   "type": "text",
+   "section": "1E Credit facilities",
+   "group": "fac2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D63",
+   "label": "Facility 2 - repayment / servicing basis",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "WC Revolving",
+    "Principal Run-Down",
+    "Level EMI",
+    "Non-Fund Commission"
+   ],
+   "group": "fac2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E63",
+   "label": "Facility 2 - sanctioned / outstanding limit",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1E Credit facilities",
+   "group": "fac2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F63",
+   "label": "Facility 2 - interest / commission rate p.a.",
+   "unit": "%",
+   "type": "percent",
+   "section": "1E Credit facilities",
+   "group": "fac2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G63",
+   "label": "Facility 2 - disbursement / start date",
+   "unit": "date",
+   "type": "date",
+   "section": "1E Credit facilities",
+   "group": "fac2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "H63",
+   "label": "Facility 2 - moratorium",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I63",
+   "label": "Facility 2 - repayment tenor",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "K63",
+   "label": "Facility 2 - active months in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "fac2",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A64",
+   "label": "Facility 3 - type",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "Cash Credit",
+    "Overdraft",
+    "Term Loan",
+    "WCTL / GECL",
+    "Letter of Credit",
+    "Bank Guarantee",
+    "Bill Discounting",
+    "Other"
+   ],
+   "group": "fac3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B64",
+   "label": "Facility 3 - name / description",
+   "unit": "text",
+   "type": "text",
+   "section": "1E Credit facilities",
+   "group": "fac3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D64",
+   "label": "Facility 3 - repayment / servicing basis",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "WC Revolving",
+    "Principal Run-Down",
+    "Level EMI",
+    "Non-Fund Commission"
+   ],
+   "group": "fac3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E64",
+   "label": "Facility 3 - sanctioned / outstanding limit",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1E Credit facilities",
+   "group": "fac3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F64",
+   "label": "Facility 3 - interest / commission rate p.a.",
+   "unit": "%",
+   "type": "percent",
+   "section": "1E Credit facilities",
+   "group": "fac3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G64",
+   "label": "Facility 3 - disbursement / start date",
+   "unit": "date",
+   "type": "date",
+   "section": "1E Credit facilities",
+   "group": "fac3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "H64",
+   "label": "Facility 3 - moratorium",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I64",
+   "label": "Facility 3 - repayment tenor",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "K64",
+   "label": "Facility 3 - active months in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "fac3",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A65",
+   "label": "Facility 4 - type",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "Cash Credit",
+    "Overdraft",
+    "Term Loan",
+    "WCTL / GECL",
+    "Letter of Credit",
+    "Bank Guarantee",
+    "Bill Discounting",
+    "Other"
+   ],
+   "group": "fac4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B65",
+   "label": "Facility 4 - name / description",
+   "unit": "text",
+   "type": "text",
+   "section": "1E Credit facilities",
+   "group": "fac4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D65",
+   "label": "Facility 4 - repayment / servicing basis",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "WC Revolving",
+    "Principal Run-Down",
+    "Level EMI",
+    "Non-Fund Commission"
+   ],
+   "group": "fac4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E65",
+   "label": "Facility 4 - sanctioned / outstanding limit",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1E Credit facilities",
+   "group": "fac4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F65",
+   "label": "Facility 4 - interest / commission rate p.a.",
+   "unit": "%",
+   "type": "percent",
+   "section": "1E Credit facilities",
+   "group": "fac4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G65",
+   "label": "Facility 4 - disbursement / start date",
+   "unit": "date",
+   "type": "date",
+   "section": "1E Credit facilities",
+   "group": "fac4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "H65",
+   "label": "Facility 4 - moratorium",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I65",
+   "label": "Facility 4 - repayment tenor",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "K65",
+   "label": "Facility 4 - active months in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "fac4",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A66",
+   "label": "Facility 5 - type",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "Cash Credit",
+    "Overdraft",
+    "Term Loan",
+    "WCTL / GECL",
+    "Letter of Credit",
+    "Bank Guarantee",
+    "Bill Discounting",
+    "Other"
+   ],
+   "group": "fac5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B66",
+   "label": "Facility 5 - name / description",
+   "unit": "text",
+   "type": "text",
+   "section": "1E Credit facilities",
+   "group": "fac5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D66",
+   "label": "Facility 5 - repayment / servicing basis",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "WC Revolving",
+    "Principal Run-Down",
+    "Level EMI",
+    "Non-Fund Commission"
+   ],
+   "group": "fac5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E66",
+   "label": "Facility 5 - sanctioned / outstanding limit",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1E Credit facilities",
+   "group": "fac5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F66",
+   "label": "Facility 5 - interest / commission rate p.a.",
+   "unit": "%",
+   "type": "percent",
+   "section": "1E Credit facilities",
+   "group": "fac5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G66",
+   "label": "Facility 5 - disbursement / start date",
+   "unit": "date",
+   "type": "date",
+   "section": "1E Credit facilities",
+   "group": "fac5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "H66",
+   "label": "Facility 5 - moratorium",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I66",
+   "label": "Facility 5 - repayment tenor",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "K66",
+   "label": "Facility 5 - active months in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "fac5",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A67",
+   "label": "Facility 6 - type",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "Cash Credit",
+    "Overdraft",
+    "Term Loan",
+    "WCTL / GECL",
+    "Letter of Credit",
+    "Bank Guarantee",
+    "Bill Discounting",
+    "Other"
+   ],
+   "group": "fac6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B67",
+   "label": "Facility 6 - name / description",
+   "unit": "text",
+   "type": "text",
+   "section": "1E Credit facilities",
+   "group": "fac6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D67",
+   "label": "Facility 6 - repayment / servicing basis",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "WC Revolving",
+    "Principal Run-Down",
+    "Level EMI",
+    "Non-Fund Commission"
+   ],
+   "group": "fac6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E67",
+   "label": "Facility 6 - sanctioned / outstanding limit",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1E Credit facilities",
+   "group": "fac6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F67",
+   "label": "Facility 6 - interest / commission rate p.a.",
+   "unit": "%",
+   "type": "percent",
+   "section": "1E Credit facilities",
+   "group": "fac6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G67",
+   "label": "Facility 6 - disbursement / start date",
+   "unit": "date",
+   "type": "date",
+   "section": "1E Credit facilities",
+   "group": "fac6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "H67",
+   "label": "Facility 6 - moratorium",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I67",
+   "label": "Facility 6 - repayment tenor",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "K67",
+   "label": "Facility 6 - active months in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "fac6",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A68",
+   "label": "Facility 7 - type",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "Cash Credit",
+    "Overdraft",
+    "Term Loan",
+    "WCTL / GECL",
+    "Letter of Credit",
+    "Bank Guarantee",
+    "Bill Discounting",
+    "Other"
+   ],
+   "group": "fac7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B68",
+   "label": "Facility 7 - name / description",
+   "unit": "text",
+   "type": "text",
+   "section": "1E Credit facilities",
+   "group": "fac7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D68",
+   "label": "Facility 7 - repayment / servicing basis",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "WC Revolving",
+    "Principal Run-Down",
+    "Level EMI",
+    "Non-Fund Commission"
+   ],
+   "group": "fac7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E68",
+   "label": "Facility 7 - sanctioned / outstanding limit",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1E Credit facilities",
+   "group": "fac7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F68",
+   "label": "Facility 7 - interest / commission rate p.a.",
+   "unit": "%",
+   "type": "percent",
+   "section": "1E Credit facilities",
+   "group": "fac7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G68",
+   "label": "Facility 7 - disbursement / start date",
+   "unit": "date",
+   "type": "date",
+   "section": "1E Credit facilities",
+   "group": "fac7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "H68",
+   "label": "Facility 7 - moratorium",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I68",
+   "label": "Facility 7 - repayment tenor",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "K68",
+   "label": "Facility 7 - active months in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "fac7",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A69",
+   "label": "Facility 8 - type",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "Cash Credit",
+    "Overdraft",
+    "Term Loan",
+    "WCTL / GECL",
+    "Letter of Credit",
+    "Bank Guarantee",
+    "Bill Discounting",
+    "Other"
+   ],
+   "group": "fac8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B69",
+   "label": "Facility 8 - name / description",
+   "unit": "text",
+   "type": "text",
+   "section": "1E Credit facilities",
+   "group": "fac8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D69",
+   "label": "Facility 8 - repayment / servicing basis",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "WC Revolving",
+    "Principal Run-Down",
+    "Level EMI",
+    "Non-Fund Commission"
+   ],
+   "group": "fac8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E69",
+   "label": "Facility 8 - sanctioned / outstanding limit",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1E Credit facilities",
+   "group": "fac8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F69",
+   "label": "Facility 8 - interest / commission rate p.a.",
+   "unit": "%",
+   "type": "percent",
+   "section": "1E Credit facilities",
+   "group": "fac8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G69",
+   "label": "Facility 8 - disbursement / start date",
+   "unit": "date",
+   "type": "date",
+   "section": "1E Credit facilities",
+   "group": "fac8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "H69",
+   "label": "Facility 8 - moratorium",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I69",
+   "label": "Facility 8 - repayment tenor",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "K69",
+   "label": "Facility 8 - active months in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "fac8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A70",
+   "label": "Facility 9 - type",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "Cash Credit",
+    "Overdraft",
+    "Term Loan",
+    "WCTL / GECL",
+    "Letter of Credit",
+    "Bank Guarantee",
+    "Bill Discounting",
+    "Other"
+   ],
+   "group": "fac9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B70",
+   "label": "Facility 9 - name / description",
+   "unit": "text",
+   "type": "text",
+   "section": "1E Credit facilities",
+   "group": "fac9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D70",
+   "label": "Facility 9 - repayment / servicing basis",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "WC Revolving",
+    "Principal Run-Down",
+    "Level EMI",
+    "Non-Fund Commission"
+   ],
+   "group": "fac9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E70",
+   "label": "Facility 9 - sanctioned / outstanding limit",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1E Credit facilities",
+   "group": "fac9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F70",
+   "label": "Facility 9 - interest / commission rate p.a.",
+   "unit": "%",
+   "type": "percent",
+   "section": "1E Credit facilities",
+   "group": "fac9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G70",
+   "label": "Facility 9 - disbursement / start date",
+   "unit": "date",
+   "type": "date",
+   "section": "1E Credit facilities",
+   "group": "fac9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "H70",
+   "label": "Facility 9 - moratorium",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I70",
+   "label": "Facility 9 - repayment tenor",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "K70",
+   "label": "Facility 9 - active months in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "fac9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "A71",
+   "label": "Facility 10 - type",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "Cash Credit",
+    "Overdraft",
+    "Term Loan",
+    "WCTL / GECL",
+    "Letter of Credit",
+    "Bank Guarantee",
+    "Bill Discounting",
+    "Other"
+   ],
+   "group": "fac10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "B71",
+   "label": "Facility 10 - name / description",
+   "unit": "text",
+   "type": "text",
+   "section": "1E Credit facilities",
+   "group": "fac10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "D71",
+   "label": "Facility 10 - repayment / servicing basis",
+   "unit": "choice",
+   "type": "choice",
+   "section": "1E Credit facilities",
+   "allowed": [
+    "WC Revolving",
+    "Principal Run-Down",
+    "Level EMI",
+    "Non-Fund Commission"
+   ],
+   "group": "fac10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "E71",
+   "label": "Facility 10 - sanctioned / outstanding limit",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "1E Credit facilities",
+   "group": "fac10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "F71",
+   "label": "Facility 10 - interest / commission rate p.a.",
+   "unit": "%",
+   "type": "percent",
+   "section": "1E Credit facilities",
+   "group": "fac10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "G71",
+   "label": "Facility 10 - disbursement / start date",
+   "unit": "date",
+   "type": "date",
+   "section": "1E Credit facilities",
+   "group": "fac10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "H71",
+   "label": "Facility 10 - moratorium",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "I71",
+   "label": "Facility 10 - repayment tenor",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "group": "fac10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "3_Project_&_Debt_Setup",
+   "cell": "K71",
+   "label": "Facility 10 - active months in projection year 1",
+   "unit": "months",
+   "type": "integer",
+   "section": "1E Credit facilities",
+   "allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "group": "fac10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B8",
+   "label": "Gross Sales - Domestic (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C8",
+   "label": "Gross Sales - Domestic (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D8",
+   "label": "Gross Sales - Domestic (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B9",
+   "label": "Gross Sales - Export (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C9",
+   "label": "Gross Sales - Export (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D9",
+   "label": "Gross Sales - Export (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B11",
+   "label": "Other Operating Income (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C11",
+   "label": "Other Operating Income (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D11",
+   "label": "Other Operating Income (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B13",
+   "label": "Raw Material Consumed - Imported (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h13",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C13",
+   "label": "Raw Material Consumed - Imported (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h13",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D13",
+   "label": "Raw Material Consumed - Imported (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h13",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B14",
+   "label": "Raw Material Consumed - Indigenous (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C14",
+   "label": "Raw Material Consumed - Indigenous (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D14",
+   "label": "Raw Material Consumed - Indigenous (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B15",
+   "label": "Power & Fuel (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C15",
+   "label": "Power & Fuel (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D15",
+   "label": "Power & Fuel (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B16",
+   "label": "Direct Labour & Wages (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C16",
+   "label": "Direct Labour & Wages (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D16",
+   "label": "Direct Labour & Wages (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B17",
+   "label": "Other Manufacturing Expenses (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C17",
+   "label": "Other Manufacturing Expenses (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D17",
+   "label": "Other Manufacturing Expenses (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B18",
+   "label": "Depreciation (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C18",
+   "label": "Depreciation (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D18",
+   "label": "Depreciation (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B20",
+   "label": "Add: Opening Stock of Finished Goods (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C20",
+   "label": "Add: Opening Stock of Finished Goods (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D20",
+   "label": "Add: Opening Stock of Finished Goods (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B21",
+   "label": "Less: Closing Stock of Finished Goods (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h21",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C21",
+   "label": "Less: Closing Stock of Finished Goods (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h21",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D21",
+   "label": "Less: Closing Stock of Finished Goods (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h21",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B23",
+   "label": "Selling, General & Admin. (SG&A) Exp. (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h23",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C23",
+   "label": "Selling, General & Admin. (SG&A) Exp. (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h23",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D23",
+   "label": "Selling, General & Admin. (SG&A) Exp. (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h23",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B25",
+   "label": "Interest - Working Capital & Bank Charges (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C25",
+   "label": "Interest - Working Capital & Bank Charges (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D25",
+   "label": "Interest - Working Capital & Bank Charges (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B26",
+   "label": "Interest - Term Loans (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C26",
+   "label": "Interest - Term Loans (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D26",
+   "label": "Interest - Term Loans (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B27",
+   "label": "Net Non-Operating Income / (Expense) (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C27",
+   "label": "Net Non-Operating Income / (Expense) (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D27",
+   "label": "Net Non-Operating Income / (Expense) (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B29",
+   "label": "Provision for Tax (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h29",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C29",
+   "label": "Provision for Tax (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h29",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D29",
+   "label": "Provision for Tax (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical P&L",
+   "group": "h29",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B33",
+   "label": "Short-Term Bank Borrowings (CC / OD) (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h33",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C33",
+   "label": "Short-Term Bank Borrowings (CC / OD) (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h33",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D33",
+   "label": "Short-Term Bank Borrowings (CC / OD) (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h33",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B34",
+   "label": "Sundry Creditors for Purchases (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h34",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C34",
+   "label": "Sundry Creditors for Purchases (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h34",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D34",
+   "label": "Sundry Creditors for Purchases (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h34",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B35",
+   "label": "Provision for Tax (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h35",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C35",
+   "label": "Provision for Tax (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h35",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D35",
+   "label": "Provision for Tax (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h35",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B36",
+   "label": "Other Current Liabilities & Provisions (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h36",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C36",
+   "label": "Other Current Liabilities & Provisions (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h36",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D36",
+   "label": "Other Current Liabilities & Provisions (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h36",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B37",
+   "label": "Current Maturities of Term Loans (<12m) (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h37",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C37",
+   "label": "Current Maturities of Term Loans (<12m) (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h37",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D37",
+   "label": "Current Maturities of Term Loans (<12m) (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h37",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B39",
+   "label": "Long-Term Bank Term Loans (>12m) (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h39",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C39",
+   "label": "Long-Term Bank Term Loans (>12m) (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h39",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D39",
+   "label": "Long-Term Bank Term Loans (>12m) (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h39",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B40",
+   "label": "Other Term Liabilities / Unsecured Loans (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h40",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C40",
+   "label": "Other Term Liabilities / Unsecured Loans (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h40",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D40",
+   "label": "Other Term Liabilities / Unsecured Loans (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h40",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B41",
+   "label": "Partners' / Equity Share Capital (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h41",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C41",
+   "label": "Partners' / Equity Share Capital (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h41",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D41",
+   "label": "Partners' / Equity Share Capital (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h41",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B42",
+   "label": "Reserves & Surplus / P&L Balance (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h42",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C42",
+   "label": "Reserves & Surplus / P&L Balance (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h42",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D42",
+   "label": "Reserves & Surplus / P&L Balance (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h42",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B44",
+   "label": "Cash & Bank Balances (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h44",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C44",
+   "label": "Cash & Bank Balances (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h44",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D44",
+   "label": "Cash & Bank Balances (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h44",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B45",
+   "label": "Trade Receivables / Debtors (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h45",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C45",
+   "label": "Trade Receivables / Debtors (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h45",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D45",
+   "label": "Trade Receivables / Debtors (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h45",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B46",
+   "label": "Inventory - Raw Material (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h46",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C46",
+   "label": "Inventory - Raw Material (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h46",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D46",
+   "label": "Inventory - Raw Material (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h46",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B47",
+   "label": "Inventory - Finished Goods (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h47",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C47",
+   "label": "Inventory - Finished Goods (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h47",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D47",
+   "label": "Inventory - Finished Goods (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h47",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B48",
+   "label": "Advance Tax & Other Current Assets (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h48",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C48",
+   "label": "Advance Tax & Other Current Assets (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h48",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D48",
+   "label": "Advance Tax & Other Current Assets (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h48",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B50",
+   "label": "Gross Fixed Assets (Gross Block) (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h50",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C50",
+   "label": "Gross Fixed Assets (Gross Block) (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h50",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D50",
+   "label": "Gross Fixed Assets (Gross Block) (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h50",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B51",
+   "label": "Less: Accumulated Depreciation (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h51",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C51",
+   "label": "Less: Accumulated Depreciation (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h51",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D51",
+   "label": "Less: Accumulated Depreciation (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h51",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B53",
+   "label": "Non-Current Loans, Advances & BG (base FY-2)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h53",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C53",
+   "label": "Non-Current Loans, Advances & BG (base FY-1)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h53",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D53",
+   "label": "Non-Current Loans, Advances & BG (base FY)",
+   "unit": "Rs lakh",
+   "type": "number",
+   "section": "Historical balance sheet",
+   "group": "h53",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "B6",
+   "label": "Audit classification (base FY-2) [grey label cell, not blue]",
+   "unit": "text",
+   "type": "choice",
+   "section": "Historical header",
+   "allowed": [
+    "Audited",
+    "Provisional",
+    "Estimated"
+   ],
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "C6",
+   "label": "Audit classification (base FY-1) [grey label cell, not blue]",
+   "unit": "text",
+   "type": "choice",
+   "section": "Historical header",
+   "allowed": [
+    "Audited",
+    "Provisional",
+    "Estimated"
+   ],
+   "template_default_kept": false
+  },
+  {
+   "sheet": "4_Historical_&_Benchmarks",
+   "cell": "D6",
+   "label": "Audit classification (base FY) [grey label cell, not blue]",
+   "unit": "text",
+   "type": "choice",
+   "section": "Historical header",
+   "allowed": [
+    "Audited",
+    "Provisional",
+    "Estimated"
+   ],
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D8",
+   "label": "Installed Production Capacity (projection year 1)",
+   "unit": "Units",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E8",
+   "label": "Installed Production Capacity (projection year 2)",
+   "unit": "Units",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F8",
+   "label": "Installed Production Capacity (projection year 3)",
+   "unit": "Units",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G8",
+   "label": "Installed Production Capacity (projection year 4)",
+   "unit": "Units",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H8",
+   "label": "Installed Production Capacity (projection year 5)",
+   "unit": "Units",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I8",
+   "label": "Installed Production Capacity (projection year 6)",
+   "unit": "Units",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J8",
+   "label": "Installed Production Capacity (projection year 7)",
+   "unit": "Units",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K8",
+   "label": "Installed Production Capacity (projection year 8)",
+   "unit": "Units",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L8",
+   "label": "Installed Production Capacity (projection year 9)",
+   "unit": "Units",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M8",
+   "label": "Installed Production Capacity (projection year 10)",
+   "unit": "Units",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p8",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D9",
+   "label": "Capacity Utilization (%) (projection year 1)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E9",
+   "label": "Capacity Utilization (%) (projection year 2)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F9",
+   "label": "Capacity Utilization (%) (projection year 3)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G9",
+   "label": "Capacity Utilization (%) (projection year 4)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H9",
+   "label": "Capacity Utilization (%) (projection year 5)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I9",
+   "label": "Capacity Utilization (%) (projection year 6)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J9",
+   "label": "Capacity Utilization (%) (projection year 7)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K9",
+   "label": "Capacity Utilization (%) (projection year 8)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L9",
+   "label": "Capacity Utilization (%) (projection year 9)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M9",
+   "label": "Capacity Utilization (%) (projection year 10)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p9",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D10",
+   "label": "Average Selling Price per Unit (projection year 1)",
+   "unit": "Rs./Unit",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E10",
+   "label": "Average Selling Price per Unit (projection year 2)",
+   "unit": "Rs./Unit",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F10",
+   "label": "Average Selling Price per Unit (projection year 3)",
+   "unit": "Rs./Unit",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G10",
+   "label": "Average Selling Price per Unit (projection year 4)",
+   "unit": "Rs./Unit",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H10",
+   "label": "Average Selling Price per Unit (projection year 5)",
+   "unit": "Rs./Unit",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I10",
+   "label": "Average Selling Price per Unit (projection year 6)",
+   "unit": "Rs./Unit",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J10",
+   "label": "Average Selling Price per Unit (projection year 7)",
+   "unit": "Rs./Unit",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K10",
+   "label": "Average Selling Price per Unit (projection year 8)",
+   "unit": "Rs./Unit",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L10",
+   "label": "Average Selling Price per Unit (projection year 9)",
+   "unit": "Rs./Unit",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M10",
+   "label": "Average Selling Price per Unit (projection year 10)",
+   "unit": "Rs./Unit",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p10",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D11",
+   "label": "Export Share of Gross Sales (%) (projection year 1)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E11",
+   "label": "Export Share of Gross Sales (%) (projection year 2)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F11",
+   "label": "Export Share of Gross Sales (%) (projection year 3)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G11",
+   "label": "Export Share of Gross Sales (%) (projection year 4)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H11",
+   "label": "Export Share of Gross Sales (%) (projection year 5)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I11",
+   "label": "Export Share of Gross Sales (%) (projection year 6)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J11",
+   "label": "Export Share of Gross Sales (%) (projection year 7)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K11",
+   "label": "Export Share of Gross Sales (%) (projection year 8)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L11",
+   "label": "Export Share of Gross Sales (%) (projection year 9)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M11",
+   "label": "Export Share of Gross Sales (%) (projection year 10)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p11",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D14",
+   "label": "Raw Material Cost (% of Net Sales) (projection year 1)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E14",
+   "label": "Raw Material Cost (% of Net Sales) (projection year 2)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F14",
+   "label": "Raw Material Cost (% of Net Sales) (projection year 3)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G14",
+   "label": "Raw Material Cost (% of Net Sales) (projection year 4)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H14",
+   "label": "Raw Material Cost (% of Net Sales) (projection year 5)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I14",
+   "label": "Raw Material Cost (% of Net Sales) (projection year 6)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J14",
+   "label": "Raw Material Cost (% of Net Sales) (projection year 7)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K14",
+   "label": "Raw Material Cost (% of Net Sales) (projection year 8)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L14",
+   "label": "Raw Material Cost (% of Net Sales) (projection year 9)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M14",
+   "label": "Raw Material Cost (% of Net Sales) (projection year 10)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p14",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D15",
+   "label": "Imported Share of Raw Material (%) (projection year 1)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E15",
+   "label": "Imported Share of Raw Material (%) (projection year 2)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F15",
+   "label": "Imported Share of Raw Material (%) (projection year 3)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G15",
+   "label": "Imported Share of Raw Material (%) (projection year 4)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H15",
+   "label": "Imported Share of Raw Material (%) (projection year 5)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I15",
+   "label": "Imported Share of Raw Material (%) (projection year 6)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J15",
+   "label": "Imported Share of Raw Material (%) (projection year 7)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K15",
+   "label": "Imported Share of Raw Material (%) (projection year 8)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L15",
+   "label": "Imported Share of Raw Material (%) (projection year 9)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M15",
+   "label": "Imported Share of Raw Material (%) (projection year 10)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p15",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D16",
+   "label": "Power & Fuel Cost (% of Net Sales) (projection year 1)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E16",
+   "label": "Power & Fuel Cost (% of Net Sales) (projection year 2)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F16",
+   "label": "Power & Fuel Cost (% of Net Sales) (projection year 3)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G16",
+   "label": "Power & Fuel Cost (% of Net Sales) (projection year 4)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H16",
+   "label": "Power & Fuel Cost (% of Net Sales) (projection year 5)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I16",
+   "label": "Power & Fuel Cost (% of Net Sales) (projection year 6)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J16",
+   "label": "Power & Fuel Cost (% of Net Sales) (projection year 7)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K16",
+   "label": "Power & Fuel Cost (% of Net Sales) (projection year 8)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L16",
+   "label": "Power & Fuel Cost (% of Net Sales) (projection year 9)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M16",
+   "label": "Power & Fuel Cost (% of Net Sales) (projection year 10)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p16",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D17",
+   "label": "Workers & Staff Headcount (projection year 1)",
+   "unit": "Nos.",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E17",
+   "label": "Workers & Staff Headcount (projection year 2)",
+   "unit": "Nos.",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F17",
+   "label": "Workers & Staff Headcount (projection year 3)",
+   "unit": "Nos.",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G17",
+   "label": "Workers & Staff Headcount (projection year 4)",
+   "unit": "Nos.",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H17",
+   "label": "Workers & Staff Headcount (projection year 5)",
+   "unit": "Nos.",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I17",
+   "label": "Workers & Staff Headcount (projection year 6)",
+   "unit": "Nos.",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J17",
+   "label": "Workers & Staff Headcount (projection year 7)",
+   "unit": "Nos.",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K17",
+   "label": "Workers & Staff Headcount (projection year 8)",
+   "unit": "Nos.",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L17",
+   "label": "Workers & Staff Headcount (projection year 9)",
+   "unit": "Nos.",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M17",
+   "label": "Workers & Staff Headcount (projection year 10)",
+   "unit": "Nos.",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p17",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D18",
+   "label": "Annual Working Days (projection year 1)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E18",
+   "label": "Annual Working Days (projection year 2)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F18",
+   "label": "Annual Working Days (projection year 3)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G18",
+   "label": "Annual Working Days (projection year 4)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H18",
+   "label": "Annual Working Days (projection year 5)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I18",
+   "label": "Annual Working Days (projection year 6)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J18",
+   "label": "Annual Working Days (projection year 7)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K18",
+   "label": "Annual Working Days (projection year 8)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L18",
+   "label": "Annual Working Days (projection year 9)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M18",
+   "label": "Annual Working Days (projection year 10)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p18",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D19",
+   "label": "Average Daily Wage per Worker (projection year 1)",
+   "unit": "Rs./Day",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E19",
+   "label": "Average Daily Wage per Worker (projection year 2)",
+   "unit": "Rs./Day",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F19",
+   "label": "Average Daily Wage per Worker (projection year 3)",
+   "unit": "Rs./Day",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G19",
+   "label": "Average Daily Wage per Worker (projection year 4)",
+   "unit": "Rs./Day",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H19",
+   "label": "Average Daily Wage per Worker (projection year 5)",
+   "unit": "Rs./Day",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I19",
+   "label": "Average Daily Wage per Worker (projection year 6)",
+   "unit": "Rs./Day",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J19",
+   "label": "Average Daily Wage per Worker (projection year 7)",
+   "unit": "Rs./Day",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K19",
+   "label": "Average Daily Wage per Worker (projection year 8)",
+   "unit": "Rs./Day",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L19",
+   "label": "Average Daily Wage per Worker (projection year 9)",
+   "unit": "Rs./Day",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M19",
+   "label": "Average Daily Wage per Worker (projection year 10)",
+   "unit": "Rs./Day",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p19",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D20",
+   "label": "Other Manufacturing Expenses (% of Net Sales) (projection year 1)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E20",
+   "label": "Other Manufacturing Expenses (% of Net Sales) (projection year 2)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F20",
+   "label": "Other Manufacturing Expenses (% of Net Sales) (projection year 3)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G20",
+   "label": "Other Manufacturing Expenses (% of Net Sales) (projection year 4)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H20",
+   "label": "Other Manufacturing Expenses (% of Net Sales) (projection year 5)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I20",
+   "label": "Other Manufacturing Expenses (% of Net Sales) (projection year 6)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J20",
+   "label": "Other Manufacturing Expenses (% of Net Sales) (projection year 7)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K20",
+   "label": "Other Manufacturing Expenses (% of Net Sales) (projection year 8)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L20",
+   "label": "Other Manufacturing Expenses (% of Net Sales) (projection year 9)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M20",
+   "label": "Other Manufacturing Expenses (% of Net Sales) (projection year 10)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p20",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D21",
+   "label": "Selling, Gen. & Admin. Expenses (% of Net Sales) (projection year 1)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p21",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E21",
+   "label": "Selling, Gen. & Admin. Expenses (% of Net Sales) (projection year 2)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p21",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F21",
+   "label": "Selling, Gen. & Admin. Expenses (% of Net Sales) (projection year 3)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p21",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G21",
+   "label": "Selling, Gen. & Admin. Expenses (% of Net Sales) (projection year 4)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p21",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H21",
+   "label": "Selling, Gen. & Admin. Expenses (% of Net Sales) (projection year 5)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p21",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I21",
+   "label": "Selling, Gen. & Admin. Expenses (% of Net Sales) (projection year 6)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p21",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J21",
+   "label": "Selling, Gen. & Admin. Expenses (% of Net Sales) (projection year 7)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p21",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K21",
+   "label": "Selling, Gen. & Admin. Expenses (% of Net Sales) (projection year 8)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p21",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L21",
+   "label": "Selling, Gen. & Admin. Expenses (% of Net Sales) (projection year 9)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p21",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M21",
+   "label": "Selling, Gen. & Admin. Expenses (% of Net Sales) (projection year 10)",
+   "unit": "%",
+   "type": "percent",
+   "section": "Projection assumptions",
+   "group": "p21",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D24",
+   "label": "Raw Material Holding Period (projection year 1)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p24",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E24",
+   "label": "Raw Material Holding Period (projection year 2)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p24",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F24",
+   "label": "Raw Material Holding Period (projection year 3)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p24",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G24",
+   "label": "Raw Material Holding Period (projection year 4)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p24",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H24",
+   "label": "Raw Material Holding Period (projection year 5)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p24",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I24",
+   "label": "Raw Material Holding Period (projection year 6)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p24",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J24",
+   "label": "Raw Material Holding Period (projection year 7)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p24",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K24",
+   "label": "Raw Material Holding Period (projection year 8)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p24",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L24",
+   "label": "Raw Material Holding Period (projection year 9)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p24",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M24",
+   "label": "Raw Material Holding Period (projection year 10)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p24",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D25",
+   "label": "Finished Goods Holding Period (projection year 1)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E25",
+   "label": "Finished Goods Holding Period (projection year 2)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F25",
+   "label": "Finished Goods Holding Period (projection year 3)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G25",
+   "label": "Finished Goods Holding Period (projection year 4)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H25",
+   "label": "Finished Goods Holding Period (projection year 5)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I25",
+   "label": "Finished Goods Holding Period (projection year 6)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J25",
+   "label": "Finished Goods Holding Period (projection year 7)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K25",
+   "label": "Finished Goods Holding Period (projection year 8)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L25",
+   "label": "Finished Goods Holding Period (projection year 9)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M25",
+   "label": "Finished Goods Holding Period (projection year 10)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p25",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D26",
+   "label": "Domestic Receivables Collection Period (projection year 1)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E26",
+   "label": "Domestic Receivables Collection Period (projection year 2)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F26",
+   "label": "Domestic Receivables Collection Period (projection year 3)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G26",
+   "label": "Domestic Receivables Collection Period (projection year 4)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H26",
+   "label": "Domestic Receivables Collection Period (projection year 5)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I26",
+   "label": "Domestic Receivables Collection Period (projection year 6)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J26",
+   "label": "Domestic Receivables Collection Period (projection year 7)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K26",
+   "label": "Domestic Receivables Collection Period (projection year 8)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L26",
+   "label": "Domestic Receivables Collection Period (projection year 9)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M26",
+   "label": "Domestic Receivables Collection Period (projection year 10)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p26",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D27",
+   "label": "Trade Creditors Payment Period (projection year 1)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E27",
+   "label": "Trade Creditors Payment Period (projection year 2)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F27",
+   "label": "Trade Creditors Payment Period (projection year 3)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G27",
+   "label": "Trade Creditors Payment Period (projection year 4)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H27",
+   "label": "Trade Creditors Payment Period (projection year 5)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I27",
+   "label": "Trade Creditors Payment Period (projection year 6)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J27",
+   "label": "Trade Creditors Payment Period (projection year 7)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K27",
+   "label": "Trade Creditors Payment Period (projection year 8)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L27",
+   "label": "Trade Creditors Payment Period (projection year 9)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M27",
+   "label": "Trade Creditors Payment Period (projection year 10)",
+   "unit": "Days",
+   "type": "integer",
+   "section": "Projection assumptions",
+   "group": "p27",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "D28",
+   "label": "Other Non-Current Assets / BG Margin (projection year 1)",
+   "unit": "Rs. Lakhs",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p28",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "E28",
+   "label": "Other Non-Current Assets / BG Margin (projection year 2)",
+   "unit": "Rs. Lakhs",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p28",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "F28",
+   "label": "Other Non-Current Assets / BG Margin (projection year 3)",
+   "unit": "Rs. Lakhs",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p28",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "G28",
+   "label": "Other Non-Current Assets / BG Margin (projection year 4)",
+   "unit": "Rs. Lakhs",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p28",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "H28",
+   "label": "Other Non-Current Assets / BG Margin (projection year 5)",
+   "unit": "Rs. Lakhs",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p28",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "I28",
+   "label": "Other Non-Current Assets / BG Margin (projection year 6)",
+   "unit": "Rs. Lakhs",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p28",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "J28",
+   "label": "Other Non-Current Assets / BG Margin (projection year 7)",
+   "unit": "Rs. Lakhs",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p28",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "K28",
+   "label": "Other Non-Current Assets / BG Margin (projection year 8)",
+   "unit": "Rs. Lakhs",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p28",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "L28",
+   "label": "Other Non-Current Assets / BG Margin (projection year 9)",
+   "unit": "Rs. Lakhs",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p28",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "5_Projection_Assumptions",
+   "cell": "M28",
+   "label": "Other Non-Current Assets / BG Margin (projection year 10)",
+   "unit": "Rs. Lakhs",
+   "type": "number",
+   "section": "Projection assumptions",
+   "group": "p28",
+   "template_default_kept": false
+  },
+  {
+   "sheet": "17_Sensitivity_Analysis",
+   "cell": "B5",
+   "label": "Stress: sales drop",
+   "unit": "%",
+   "type": "percent",
+   "section": "Sensitivity shocks",
+   "template_default_kept": true,
+   "default": 0.1
+  },
+  {
+   "sheet": "17_Sensitivity_Analysis",
+   "cell": "B6",
+   "label": "Stress: raw material cost rise",
+   "unit": "%",
+   "type": "percent",
+   "section": "Sensitivity shocks",
+   "template_default_kept": true,
+   "default": 0.05
+  },
+  {
+   "sheet": "17_Sensitivity_Analysis",
+   "cell": "B7",
+   "label": "Stress: operating expense rise",
+   "unit": "%",
+   "type": "percent",
+   "section": "Sensitivity shocks",
+   "template_default_kept": true,
+   "default": 0.1
+  }
+ ]
+}

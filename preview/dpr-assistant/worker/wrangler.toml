@@ -1,0 +1,17 @@
+name = "dpr-assistant-ai"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+account_id = "8294b08c3d2a86e0df3ce39e83a850fe"
+workers_dev = true
+
+[vars]
+ALLOW_ORIGIN = "https://cakashoza-cmyk.github.io"
+AI_ENABLED = "true"
+
+[observability]
+enabled = false
+
+# KV for rate limits only (no request content is stored)
+[[kv_namespaces]]
+binding = "RL"
+id = "eda120c6907d405eb21f77a13ca96f8e"
