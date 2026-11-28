@@ -333,7 +333,7 @@
     {
      "type": "prices",
      "title": "Raw material and sale prices",
-     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win.",
      "rows": [
       {
        "item": "Polyester POY 130/34",
@@ -1162,6 +1162,41 @@
    "publisher": "Bhaskar English",
    "date": "Oct 2026",
    "url": "https://www.bhaskarenglish.in/local/gujarat/news/surat-textile-market-crisis-looms-shut-diwali-slump-139403943.html"
+  }
+ ],
+ "lede": "A weaving unit buys yarn and weaves grey (unprocessed) fabric on water-jet, rapier or air-jet looms, then sells it to traders. This page covers weaving only, not yarn making, processing, embroidery or trading.",
+ "keyfacts": [
+  {
+   "label": "Main raw material",
+   "text": "Polyester POY 130/34, Rs 178-180/kg (30 Oct 2026).",
+   "tag": "reported",
+   "src": [
+    "biz_yarn"
+   ]
+  },
+  {
+   "label": "Sold to",
+   "text": "Grey-fabric traders and brokers.",
+   "tag": "fact",
+   "src": [
+    "txc"
+   ]
+  },
+  {
+   "label": "Typical margin",
+   "text": "Unknown for a typical MSME weaver. One large listed weaver reported a 23.55% EBITDA margin in FY26; that is not typical of a small unit.",
+   "tag": "unknown",
+   "src": [
+    "borana"
+   ]
+  },
+  {
+   "label": "Biggest risk",
+   "text": "Weavers report payment from traders after 60-120 days. Yarn prices have also risen much faster than grey fabric.",
+   "tag": "reported",
+   "src": [
+    "nie_sep"
+   ]
   }
  ]
 }

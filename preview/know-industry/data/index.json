@@ -32,7 +32,8 @@
      "cluster": "Surat",
      "status": "live",
      "priority": "normal",
-     "note": "Large-company segment; mainly for context"
+     "note": "Large-company segment; mainly for context",
+     "blurb": "Makes POY and FDY from PTA and MEG. Mostly large companies."
     },
     {
      "slug": "surat-texturising",
@@ -40,7 +41,8 @@
      "cluster": "Surat",
      "status": "live",
      "priority": "high",
-     "note": "Twisting merged here; warping and sizing are covered on the weaving page"
+     "note": "Twisting merged here; warping and sizing are covered on the weaving page",
+     "blurb": "Turns POY into stretch yarn (DTY) and twists yarn for weavers."
     },
     {
      "slug": "surat-mmf-weaving",
@@ -48,7 +50,8 @@
      "cluster": "Surat",
      "status": "live",
      "priority": "high",
-     "note": ""
+     "note": "",
+     "blurb": "Weaves grey fabric on water-jet, rapier and air-jet looms."
     },
     {
      "slug": "surat-processing-dyeing",
@@ -56,7 +59,8 @@
      "cluster": "Surat",
      "status": "live",
      "priority": "high",
-     "note": ""
+     "note": "",
+     "blurb": "Dyes, prints and finishes grey fabric on job-work for traders."
     },
     {
      "slug": "surat-embroidery",
@@ -64,7 +68,8 @@
      "cluster": "Surat",
      "status": "live",
      "priority": "high",
-     "note": ""
+     "note": "",
+     "blurb": "Computerised multi-head embroidery, mostly job-work for traders."
     },
     {
      "slug": "surat-zari",
@@ -72,7 +77,8 @@
      "cluster": "Surat",
      "status": "live",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Metallic and imitation thread used in weaving and embroidery."
     },
     {
      "slug": "surat-garmenting",
@@ -80,7 +86,8 @@
      "cluster": "Surat",
      "status": "live",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Cuts and stitches Surat fabric into ready-made garments."
     },
     {
      "slug": "surat-textile-trading",
@@ -88,7 +95,8 @@
      "cluster": "Surat",
      "status": "live",
      "priority": "high",
-     "note": ""
+     "note": "",
+     "blurb": "Buys grey fabric, gets it processed, and sells it across India."
     }
    ]
   },
@@ -102,7 +110,8 @@
      "status": "planned",
      "priority": "high",
      "note": "",
-     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list) (Varachha, Surat)"
+     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list) (Varachha, Surat)",
+     "blurb": "Cutting and polishing of natural diamonds, mainly in Varachha."
     },
     {
      "slug": "surat-lab-grown-diamond",
@@ -111,7 +120,8 @@
      "status": "planned",
      "priority": "high",
      "note": "",
-     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list) (Surat and Navsari)"
+     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list) (Surat and Navsari)",
+     "blurb": "Lab-grown diamonds (CVD and HPHT) in Surat and Navsari."
     },
     {
      "slug": "surat-jewellery",
@@ -119,7 +129,8 @@
      "cluster": "Surat",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Jewellery manufacturing and trade in Surat."
     }
    ]
   },
@@ -133,7 +144,8 @@
      "status": "planned",
      "priority": "normal",
      "note": "",
-     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list)"
+     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list)",
+     "blurb": "Engineering units, mainly in Varachha."
     },
     {
      "slug": "surat-metal-fabrication",
@@ -142,7 +154,8 @@
      "status": "planned",
      "priority": "normal",
      "note": "",
-     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list)"
+     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list)",
+     "blurb": "Aluminium and steel fabrication."
     },
     {
      "slug": "surat-food-processing",
@@ -151,7 +164,8 @@
      "status": "planned",
      "priority": "normal",
      "note": "",
-     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list)"
+     "verified": "Listed among MSE-CDP common facility centre clusters (Office of DC (MSME), MSME-DFO Ahmedabad list)",
+     "blurb": "Food processing units in Surat."
     }
    ]
   },
@@ -164,7 +178,8 @@
      "cluster": "Hazira",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Steel making at the Hazira industrial belt."
     },
     {
      "slug": "hazira-refining-petchem",
@@ -172,7 +187,8 @@
      "cluster": "Hazira",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Oil refining and petrochemicals."
     },
     {
      "slug": "hazira-lng",
@@ -180,7 +196,8 @@
      "cluster": "Hazira",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Liquefied natural gas."
     },
     {
      "slug": "hazira-heavy-engineering",
@@ -188,7 +205,8 @@
      "cluster": "Hazira",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Heavy engineering works."
     },
     {
      "slug": "hazira-fertiliser",
@@ -196,7 +214,8 @@
      "cluster": "Hazira",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Fertiliser plants."
     },
     {
      "slug": "hazira-port-logistics",
@@ -204,7 +223,8 @@
      "cluster": "Hazira",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Port handling and logistics."
     }
    ]
   },
@@ -217,7 +237,8 @@
      "cluster": "Bharuch / Ankleshwar / Dahej",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Bulk chemicals in Bharuch, Ankleshwar and Dahej."
     },
     {
      "slug": "bharuch-dyes-pigments",
@@ -225,7 +246,8 @@
      "cluster": "Ankleshwar",
      "status": "planned",
      "priority": "high",
-     "note": ""
+     "note": "",
+     "blurb": "Dyes and pigments, mainly Ankleshwar."
     },
     {
      "slug": "bharuch-dye-intermediates",
@@ -233,7 +255,8 @@
      "cluster": "Ankleshwar",
      "status": "planned",
      "priority": "high",
-     "note": ""
+     "note": "",
+     "blurb": "Dye intermediates, mainly Ankleshwar."
     },
     {
      "slug": "bharuch-pharma-api",
@@ -241,7 +264,8 @@
      "cluster": "Ankleshwar / Dahej",
      "status": "planned",
      "priority": "high",
-     "note": ""
+     "note": "",
+     "blurb": "Pharma active ingredients in Ankleshwar and Dahej."
     },
     {
      "slug": "bharuch-agrochemicals",
@@ -249,7 +273,8 @@
      "cluster": "Ankleshwar / Dahej",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Agrochemicals in Ankleshwar and Dahej."
     },
     {
      "slug": "bharuch-specialty-chemicals",
@@ -257,7 +282,8 @@
      "cluster": "Ankleshwar / Dahej",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Specialty chemicals in Ankleshwar and Dahej."
     }
    ]
   },
@@ -270,7 +296,8 @@
      "cluster": "Vapi / Sarigam",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Chemicals in Vapi and Sarigam."
     },
     {
      "slug": "vapi-pharma",
@@ -278,7 +305,8 @@
      "cluster": "Vapi",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Pharma units in Vapi."
     },
     {
      "slug": "vapi-paper-board",
@@ -286,7 +314,8 @@
      "cluster": "Vapi",
      "status": "planned",
      "priority": "high",
-     "note": ""
+     "note": "",
+     "blurb": "Paper and board mills in Vapi."
     },
     {
      "slug": "vapi-plastics-packaging",
@@ -294,7 +323,8 @@
      "cluster": "Vapi / Umbergaon",
      "status": "planned",
      "priority": "high",
-     "note": ""
+     "note": "",
+     "blurb": "Plastics and packaging in Vapi and Umbergaon."
     },
     {
      "slug": "vapi-engineering",
@@ -302,7 +332,8 @@
      "cluster": "Vapi / Valsad",
      "status": "planned",
      "priority": "high",
-     "note": ""
+     "note": "",
+     "blurb": "Engineering units in Vapi and Valsad."
     },
     {
      "slug": "vapi-fans-appliances",
@@ -310,7 +341,8 @@
      "cluster": "Valsad / Vapi",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Fans and appliances in Valsad and Vapi."
     }
    ]
   },
@@ -323,7 +355,8 @@
      "cluster": "Bardoli / Tapi",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Sugar co-operatives around Bardoli and Tapi."
     },
     {
      "slug": "navsari-food-fruit-processing",
@@ -331,7 +364,8 @@
      "cluster": "Navsari / Bardoli",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Food and fruit processing in Navsari and Bardoli."
     },
     {
      "slug": "navsari-shrimp-aquaculture",
@@ -339,7 +373,8 @@
      "cluster": "Navsari / Valsad",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Shrimp and aquaculture in Navsari and Valsad."
     }
    ]
   },
@@ -352,7 +387,8 @@
      "cluster": "Vadodara",
      "status": "planned",
      "priority": "high",
-     "note": ""
+     "note": "",
+     "blurb": "Engineering units in Vadodara."
     },
     {
      "slug": "vadodara-power-equipment",
@@ -360,7 +396,8 @@
      "cluster": "Vadodara",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Power equipment manufacturing in Vadodara."
     },
     {
      "slug": "vadodara-pharma",
@@ -368,7 +405,8 @@
      "cluster": "Vadodara",
      "status": "planned",
      "priority": "normal",
-     "note": ""
+     "note": "",
+     "blurb": "Pharma units in Vadodara."
     }
    ]
   }

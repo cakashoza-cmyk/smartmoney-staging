@@ -198,7 +198,7 @@
     {
      "type": "prices",
      "title": "Raw material and sale prices",
-     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win.",
      "rows": [
       {
        "item": "PTA (Reliance domestic list)",
@@ -613,6 +613,42 @@
    "publisher": "The New Indian Express",
    "date": "13 May 2026",
    "url": "https://www.newindianexpress.com/states/gujarat/2026/May/13/rising-input-costs-and-global-headwinds-strain-gujarats-textile-backbone"
+  }
+ ],
+ "lede": "Large continuous-process plants turn PTA and MEG into polyester yarn (POY and FDY). This is mostly a large-company segment; banks in the region meet it as the main supplier to their MSME borrowers.",
+ "keyfacts": [
+  {
+   "label": "Main raw material",
+   "text": "PTA Rs 93.90/kg and MEG Rs 71/kg (Reliance list, 21 Nov 2026).",
+   "tag": "reported",
+   "src": [
+    "f2f_pta"
+   ]
+  },
+  {
+   "label": "Sold to",
+   "text": "Texturisers (POY), and weavers and knitters (FDY).",
+   "tag": "reported",
+   "src": [
+    "sgcci"
+   ]
+  },
+  {
+   "label": "Typical margin",
+   "text": "One rated Surat yarn maker had a 1.25% operating margin in FY2025. That is not a typical MSME figure.",
+   "tag": "fact",
+   "src": [
+    "crisil"
+   ]
+  },
+  {
+   "label": "Biggest risk",
+   "text": "Crude oil, PTA and MEG prices move the cost base every week.",
+   "tag": "inference",
+   "src": [
+    "sgcci",
+    "f2f_pta"
+   ]
   }
  ]
 }

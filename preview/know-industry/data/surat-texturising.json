@@ -196,7 +196,7 @@
     {
      "type": "prices",
      "title": "Raw material and sale prices",
-     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win.",
      "rows": [
       {
        "item": "POY 130/34 (main input)",
@@ -619,6 +619,36 @@
    "publisher": "The New Indian Express",
    "date": "13 May 2026",
    "url": "https://www.newindianexpress.com/states/gujarat/2026/May/13/rising-input-costs-and-global-headwinds-strain-gujarats-textile-backbone"
+  }
+ ],
+ "lede": "A texturiser turns POY into stretch yarn (DTY). Twisting units add twist for strength or crepe effects. Both supply weavers and knitters. Warping and sizing are usually done inside weaving units, so they have no separate page.",
+ "keyfacts": [
+  {
+   "label": "Main raw material",
+   "text": "Polyester POY 130/34, Rs 178-180/kg (30 Oct 2026).",
+   "tag": "reported",
+   "src": [
+    "biz_yarn"
+   ]
+  },
+  {
+   "label": "Sold to",
+   "text": "Weavers and knitters in Surat, often through yarn dealers.",
+   "tag": "inference"
+  },
+  {
+   "label": "Typical margin",
+   "text": "Unknown — collect from the customer.",
+   "tag": "unknown"
+  },
+  {
+   "label": "Biggest risk",
+   "text": "A squeeze between the POY price, set by a few makers, and what weavers can pay.",
+   "tag": "reported",
+   "src": [
+    "crisil",
+    "toi_mahamanthan"
+   ]
   }
  ]
 }

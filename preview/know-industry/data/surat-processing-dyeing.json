@@ -218,7 +218,7 @@
     {
      "type": "prices",
      "title": "Raw material and sale prices",
-     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win.",
      "rows": [
       {
        "item": "Boiler coal (imported / steam)",
@@ -653,6 +653,38 @@
    "publisher": "Government of Gujarat policy, via MAC Ancillary Services",
    "date": "Oct 2024",
    "url": "https://www.macancillary.com/policies/gujarat/GUJARAT_TEXTILE_POLICY__2024.pdf"
+  }
+ ],
+ "lede": "Process houses dye, print and finish grey fabric. Most work on job-work: the trader owns the fabric and pays a per-metre charge. Effluent treatment and water supply decide whether a unit can run at all.",
+ "keyfacts": [
+  {
+   "label": "Main raw material",
+   "text": "Boiler coal, Rs 13,000 a tonne on 18 Nov 2026, up from Rs 11,000.",
+   "tag": "reported",
+   "src": [
+    "biz_coal"
+   ]
+  },
+  {
+   "label": "Sold to",
+   "text": "Traders and merchant-manufacturers, who own the fabric (job-work).",
+   "tag": "fact",
+   "src": [
+    "sgtpa"
+   ]
+  },
+  {
+   "label": "Typical margin",
+   "text": "Unknown — collect from the customer.",
+   "tag": "unknown"
+  },
+  {
+   "label": "Biggest risk",
+   "text": "A CETP, water or GPCB shutdown can stop the whole unit, regardless of orders.",
+   "tag": "reported",
+   "src": [
+    "toi_flood"
+   ]
   }
  ]
 }

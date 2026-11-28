@@ -180,7 +180,7 @@
     {
      "type": "prices",
      "title": "Raw material and sale prices",
-     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win.",
      "rows": [
       {
        "item": "Processed fabric (main input)",
@@ -455,6 +455,32 @@
    "date": "25 Mar 2026",
    "url": "https://gercin.org/order-category/tariff-orders/",
    "note": "GERC website was slow or blocked when we tried to open it on 27 Nov 2026; the figures were read from the document via search. Open the link and confirm."
+  }
+ ],
+ "lede": "Garment units cut and stitch Surat fabric into ready-made clothing. This is a newer segment than weaving or processing, so public data is thin.",
+ "keyfacts": [
+  {
+   "label": "Main raw material",
+   "text": "Processed fabric. No reliable public price was found.",
+   "tag": "unknown"
+  },
+  {
+   "label": "Sold to",
+   "text": "Tier-2 and Tier-3 domestic brands, and online and organised retailers.",
+   "tag": "reported",
+   "src": [
+    "ar_garment"
+   ]
+  },
+  {
+   "label": "Typical margin",
+   "text": "Unknown — collect from the customer.",
+   "tag": "unknown"
+  },
+  {
+   "label": "Biggest risk",
+   "text": "Buyer concentration: one large brand order can be most of the business.",
+   "tag": "inference"
   }
  ]
 }

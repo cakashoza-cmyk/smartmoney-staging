@@ -190,7 +190,7 @@
     {
      "type": "prices",
      "title": "Raw material and sale prices",
-     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win.",
      "rows": [
       {
        "item": "Grey fabric (main purchase)",
@@ -526,6 +526,38 @@
    "publisher": "Times of India",
    "date": "24 Sep 2026",
    "url": "https://timesofindia.indiatimes.com/city/surat/weavers-seek-to-mend-market-threads/articleshow/134445162.cms"
+  }
+ ],
+ "lede": "Textile traders buy grey fabric from weavers, send it for processing and embroidery on job-work, and sell finished goods across India. They coordinate the chain but usually own no looms or process houses.",
+ "keyfacts": [
+  {
+   "label": "Main raw material",
+   "text": "Grey fabric, about Rs 12.80 a metre (Oct 2026).",
+   "tag": "reported",
+   "src": [
+    "biz_proc"
+   ]
+  },
+  {
+   "label": "Sold to",
+   "text": "Distributors, wholesalers and retailers across India, often on 180 days' credit.",
+   "tag": "reported",
+   "src": [
+    "toi_fostta"
+   ]
+  },
+  {
+   "label": "Typical margin",
+   "text": "Unknown — collect from the customer.",
+   "tag": "unknown"
+  },
+  {
+   "label": "Biggest risk",
+   "text": "Long receivables, plus returns of unsold, out-of-fashion goods after the credit period.",
+   "tag": "reported",
+   "src": [
+    "toi_fostta"
+   ]
   }
  ]
 }

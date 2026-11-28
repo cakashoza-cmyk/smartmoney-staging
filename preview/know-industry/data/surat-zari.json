@@ -186,7 +186,7 @@
     {
      "type": "prices",
      "title": "Raw material and sale prices",
-     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win.",
      "rows": [
       {
        "item": "Gold (for real zari)",
@@ -441,6 +441,38 @@
    "publisher": "QHSE Alert (copy of CPCB lists)",
    "date": "2025",
    "url": "https://legalupdate.qhsealert.com/file/316_CPCB_Industry_Categorization_Red_to_White_Explained.pdf"
+  }
+ ],
+ "lede": "Zari is decorative metallic thread. Real silver and gold zari has shrunk as metal prices rose; most output is now metallic yarn or imitation copper and brass zari. It feeds weaving and embroidery rather than sitting in a straight line in the chain.",
+ "keyfacts": [
+  {
+   "label": "Main raw material",
+   "text": "Copper and brass wire: no public price. Gold for real zari was Rs 1,48,465 per 10 g in Mar 2026.",
+   "tag": "reported",
+   "src": [
+    "toi_zari"
+   ]
+  },
+  {
+   "label": "Sold to",
+   "text": "Weavers and embroiderers, in Surat and in handloom centres in other states.",
+   "tag": "reported",
+   "src": [
+    "ians_zari"
+   ]
+  },
+  {
+   "label": "Typical margin",
+   "text": "Unknown — collect from the customer.",
+   "tag": "unknown"
+  },
+  {
+   "label": "Biggest risk",
+   "text": "Metal price swings. Gold rose from Rs 42,758 per 10 g in 2021 to Rs 1,48,465 in Mar 2026.",
+   "tag": "reported",
+   "src": [
+    "toi_zari"
+   ]
   }
  ]
 }

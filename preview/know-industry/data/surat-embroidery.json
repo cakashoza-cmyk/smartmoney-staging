@@ -194,7 +194,7 @@
     {
      "type": "prices",
      "title": "Raw material and sale prices",
-     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win. Trend arrows only where the source itself gives a direction.",
+     "note": "Public quotes only, with date and source. Trade-site quotes are indicative; a customer's own purchase bills always win.",
      "rows": [
       {
        "item": "Viscose embroidery yarn",
@@ -570,6 +570,39 @@
    "publisher": "Government of Gujarat policy, via MAC Ancillary Services",
    "date": "Oct 2024",
    "url": "https://www.macancillary.com/policies/gujarat/GUJARAT_TEXTILE_POLICY__2024.pdf"
+  }
+ ],
+ "lede": "Most Surat embroidery units run computerised multi-head machines on job-work for traders, charged per 1,000 stitches. Hand embroidery and zari thread making are not covered here.",
+ "keyfacts": [
+  {
+   "label": "Main raw material",
+   "text": "Embroidery thread. Viscose embroidery yarn was about 12% costlier over four months to Sep 2026; no public rupee price was found.",
+   "tag": "reported",
+   "src": [
+    "toi_thread"
+   ]
+  },
+  {
+   "label": "Sold to",
+   "text": "Textile traders, who own the fabric and pay a job charge.",
+   "tag": "reported",
+   "src": [
+    "toi_thread"
+   ]
+  },
+  {
+   "label": "Typical margin",
+   "text": "Unknown — collect from the customer.",
+   "tag": "unknown"
+  },
+  {
+   "label": "Biggest risk",
+   "text": "Thread cost spikes, and labour disputes with migrant workers leaving.",
+   "tag": "reported",
+   "src": [
+    "toi_thread",
+    "bbc_emb"
+   ]
   }
  ]
 }
