@@ -4,7 +4,8 @@
   const M = window.DPRModel, X = window.XlsxFill;
   const AI_URL = 'https://dpr-assistant-ai.cakashoza.workers.dev';
   const STORE = 'dpr-assistant-v1';
-  let A = load() || fresh();
+  function norm(a) { const f = fresh(); a = a || f; for (const k of Object.keys(f)) if (a[k] == null) a[k] = f[k]; for (const k of Object.keys(f.facilities)) if (!Array.isArray(a.facilities[k])) a.facilities[k] = []; if (!a.project.items) a.project.items = []; return a; }
+  let A = norm(load());
   let idx = 0, aiOK = false, pending = new Set(), aiConsent = localStorage.getItem(STORE + '-consent') === 'yes', narrative = null;
   const $ = s => document.querySelector(s);
   function fresh() { return { business: { state: 'Gujarat', promoters: [{}] }, project: { items: [] }, funds: {}, facilities: { existing: [], proposedTL: [], wc: [], nonfund: [] }, collateral: [], ops: {}, hist: {}, settings: {}, narrative: {} }; }
@@ -303,7 +304,7 @@
     <div class="row"><button class="primary" id="go">${Object.keys(A.business || {}).length > 2 ? 'Continue' : 'Start'}</button><button id="demo" class="ghost">Try the fictional demo case</button><button id="clear" class="ghost">Clear my answers</button></div>
     <p class="help small" id="aistat"></p>`;
     $('#go').onclick = () => { idx = 1; render(); };
-    $('#demo').onclick = async () => { if (!confirm('Load the fictional "Apex Precision Components" practice case? This replaces your answers on this device.')) return; A = await (await fetch('demo_apex.json')).json(); save(); idx = visible().length - 1; render(); };
+    $('#demo').onclick = async () => { if (!confirm('Load the fictional "Apex Precision Components" practice case? This replaces your answers on this device.')) return; A = norm(await (await fetch('demo_apex.json')).json()); save(); idx = visible().length - 1; render(); };
     $('#clear').onclick = () => { if (confirm('Delete all answers saved on this device?')) { localStorage.removeItem(STORE); A = fresh(); render(); } };
     $('#aistat').textContent = aiOK ? 'Optional AI help is available (you will be asked before anything is sent).' : 'Working without AI help — everything still works.';
   }
@@ -398,7 +399,7 @@
         const out = await callAI('/extract', { card: c.id, context: `${A.activity || ''} ${A.stage || ''} base FY ${A.baseFY || ''}`, fields, text });
         const found = []; const notLiteral = [];
         const literal = new Set((raw.match(/\d[\d,.]*/g) || []).map(s => Number(s.replace(/,/g, ''))));
-        const chk = v => { if (typeof v === 'number' && !literal.has(v) && !literal.has(Math.round(v * 100 * 1e6) / 1e6)) notLiteral.push(v); };
+        const chk = v => { if (typeof v === 'number' && v !== 0 && !literal.has(v) && !literal.has(Math.round(v * 100 * 1e6) / 1e6)) notLiteral.push(v); };
         for (const [p, v] of Object.entries(out.values || {})) {
           if (Array.isArray(v) && Array.isArray(get(p) || [])) {
             if (v.length && typeof v[0] === 'object') { const arr = get(p) || []; const startN = arr.filter(x => x && Object.keys(x).length).length; const base = arr.slice(0, startN); v.forEach((o, n) => { base.push(o); Object.entries(o).forEach(([k, x]) => { chk(x); pending.add(`${p}.${startN + n}.${k}`); }); }); set(p, base); }
