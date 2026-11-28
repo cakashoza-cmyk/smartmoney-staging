@@ -371,7 +371,7 @@
     PROJECT_COST: { f: "'6_Capex_&_Means'!B38", t: 'lakh' }, TERM_LOAN: { f: "'6_Capex_&_Means'!F33", t: 'lakh' }, PROMOTER_CONTRIBUTION: { f: "'6_Capex_&_Means'!F31", t: 'lakh' },
     UNSECURED_LOANS: { f: "'6_Capex_&_Means'!F32", t: 'lakh' }, WC_LIMITS: { f: "'2_Executive_Summary'!G7", t: 'lakh' }, NONFUND_LIMITS: { f: "'2_Executive_Summary'!G8", t: 'lakh' },
     SALES_Y1: { f: "'11_Profit_&_Loss'!E9", t: 'lakh' }, SALES_Y3: { f: "'11_Profit_&_Loss'!G9", t: 'lakh' }, PAT_Y1: { f: "'11_Profit_&_Loss'!E32", t: 'lakh' },
-    CASH_ACCRUALS_Y1: { f: "'11_Profit_&_Loss'!E34", t: 'lakh' }, AVG_DSCR: { f: "'15_DSCR_&_BEP'!L13", t: 'x' }, MIN_DSCR: { f: "MINIFS('15_DSCR_&_BEP'!B13:K13,'15_DSCR_&_BEP'!B12:K12,\">0\")", t: 'x' },
+    CASH_ACCRUALS_Y1: { f: "'11_Profit_&_Loss'!E34", t: 'lakh' }, AVG_DSCR: { f: "'15_DSCR_&_BEP'!L13", t: 'x' }, MIN_DSCR: { f: "_xlfn.MINIFS('15_DSCR_&_BEP'!B13:K13,'15_DSCR_&_BEP'!B12:K12,\">0\")", t: 'x' },
     BEP_SALES_Y1: { f: "'15_DSCR_&_BEP'!B23", t: 'lakh' }, INSTALLED_CAPACITY: { f: "'5_Projection_Assumptions'!D8", t: 'num' }, UTILISATION_Y1: { f: "'5_Projection_Assumptions'!D9", t: 'pct' },
     TOTAL_COLLATERAL: { f: null, t: 'lakh' }
   };
